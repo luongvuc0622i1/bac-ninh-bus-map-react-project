@@ -1,0 +1,62 @@
+[
+    {
+        "route_id": "BN01",
+        "route_name": "Bắc Ninh - Lương Tài"
+    },
+    {
+        "route_id": "BN02",
+        "route_name": "Bắc Ninh - Phả Lại"
+    },
+    {
+        "route_id": "BN03",
+        "route_name": "Bắc Ninh - Yên Phong"
+    },
+    {
+        "route_id": "BN08",
+        "route_name": "Bắc Ninh - Kênh Vàng"
+    },
+    {
+        "route_id": "BN27",
+        "route_name": "Kênh Vàng - Xuân Lâm"
+    },
+    {
+        "route_id": "BN68",
+        "route_name": "KCN VSIP - Chi Lăng"
+    },
+    {
+        "route_id": "BN86A",
+        "route_name": "Bắc Ninh - Minh Tân"
+    },
+    {
+        "route_id": "BN86B",
+        "route_name": "Bắc Ninh - Đại Lai"
+    },
+    {
+        "route_id": "10",
+        "route_name": "Long Biên - Từ Sơn"
+    },
+    {
+        "route_id": "54",
+        "route_name": "Long Biên - Thành phố Bắc Ninh"
+    },
+    {
+        "route_id": "203",
+        "route_name": "Giáp Bát - Bắc Giang"
+    },
+    {
+        "route_id": "204",
+        "route_name": "Long Biên - Thuận Thành"
+    },
+    {
+        "route_id": "210",
+        "route_name": "Hiệp Hòa - Gia Lâm"
+    },
+    {
+        "route_id": "212",
+        "route_name": "Mỹ Đình - Quế Võ"
+    },
+    {
+        "route_id": "217",
+        "route_name": "Hải Dương - Bắc Ninh"
+    }
+]
