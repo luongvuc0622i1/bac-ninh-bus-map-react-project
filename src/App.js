@@ -3,7 +3,7 @@ import './App.css';
 export default function App() {
   return (
     <div className='container'>
-      <div className='row' style={{backgroundColor: 'blue'}} >
+      <div className='row' style={{backgroundColor: 'lightblue'}} >
         <h2 style={{height: 50}}>Bản đồ xe buýt Bắc Ninh</h2>
       </div>  
       <div className='row'>
