@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div className='container'>
       <div className='row' style={{backgroundColor: 'lightblue'}} >
-        <h2 style={{height: 50}}>Bản đồ xe buýt Bắc Ninh</h2>
+        <h2 style={{height: '8.5vh'}}>Bản đồ xe buýt Bắc Ninh</h2>
       </div>  
       <div className='row'>
         <div className='col-lg-3'>
@@ -33,7 +33,7 @@ export default function App() {
           </div>
           <Infomation routeId={routeId} />
         </div>
-        <div className='col-lg-9'>
+        <div className='col-lg-9' style={{paddingLeft: 0, paddingRight: 0}} >
           <RouteMap routeId={routeId} />
         </div>
       </div>
