@@ -92,10 +92,18 @@ export default class RouteMap extends React.Component {
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
     };
 
+    // event click list bus stop in menu => map
     if (document.getElementById(this.props.markerId)) {
-      // document.getElementById(this.props.markerId).style.width = "100px";
-      // document.getElementById(this.props.markerId).style.height = "100px";
-      document.getElementById(this.props.markerId).innerHTML += '<p>Ở đây</p>'
+      // for all marker have opacity = 0.3
+      const elements = document.getElementsByClassName('mapboxgl-marker');
+      for (const element of elements) {
+        element.style.opacity = "0.3";
+      }
+      document.getElementById(this.props.markerId).style.backgroundImage = "url(../images/bus-stop-here2.png)";
+      document.getElementById(this.props.markerId).style.marginTop = "-40px"
+      document.getElementById(this.props.markerId).style.width = "80px";
+      document.getElementById(this.props.markerId).style.height = "80px";
+      document.getElementById(this.props.markerId).style.opacity = "1";
     }
   }
 
