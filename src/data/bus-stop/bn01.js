@@ -72,7 +72,7 @@ export let bus_stop_list_bn01 = {
           'coordinates': [106.195603,21.019009]
       },
       'properties': {
-        'title': 'Bến xe Lương Tài',
+        'title': '(B) Bến xe Lương Tài',
         'description': 'Đường Lý Thái Tổ',
         'router': 'BN01'
       }

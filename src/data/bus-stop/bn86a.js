@@ -1,11 +1,11 @@
 export let bus_stop_list_bn86a = {
-    'type': 'FeatureCollection',
-    'features': [
+  'type': 'FeatureCollection',
+  'features': [
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.061027,21.180761]
+        'coordinates': [106.061027, 21.180761]
       },
       'properties': {
         'title': '(A) Bến xe Bắc Ninh',
@@ -17,7 +17,7 @@ export let bus_stop_list_bn86a = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.059702,21.178827]
+        'coordinates': [106.059702, 21.178827]
       },
       'properties': {
         'title': 'Hiệu sách nhân dân tỉnh Bắc Ninh',
@@ -28,9 +28,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.064174,21.180864]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.064174, 21.180864]
       },
       'properties': {
         'title': 'Chợ Nhớn',
@@ -41,9 +41,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.065580,21.180400]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.065580, 21.180400]
       },
       'properties': {
         'title': 'Trạm Y tế Phường Tiền An',
@@ -54,9 +54,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.069870,21.178600]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.069870, 21.178600]
       },
       'properties': {
         'title': 'HimLam Plaza',
@@ -66,9 +66,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.072246,21.177559]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.072246, 21.177559]
       },
       'properties': {
         'title': 'Tòa Vietcombank Bắc Ninh',
@@ -79,9 +79,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.072377,21.177637]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.072377, 21.177637]
       },
       'properties': {
         'title': 'Vincom Plaza Lý Thái Tổ',
@@ -92,9 +92,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.079279,21.174902]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.079279, 21.174902]
       },
       'properties': {
         'title': 'Khu tập thể Lilama 69-1',
@@ -105,9 +105,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.079332,21.175007]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.079332, 21.175007]
       },
       'properties': {
         'title': '',
@@ -118,9 +118,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.083540,21.173804]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.083540, 21.173804]
       },
       'properties': {
         'title': 'Nhà khách Bộ chỉ huy Quân sự Bắc Ninh',
@@ -131,9 +131,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.084349,21.173756]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.084349, 21.173756]
       },
       'properties': {
         'title': 'Cổng chào Thành phố Bắc Ninh',
@@ -144,9 +144,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.094880,21.171406]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.094880, 21.171406]
       },
       'properties': {
         'title': 'Cây xăng Cầu Ngà',
@@ -156,9 +156,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.101941,21.169465]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.101941, 21.169465]
       },
       'properties': {
         'title': 'Siêu thị Minh Anh',
@@ -168,9 +168,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.110034,21.163219]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.110034, 21.163219]
       },
       'properties': {
         'title': 'Công ty TNHH Canon Vietnam - KCN Quế Võ',
@@ -180,9 +180,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.116185,21.159056]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.116185, 21.159056]
       },
       'properties': {
         'title': 'Công ty Sài Gòn Kinh Bắc',
@@ -192,9 +192,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.126529,21.157415]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.126529, 21.157415]
       },
       'properties': {
         'title': 'Cổng Làng Giang Liễu',
@@ -204,9 +204,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.136341,21.155789]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.136341, 21.155789]
       },
       'properties': {
         'title': 'Trường Cao Đẳng nghề Quản Lý và Công Nghệ',
@@ -216,9 +216,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.145730,21.154256]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.145730, 21.154256]
       },
       'properties': {
         'title': 'Siêu thị DABACO Quế Võ',
@@ -228,9 +228,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.150950,21.153405]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.150950, 21.153405]
       },
       'properties': {
         'title': 'Cửa hàng vàng bạc Xuân Mạo',
@@ -240,9 +240,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.154165,21.152895]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.154165, 21.152895]
       },
       'properties': {
         'title': 'Công an Thị xã Quế Võ',
@@ -252,9 +252,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.155843,21.152598]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.155843, 21.152598]
       },
       'properties': {
         'title': 'Bến xe Quế Võ',
@@ -264,9 +264,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.167044,21.148198]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.167044, 21.148198]
       },
       'properties': {
         'title': 'UBND Phường Việt Hùng',
@@ -276,9 +276,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.174731,21.140997]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.174731, 21.140997]
       },
       'properties': {
         'title': 'Phố Lựa',
@@ -288,9 +288,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.179127,21.137661]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.179127, 21.137661]
       },
       'properties': {
         'title': 'KCN Quế Võ III',
@@ -300,9 +300,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.188670,21.132535]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.188670, 21.132535]
       },
       'properties': {
         'title': 'Trung tâm Thánh mẫu Từ Phong',
@@ -312,9 +312,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.198230,21.128221]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.198230, 21.128221]
       },
       'properties': {
         'title': 'Agribank Đông Du',
@@ -324,9 +324,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.223544,21.123041]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.223544, 21.123041]
       },
       'properties': {
         'title': 'KCN Quế Võ II',
@@ -336,9 +336,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.237439,21.121243]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.237439, 21.121243]
       },
       'properties': {
         'title': 'Thôn Ngọc Sơn',
@@ -348,9 +348,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.243259,21.120507]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.243259, 21.120507]
       },
       'properties': {
         'title': 'Chân cầu Bình Than',
@@ -360,9 +360,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.249467,21.105088]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.249467, 21.105088]
       },
       'properties': {
         'title': 'Thôn Chính Thượng',
@@ -372,9 +372,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.251166,21.098230]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.251166, 21.098230]
       },
       'properties': {
         'title': 'KCN Hanaka Gia Bình II',
@@ -384,9 +384,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.259575,21.084076]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.259575, 21.084076]
       },
       'properties': {
         'title': 'Vòng xuyến cầu Bình Than',
@@ -396,9 +396,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.251877,21.079142]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.251877, 21.079142]
       },
       'properties': {
         'title': 'UBND xã Bình Dương',
@@ -408,9 +408,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.247640,21.075895]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.247640, 21.075895]
       },
       'properties': {
         'title': 'Thôn Đìa',
@@ -420,9 +420,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.243727,21.072526]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.243727, 21.072526]
       },
       'properties': {
         'title': 'Trại Vối',
@@ -432,9 +432,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.240347,21.068479]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.240347, 21.068479]
       },
       'properties': {
         'title': 'Cổng làng Cẩm Xá',
@@ -444,9 +444,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.238193,21.065317]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.238193, 21.065317]
       },
       'properties': {
         'title': 'Cổng làng Lê Lợi',
@@ -456,9 +456,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.235564,21.063586]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.235564, 21.063586]
       },
       'properties': {
         'title': 'Khu dãn dân thôn Cầu Đào',
@@ -468,9 +468,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.229274,21.063179]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.229274, 21.063179]
       },
       'properties': {
         'title': 'Chùa Ngụ',
@@ -480,9 +480,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.228167,21.060662]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228167, 21.060662]
       },
       'properties': {
         'title': 'Cống Ngụ',
@@ -492,9 +492,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.228362,21.054020]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228362, 21.054020]
       },
       'properties': {
         'title': 'Cống Duối',
@@ -504,9 +504,9 @@ export let bus_stop_list_bn86a = {
     },
     {
       'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.265589,20.989173]
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.265589, 20.989173]
       },
       'properties': {
         'title': '(B) Minh Tân',
@@ -514,5 +514,5 @@ export let bus_stop_list_bn86a = {
         'router': 'BN68A'
       }
     }
-    ]
-  }
+  ]
+}
