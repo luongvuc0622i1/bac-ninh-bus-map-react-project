@@ -21,7 +21,7 @@ import b54Go from '../data/bus-routes/54-go.json';
 import b54Back from '../data/bus-routes/54-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
-// import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
+import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
 import { bus_stop_list_bn01 } from '../data/bus-stop/bn01';
 import { bus_stop_list_bn02 } from '../data/bus-stop/bn02';
 import { bus_stop_list_bn08 } from '../data/bus-stop/bn08';
@@ -43,10 +43,9 @@ export default class RouteMap extends React.Component {
 
     //init page load soure & layer (route line) null
     initPage(this.map);
-    // loadMarker(this.map, bus_stop_list_bSE);
 
-    //init page load marker (bus_stop_list) null
-    loadMarker(this.map, { 'features': [] });
+    //init page load marker (bus_stop_list) start-end bus stop
+    loadMarker(this.map, bus_stop_list_bSE);
   };
 
   componentDidUpdate() {
