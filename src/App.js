@@ -1,16 +1,23 @@
 import './App.css';
 import { useState } from 'react';
-import busRoutersList from './data/bus-routers-list.json' //list of all bus routes
 import Infomation from './components/Infomation';
 import RouteMap from './components/RouteMap';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import busRoutersList from './data/bus-routers-list.json' //list of all bus routes
+import { bus_stop_list_bn01 } from './data/bus-stop/bn01';
+import { bus_stop_list_bn02 } from './data/bus-stop/bn02';
 
 export default function App() {
   const [routeId, setRouteId] = useState();
+  const [markerId, setMarkerId] = useState("");
 
   const handleInputChange = (e) => {
     setRouteId(e.target.value);
   };
+
+  const handleClick = (e) => {
+    setMarkerId(e.target.value);
+  }
 
   const optionItems = busRoutersList.map((bus) => <option key={bus.route_id} value={bus.route_id}>{bus.route_id+" : "+bus.route_name}</option>);
 
@@ -29,12 +36,27 @@ export default function App() {
                 {optionItems}
               </select>
             </div>
+            <button>Chọn</button>
             <hr/>
           </div>
           <Infomation routeId={routeId} />
+          <div>
+            <hr/>
+            {bus_stop_list_bn01.features.map(feature => (
+              <div key={feature.markerId}>
+                <button value={feature.markerId} onClick={handleClick}>{feature.properties.title} : {feature.properties.description}</button>
+              </div>
+            ))}
+            <hr/>
+            {bus_stop_list_bn02.features.map(feature => (
+              <div key={feature.markerId}>
+                <button value={feature.markerId} onClick={handleClick}>{feature.properties.title} : {feature.properties.description}</button>
+              </div>
+            ))}
+          </div>
         </div>
         <div className='col-lg-9' style={{paddingLeft: 0, paddingRight: 0}} >
-          <RouteMap routeId={routeId} />
+          <RouteMap routeId={routeId} markerId={markerId} />
         </div>
       </div>
     </div>

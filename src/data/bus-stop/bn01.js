@@ -12,6 +12,7 @@ export let bus_stop_list_bn01 = {
         'description': '142-144 Nguyễn Văn Cừ',
         'router': 'BN01'
       },
+      'markerId': 'bn01-001',
       'color': 'red'
     },
     {
@@ -25,6 +26,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Vườn hoa đối diện CA huyện Gia Bình',
         'router': 'BN01'
       },
+      'markerId': 'bn01-002',
       'color': 'blue'
     },
     {
@@ -38,6 +40,7 @@ export let bus_stop_list_bn01 = {
         'description': '22-24 Nguyễn Văn Cừ',
         'router': 'BN01'
       },
+      'markerId': 'bn01-003',
       'color': 'red'
     },
     {
@@ -51,6 +54,7 @@ export let bus_stop_list_bn01 = {
         'description': '2-4 Thiên Thai',
         'router': 'BN01'
       },
+      'markerId': 'bn01-004',
       'color': 'blue'
     },
     {
@@ -63,7 +67,8 @@ export let bus_stop_list_bn01 = {
         'title': 'Nghĩa trang Liệt sỹ Thị trấn Gia Bình',
         'description': 'Đường Thiên Thai',
         'router': 'BN01'
-      }
+      },
+      'markerId': 'bn01-005'
     },
     {
       'type': 'Feature',
@@ -75,7 +80,8 @@ export let bus_stop_list_bn01 = {
         'title': '(B) Bến xe Lương Tài',
         'description': 'Đường Lý Thái Tổ',
         'router': 'BN01'
-      }
+      },
+      'markerId': 'bn01-006'
     }
   ]
 }

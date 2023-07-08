@@ -91,6 +91,12 @@ export default class RouteMap extends React.Component {
       setDataSoure(this.map, 'Bus Route Go', [b217Go]);
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
     };
+
+    if (document.getElementById(this.props.markerId)) {
+      // document.getElementById(this.props.markerId).style.width = "100px";
+      // document.getElementById(this.props.markerId).style.height = "100px";
+      document.getElementById(this.props.markerId).innerHTML += '<p>Ở đây</p>'
+    }
   }
 
   render() {
@@ -190,10 +196,13 @@ function loadMarker(map, bus_stop_list) {
     // create a HTML element for each feature
     const el = document.createElement('div');
     el.className = 'marker';
+    el.id = feature.markerId;
     const elGo = document.createElement('div');
     elGo.className = 'marker-blue';
+    elGo.id = feature.markerId;
     const elBack = document.createElement('div');
     elBack.className = 'marker-red';
+    elBack.id = feature.markerId;
 
     // make a marker for each feature and add it to the map
     new mapboxgl.Marker(feature.color ? (feature.color === 'blue' ? elGo : elBack) : el).setLngLat(feature.geometry.coordinates).setPopup(
