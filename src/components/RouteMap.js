@@ -27,6 +27,7 @@ import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
 import { bus_stop_list_bn01 } from '../data/bus-stop/bn01';
 import { bus_stop_list_bn02 } from '../data/bus-stop/bn02';
 import { bus_stop_list_bn08 } from '../data/bus-stop/bn08';
+import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
 import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
 import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
 
@@ -78,6 +79,7 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "BN68") {
       setDataSoure(this.map, 'Bus Route Go', [bn68Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn68Back]);
+      loadMarker(this.map, bus_stop_list_bn68);
     } else if (this.props.routeId === "BN86A") {
       setDataSoure(this.map, 'Bus Route Go', [bn86aGo]);
       setDataSoure(this.map, 'Bus Route Back', [bn86aBack]);

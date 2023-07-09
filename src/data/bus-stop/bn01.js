@@ -246,7 +246,7 @@ export let bus_stop_list_bn01 = {
       'properties': {
         'title': 'Cột đồng hồ Thành phố Bắc Ninh',
         'description': '294 Nguyễn Trãi, Thành phố Bắc Ninh',
-        'router': 'BN01, BN08, 212, 217'
+        'router': 'BN01, BN08, BN68, 212, 217'
       },
       'markerId': 'bn01-018'
     },
