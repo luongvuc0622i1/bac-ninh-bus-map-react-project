@@ -19,6 +19,8 @@ import bn86bGo from '../data/bus-routes/bn86b-go.json';
 import bn86bBack from '../data/bus-routes/bn86b-back.json';
 import b54Go from '../data/bus-routes/54-go.json';
 import b54Back from '../data/bus-routes/54-back.json';
+import b204Go from '../data/bus-routes/204-go.json';
+import b204Back from '../data/bus-routes/204-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
 import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
@@ -87,6 +89,9 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "54") {
       setDataSoure(this.map, 'Bus Route Go', [b54Go]);
       setDataSoure(this.map, 'Bus Route Back', [b54Back]);
+    } else if (this.props.routeId === "204") {
+      setDataSoure(this.map, 'Bus Route Go', [b204Go]);
+      setDataSoure(this.map, 'Bus Route Back', [b204Back]);
     } else if (this.props.routeId === "217") {
       setDataSoure(this.map, 'Bus Route Go', [b217Go]);
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
@@ -135,6 +140,8 @@ function initPage(map) {
   addSourceLayer(map, 'Init Route BN86B Back', [bn86bBack], 'red');
   addSourceLayer(map, 'Init Route 54 Go', [b54Go], 'blue');
   addSourceLayer(map, 'Init Route 54 Back', [b54Back], 'red');
+  addSourceLayer(map, 'Init Route 204 Go', [b204Go], 'blue');
+  addSourceLayer(map, 'Init Route 204 Back', [b204Back], 'red');
   addSourceLayer(map, 'Init Route 217 Go', [b217Go], 'blue');
   addSourceLayer(map, 'Init Route 217 Back', [b217Back], 'red');
   addSourceLayer(map, 'Bus Route Go', [], 'blue');
@@ -189,6 +196,8 @@ function clearInitPage(map) {
   map.removeLayer('Init Route BN86B Back').removeSource('Init Route BN86B Back');
   map.removeLayer('Init Route 54 Go').removeSource('Init Route 54 Go');
   map.removeLayer('Init Route 54 Back').removeSource('Init Route 54 Back');
+  map.removeLayer('Init Route 204 Go').removeSource('Init Route 204 Go');
+  map.removeLayer('Init Route 204 Back').removeSource('Init Route 204 Back');
   map.removeLayer('Init Route 217 Go').removeSource('Init Route 217 Go');
   map.removeLayer('Init Route 217 Back').removeSource('Init Route 217 Back');
 }

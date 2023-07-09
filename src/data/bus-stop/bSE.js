@@ -5,7 +5,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.061027, 21.180761]
+        'coordinates': [106.061027,21.180761]
       },
       'properties': {
         'title': '(A) Bến xe Bắc Ninh',
@@ -17,7 +17,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.195603, 21.019009]
+        'coordinates': [106.195603,21.019009]
       },
       'properties': {
         'title': '(B) Bến xe Lương Tài',
@@ -30,7 +30,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.285208, 21.117838]
+        'coordinates': [106.285208,21.117838]
       },
       'properties': {
         'title': '(B) Phả Lại',
@@ -42,19 +42,19 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.276207, 21.044408]
+        'coordinates': [106.276207,21.044408]
       },
       'properties': {
         'title': '(B) Kênh Vàng',
         'description': 'Gần cầu Đò',
-        'router': 'BN08, BN27'
+        'router': 'BN08'
       }
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.265589, 20.989173]
+        'coordinates': [106.265589,20.989173]
       },
       'properties': {
         'title': '(B) Minh Tân',
@@ -66,7 +66,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.201397, 21.086935]
+        'coordinates': [106.201397,21.086935]
       },
       'properties': {
         'title': '(B) Đại Lai',
@@ -78,7 +78,19 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.075359, 21.140047]
+        'coordinates': [106.088707,21.059260]
+      },
+      'properties': {
+        'title': '(B) Thuận Thành',
+        'description': 'Chợ Trung tâm Thuận Thành',
+        'router': '204'
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.075359,21.140047]
       },
       'properties': {
         'title': 'Quốc lộ 38',
@@ -91,7 +103,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.110034, 21.163219]
+        'coordinates': [106.110034,21.163219]
       },
       'properties': {
         'title': 'Quốc lộ 18',
@@ -104,7 +116,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.223544, 21.123041]
+        'coordinates': [106.223544,21.123041]
       },
       'properties': {
         'title': 'Quốc lộ 18',
@@ -117,7 +129,7 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.243727, 21.072526]
+        'coordinates': [106.243727,21.072526]
       },
       'properties': {
         'title': 'Quốc lộ 17',
