@@ -11,7 +11,8 @@ export let bus_stop_list_bn86a = {
         'title': '(A) Bến xe Bắc Ninh',
         'description': '2 Nguyễn Du, Thành phố Bắc Ninh',
         'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B, 54, 203'
-      }
+      },
+      'markerId': 'bn86a-001'
     },
     {
       'type': 'Feature',
@@ -24,6 +25,7 @@ export let bus_stop_list_bn86a = {
         'description': '687 Ngô Gia Tự, Thành phố Bắc Ninh',
         'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B, 54, 203'
       },
+      'markerId': 'bn86a-002',
       'color': 'blue'
     },
     {
@@ -37,6 +39,7 @@ export let bus_stop_list_bn86a = {
         'description': '60 Trần Hưng Đạo, Thành phố Bắc Ninh',
         'router': 'BN02, BN68A, BN68B'
       },
+      'markerId': 'bn86a-003',
       'color': 'blue'
     },
     {
@@ -50,6 +53,7 @@ export let bus_stop_list_bn86a = {
         'description': '117 Trần Hưng Đạo, Thành phố Bắc Ninh',
         'router': 'BN02, BN68A, BN68B'
       },
+      'markerId': 'bn86a-004',
       'color': 'red'
     },
     {
@@ -62,7 +66,8 @@ export let bus_stop_list_bn86a = {
         'title': 'HimLam Plaza',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-005'
     },
     {
       'type': 'Feature',
@@ -75,6 +80,7 @@ export let bus_stop_list_bn86a = {
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-006',
       'color': 'blue'
     },
     {
@@ -88,6 +94,7 @@ export let bus_stop_list_bn86a = {
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-007',
       'color': 'red'
     },
     {
@@ -101,6 +108,7 @@ export let bus_stop_list_bn86a = {
         'description': '112 Trần Hưng Đạo, Thành phố Bắc Ninh',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-008',
       'color': 'blue'
     },
     {
@@ -114,6 +122,7 @@ export let bus_stop_list_bn86a = {
         'description': '131 Trần Hưng Đạo, Thành phố Bắc Ninh',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-009',
       'color': 'red'
     },
     {
@@ -127,6 +136,7 @@ export let bus_stop_list_bn86a = {
         'description': '232 Trần Hưng Đạo, Thành phố Bắc Ninh',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-010',
       'color': 'blue'
     },
     {
@@ -140,6 +150,7 @@ export let bus_stop_list_bn86a = {
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
       },
+      'markerId': 'bn86a-011',
       'color': 'red'
     },
     {
@@ -152,7 +163,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cây xăng Cầu Ngà',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-012'
     },
     {
       'type': 'Feature',
@@ -164,7 +176,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Siêu thị Minh Anh',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-013'
     },
     {
       'type': 'Feature',
@@ -176,7 +189,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Công ty TNHH Canon Vietnam - KCN Quế Võ',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-014'
     },
     {
       'type': 'Feature',
@@ -188,7 +202,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Công ty Sài Gòn Kinh Bắc',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-015'
     },
     {
       'type': 'Feature',
@@ -200,7 +215,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cổng Làng Giang Liễu',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-016'
     },
     {
       'type': 'Feature',
@@ -212,7 +228,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Trường Cao Đẳng nghề Quản Lý và Công Nghệ',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-017'
     },
     {
       'type': 'Feature',
@@ -224,7 +241,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Siêu thị DABACO Quế Võ',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-018'
     },
     {
       'type': 'Feature',
@@ -236,7 +254,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cửa hàng vàng bạc Xuân Mạo',
         'description': '183 Trần Hưng Đạo, Quế Võ',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-019'
     },
     {
       'type': 'Feature',
@@ -248,7 +267,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Công an Thị xã Quế Võ',
         'description': 'Khu 1, Phố Mới, Quế Võ',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-020'
     },
     {
       'type': 'Feature',
@@ -260,7 +280,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Bến xe Quế Võ',
         'description': '',
         'router': 'BN02, BN68A, BN68B, 212'
-      }
+      },
+      'markerId': 'bn86a-021'
     },
     {
       'type': 'Feature',
@@ -272,7 +293,8 @@ export let bus_stop_list_bn86a = {
         'title': 'UBND Phường Việt Hùng',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-022'
     },
     {
       'type': 'Feature',
@@ -284,7 +306,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Phố Lựa',
         'description': 'Gần Chùa Khánh Quang',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-023'
     },
     {
       'type': 'Feature',
@@ -296,7 +319,8 @@ export let bus_stop_list_bn86a = {
         'title': 'KCN Quế Võ III',
         'description': 'Gần Chùa Diên Quang',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-024'
     },
     {
       'type': 'Feature',
@@ -308,7 +332,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Trung tâm Thánh mẫu Từ Phong',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-025'
     },
     {
       'type': 'Feature',
@@ -320,7 +345,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Agribank Đông Du',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-026'
     },
     {
       'type': 'Feature',
@@ -332,7 +358,8 @@ export let bus_stop_list_bn86a = {
         'title': 'KCN Quế Võ II',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-027'
     },
     {
       'type': 'Feature',
@@ -344,7 +371,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Thôn Ngọc Sơn',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-028'
     },
     {
       'type': 'Feature',
@@ -356,7 +384,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Chân cầu Bình Than',
         'description': '',
         'router': 'BN02, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-029'
     },
     {
       'type': 'Feature',
@@ -368,7 +397,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Thôn Chính Thượng',
         'description': '',
         'router': 'BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-030'
     },
     {
       'type': 'Feature',
@@ -380,7 +410,8 @@ export let bus_stop_list_bn86a = {
         'title': 'KCN Hanaka Gia Bình II',
         'description': '',
         'router': 'BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-031'
     },
     {
       'type': 'Feature',
@@ -392,7 +423,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Vòng xuyến cầu Bình Than',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-032'
     },
     {
       'type': 'Feature',
@@ -404,7 +436,8 @@ export let bus_stop_list_bn86a = {
         'title': 'UBND xã Bình Dương',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-033'
     },
     {
       'type': 'Feature',
@@ -416,7 +449,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Thôn Đìa',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-034'
     },
     {
       'type': 'Feature',
@@ -428,7 +462,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Trại Vối',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-035'
     },
     {
       'type': 'Feature',
@@ -440,7 +475,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cổng làng Cẩm Xá',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-036'
     },
     {
       'type': 'Feature',
@@ -452,7 +488,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cổng làng Lê Lợi',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-037'
     },
     {
       'type': 'Feature',
@@ -464,7 +501,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Khu dãn dân thôn Cầu Đào',
         'description': '',
         'router': 'BN08, BN68A, BN68B'
-      }
+      },
+      'markerId': 'bn86a-038'
     },
     {
       'type': 'Feature',
@@ -476,7 +514,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Chùa Ngụ',
         'description': '',
         'router': 'BN08, BN68A'
-      }
+      },
+      'markerId': 'bn86a-039'
     },
     {
       'type': 'Feature',
@@ -488,7 +527,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cống Ngụ',
         'description': '',
         'router': 'BN68A'
-      }
+      },
+      'markerId': 'bn86a-040'
     },
     {
       'type': 'Feature',
@@ -500,7 +540,8 @@ export let bus_stop_list_bn86a = {
         'title': 'Cống Duối',
         'description': '',
         'router': 'BN68A'
-      }
+      },
+      'markerId': 'bn86a-041'
     },
     {
       'type': 'Feature',
@@ -512,7 +553,8 @@ export let bus_stop_list_bn86a = {
         'title': '(B) Minh Tân',
         'description': 'Gần chợ Văn Thai',
         'router': 'BN68A'
-      }
+      },
+      'markerId': 'bn86a-042'
     }
   ]
 }

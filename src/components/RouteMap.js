@@ -45,7 +45,7 @@ export default class RouteMap extends React.Component {
     initPage(this.map);
 
     //init page load marker (bus_stop_list) start-end bus stop
-    loadMarker(this.map, bus_stop_list_bSE);
+    initLoadMarker(this.map);
   };
 
   componentDidUpdate() {
@@ -99,7 +99,7 @@ export default class RouteMap extends React.Component {
       for (const element of elements) {
         element.style.opacity = "0.3";
       }
-      document.getElementById(this.props.markerId).style.backgroundImage = "url(../images/bus-stop-here2.png)";
+      document.getElementById(this.props.markerId).style.backgroundImage = "url(../images/bus-stop-here.png)";
       document.getElementById(this.props.markerId).style.marginTop = "-40px"
       document.getElementById(this.props.markerId).style.width = "80px";
       document.getElementById(this.props.markerId).style.height = "80px";
@@ -139,6 +139,35 @@ function initPage(map) {
   addSourceLayer(map, 'Init Route 217 Back', [b217Back], 'red');
   addSourceLayer(map, 'Bus Route Go', [], 'blue');
   addSourceLayer(map, 'Bus Route Back', [], 'red');
+}
+
+function initLoadMarker(map) {
+  // add markers to map
+  for (const feature of bus_stop_list_bSE.features) {
+    // create a HTML element for each feature
+    const el = document.createElement('div');
+    el.className = 'marker';
+    const el0108217 = document.createElement('div');
+    el0108217.className = 'marker-node marker-01-08-217';
+    const el0286212 = document.createElement('div');
+    el0286212.className = 'marker-node marker-02-86-212';
+    const el0286 = document.createElement('div');
+    el0286.className = 'marker-node marker-02-86';
+    const el0886 = document.createElement('div');
+    el0886.className = 'marker-node marker-08-86';
+
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(feature.nodeRoute ? (feature.nodeRoute !== '0108217' ? (feature.nodeRoute !== '0286212' ? (feature.nodeRoute !== '0286' ? el0886 : el0286) : el0286212) : el0108217) : el).setLngLat(feature.geometry.coordinates).setPopup(
+      new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML(
+          `<div>`
+          + (feature.properties.title ? (`<b>` + feature.properties.title + `</b></br>`) : '')
+          + (feature.properties.description ? (`<small>Đ/c: ` + feature.properties.description + `</small></br>`) : '')
+          + (feature.properties.router ? (`<small>Tuyến: ` + feature.properties.router + `</small>`) : '') +
+          `</div>`
+        )
+    ).addTo(map);
+  };
 }
 
 function clearInitPage(map) {
