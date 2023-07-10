@@ -430,6 +430,19 @@ export let bus_stop_list_bn08 = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.096132,21.067050]
+      },
+      'properties': {
+        'title': 'Cầu Hồ',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-031a'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.134261,21.076401]
       },
       'properties': {

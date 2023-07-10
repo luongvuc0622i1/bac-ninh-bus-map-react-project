@@ -508,6 +508,58 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.230890,21.066199]
+      },
+      'properties': {
+        'title': 'UBND Thị trấn Nhân Thắng',
+        'description': '',
+        'router': 'BN68B'
+      },
+      'markerId': 'bn86b-039'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.230110,21.074036]
+      },
+      'properties': {
+        'title': 'Cổng làng Nhân Hữu',
+        'description': '',
+        'router': 'BN68B'
+      },
+      'markerId': 'bn86b-040'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.229521,21.081386]
+      },
+      'properties': {
+        'title': 'Thôn Bảo Ngọc',
+        'description': '',
+        'router': 'BN68B'
+      },
+      'markerId': 'bn86b-041'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.222924,21.082267]
+      },
+      'properties': {
+        'title': 'Nhà văn hóa thôn Phương Triện',
+        'description': '',
+        'router': 'BN68B'
+      },
+      'markerId': 'bn86b-042'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.201397, 21.086935]
       },
       'properties': {
@@ -515,7 +567,7 @@ export let bus_stop_list_bn86b = {
         'description': 'Khu di tích Lệ Chi Viên',
         'router': 'BN68B'
       },
-      'markerId': 'bn86b-039'
+      'markerId': 'bn86b-050'
     }
   ]
 }

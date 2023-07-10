@@ -38,7 +38,7 @@ export let bus_stop_list_204 = {
           'description': 'Quốc lộ 17',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-027'
+        'markerId': '204-003'
       },
       {
         'type': 'Feature',
