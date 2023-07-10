@@ -27,9 +27,11 @@ import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
 import { bus_stop_list_bn01 } from '../data/bus-stop/bn01';
 import { bus_stop_list_bn02 } from '../data/bus-stop/bn02';
 import { bus_stop_list_bn08 } from '../data/bus-stop/bn08';
+import { bus_stop_list_bn27 } from '../data/bus-stop/bn27';
 import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
 import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
 import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
+import { bus_stop_list_204 } from '../data/bus-stop/204';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -76,6 +78,7 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "BN27") {
       setDataSoure(this.map, 'Bus Route Go', [bn27Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn27Back]);
+      loadMarker(this.map, bus_stop_list_bn27);
     } else if (this.props.routeId === "BN68") {
       setDataSoure(this.map, 'Bus Route Go', [bn68Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn68Back]);
@@ -94,6 +97,7 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "204") {
       setDataSoure(this.map, 'Bus Route Go', [b204Go]);
       setDataSoure(this.map, 'Bus Route Back', [b204Back]);
+      loadMarker(this.map, bus_stop_list_204);
     } else if (this.props.routeId === "217") {
       setDataSoure(this.map, 'Bus Route Go', [b217Go]);
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
@@ -158,15 +162,26 @@ function initLoadMarker(map) {
     el.className = 'marker';
     const el0108217 = document.createElement('div');
     el0108217.className = 'marker-node marker-01-08-217';
+    const el0127 = document.createElement('div');
+    el0127.className = 'marker-node marker-01-27';
     const el0286212 = document.createElement('div');
     el0286212.className = 'marker-node marker-02-86-212';
     const el0286 = document.createElement('div');
     el0286.className = 'marker-node marker-02-86';
     const el0886 = document.createElement('div');
     el0886.className = 'marker-node marker-08-86';
+    const el27204 = document.createElement('div');
+    el27204.className = 'marker-node marker-27-204';
 
     // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(feature.nodeRoute ? (feature.nodeRoute !== '0108217' ? (feature.nodeRoute !== '0286212' ? (feature.nodeRoute !== '0286' ? el0886 : el0286) : el0286212) : el0108217) : el).setLngLat(feature.geometry.coordinates).setPopup(
+    new mapboxgl.Marker(feature.nodeRoute === '0108217' ? el0108217 :
+                        feature.nodeRoute === '0127' ? el0127 :
+                        feature.nodeRoute === '0286212' ? el0286212 :
+                        feature.nodeRoute === '0286' ? el0286 :
+                        feature.nodeRoute === '0886' ? el0886 :
+                        feature.nodeRoute === '27204' ? el27204 :
+                                                                  el
+      ).setLngLat(feature.geometry.coordinates).setPopup(
       new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(
           `<div>`

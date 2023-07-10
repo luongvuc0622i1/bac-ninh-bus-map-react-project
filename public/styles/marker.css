@@ -48,6 +48,10 @@
   background-image: url('../images/01,08,217.png');
 }
 
+.marker-01-27 {
+  background-image: url('../images/01,27.png');
+}
+
 .marker-02-86-212 {
   background-image: url('../images/02,86,212.png');
 }
@@ -58,4 +62,8 @@
 
 .marker-08-86 {
   background-image: url('../images/08,86.png');
+}
+
+.marker-27-204 {
+  background-image: url('../images/27,204.png');
 }
