@@ -560,6 +560,19 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.210212,21.089461]
+      },
+      'properties': {
+        'title': 'UBND xã Đại Lai',
+        'description': '',
+        'router': 'BN68B'
+      },
+      'markerId': 'bn86b-043'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.201397, 21.086935]
       },
       'properties': {
@@ -567,7 +580,7 @@ export let bus_stop_list_bn86b = {
         'description': 'Khu di tích Lệ Chi Viên',
         'router': 'BN68B'
       },
-      'markerId': 'bn86b-050'
+      'markerId': 'bn86b-044'
     }
   ]
 }

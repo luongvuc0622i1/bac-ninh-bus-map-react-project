@@ -32,6 +32,7 @@ import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
 import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
 import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
 import { bus_stop_list_204 } from '../data/bus-stop/204';
+import { bus_stop_list_217 } from '../data/bus-stop/217';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -101,6 +102,7 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "217") {
       setDataSoure(this.map, 'Bus Route Go', [b217Go]);
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
+      loadMarker(this.map, bus_stop_list_217);
     };
 
     // event click list bus stop in menu => map
