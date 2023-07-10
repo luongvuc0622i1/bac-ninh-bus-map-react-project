@@ -40,7 +40,7 @@ export default function App() {
           <div style={{ display: routeId ? "block" : "none" }}>
             <Infomation routeId={routeId} />
             <hr />
-            <div style={{ overflow: 'auto', height: "500px" }}>
+            <div style={{ overflow: 'auto', height: "50vh" }}>
               <BusStopList routeId={routeId} parentCallback={handleClick} />
             </div>
           </div>

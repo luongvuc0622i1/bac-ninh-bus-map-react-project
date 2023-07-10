@@ -54,6 +54,30 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [105.964877,21.086800]
+      },
+      'properties': {
+        'title': '(A) Khu công nghiệp VSIP',
+        'description': 'Thôn Rích Gạo',
+        'router': 'BN68'
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.143433,21.098960]
+      },
+      'properties': {
+        'title': '(B) Chi Lăng',
+        'description': 'Thôn Quế Ổ',
+        'router': 'BN68'
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.265589,20.989173]
       },
       'properties': {

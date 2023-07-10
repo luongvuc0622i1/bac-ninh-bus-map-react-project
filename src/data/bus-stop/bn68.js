@@ -180,6 +180,162 @@ export let bus_stop_list_bn68 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [106.106241,21.200770]
+        },
+        'properties': {
+          'title': 'Thôn Kim Đôi',
+          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-013'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.113367,21.199077]
+        },
+        'properties': {
+          'title': 'Chợ Kim Đôi',
+          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-014'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.122263,21.194835]
+        },
+        'properties': {
+          'title': 'Trạm bơm tiêu Kim Đôi 2',
+          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-015'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.129828,21.190579]
+        },
+        'properties': {
+          'title': 'Trường THCS Đại Xuân',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-016'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.134651,21.184404]
+        },
+        'properties': {
+          'title': 'Cổng làng Bất Phí',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-017'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.141657,21.180748]
+        },
+        'properties': {
+          'title': 'UBND Phường Đại Xuân',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-018'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.145339,21.175855]
+        },
+        'properties': {
+          'title': 'Cổng làng Trại Đường',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-019'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.148000,21.168530]
+        },
+        'properties': {
+          'title': 'Cửa hàng xăng dầu Âu Lạc',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-020'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.149800,21.163306]
+        },
+        'properties': {
+          'title': 'Trường THPT Quế Võ số 1',
+          'description': '618 Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-021'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.150963,21.159318]
+        },
+        'properties': {
+          'title': 'Đầu phố Phan Châu Trinh',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-022'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.151795,21.154132]
+        },
+        'properties': {
+          'title': 'UBND Phường Phố Mới',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-023'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.151875,21.147460]
+        },
+        'properties': {
+          'title': 'Thôn Mao Lại',
+          'description': 'Đường Quang Trung, Thị xã Quế Võ',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-024'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [106.143433,21.098960]
         },
         'properties': {
@@ -187,7 +343,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Thôn Quế Ổ',
           'router': 'BN68'
         },
-        'markerId': 'bn68-030'
+        'markerId': 'bn68-025'
       }
     ]
   }

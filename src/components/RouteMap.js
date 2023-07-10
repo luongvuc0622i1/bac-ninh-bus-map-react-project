@@ -41,7 +41,7 @@ export default class RouteMap extends React.Component {
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [106.0804849, 21.1169071],
-      zoom: 11
+      zoom: 10.5
     });
 
     //init page load soure & layer (route line) null
