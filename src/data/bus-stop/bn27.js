@@ -27,6 +27,138 @@ export let bus_stop_list_bn27 = {
         },
         'markerId': 'bn27-002'
       },
+      //---------------------------------------------------------- Đoạn Kênh Vàng - Thứa
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.223477,21.029325]
+        },
+        'properties': {
+          'title': 'Công ty CP Tập đoàn Minh Tâm',
+          'description': 'Đường Hàn Thuyên, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-003'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.218416,21.027450]
+        },
+        'properties': {
+          'title': 'Trường THCS Hàn Thuyên',
+          'description': 'Đường Hàn Thuyên, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-004'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.211781,21.024957]
+        },
+        'properties': {
+          'title': 'Nhà văn hóa thôn Giàng',
+          'description': 'Đường Hàn Thuyên, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-005'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.208261,21.023007]
+        },
+        'properties': {
+          'title': 'Trung tâm Y tế Lương Tài',
+          'description': '267 Hàn Thuyên, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-006'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.203407,21.019260]
+        },
+        'properties': {
+          'title': 'Trạm Y tế Thị trấn Thứa',
+          'description': '33-35 Hàn Thuyên, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-007'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.201298,21.016231]
+        },
+        'properties': {
+          'title': 'Bờ hồ Thứa',
+          'description': 'Đường Lý Thái Tổ, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-008'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.200644,21.014453]
+        },
+        'properties': {
+          'title': 'Trường THPT Lương Tài số 1',
+          'description': '38 Lý Thái Tổ, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-009'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.197722,21.012123]
+        },
+        'properties': {
+          'title': 'Thôn Kim Đào',
+          'description': 'Đường Lý Thái Tổ, Thị trấn Thứa',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-010'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.190954,21.020785]
+        },
+        'properties': {
+          'title': 'Gần Bến xe Lương Tài',
+          'description': 'Ngã tư ĐT.284 giao Nguyễn Văn Cừ',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-011'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.157364,21.034638]
+        },
+        'properties': {
+          'title': 'Thôn Quảng Bố',
+          'description': '',
+          'router': 'BN27'
+        },
+        'markerId': 'bn27-012'
+      },
+      //---------------------------------------------------------- Đoạn Thứa - Đại Bái
       {
         'type': 'Feature',
         'geometry': {
@@ -38,7 +170,7 @@ export let bus_stop_list_bn27 = {
           'description': '',
           'router': 'BN01, BN27'
         },
-        'markerId': 'bn27-003'
+        'markerId': 'bn27-013'
       },
       {
         'type': 'Feature',
@@ -51,7 +183,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Quốc lộ 17, Phường An Bình',
           'router': 'BN01, BN27'
         },
-        'markerId': 'bn27-004'
+        'markerId': 'bn27-014'
       },
       {
         'type': 'Feature',
@@ -64,7 +196,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Ngã ba phố Nguyễn Cư Đạo',
           'router': 'BN01, BN27'
         },
-        'markerId': 'bn27-005'
+        'markerId': 'bn27-015'
       },
       {
         'type': 'Feature',
@@ -77,7 +209,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Trường Đại học Kỹ thuật - Hậu cần CAND',
           'router': 'BN01, BN27'
         },
-        'markerId': 'bn27-006'
+        'markerId': 'bn27-016'
       },
       //Đoạn Kinh Dương Vương
       {
@@ -91,7 +223,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Vương Văn Trà, Thị xã Thuận Thành',
           'router': 'BN01, BN27'
         },
-        'markerId': 'bn27-011'
+        'markerId': 'bn27-017'
       },
       {
         'type': 'Feature',
@@ -104,7 +236,7 @@ export let bus_stop_list_bn27 = {
           'description': '213 Âu Cơ, Thị xã Thuận Thành',
           'router': 'BN01, BN27, 204'
         },
-        'markerId': 'bn27-012'
+        'markerId': 'bn27-018'
       },
       {
         'type': 'Feature',
@@ -117,7 +249,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
           'router': 'BN01, BN27, 204'
         },
-        'markerId': 'bn27-013'
+        'markerId': 'bn27-019'
       },
       {
         'type': 'Feature',
@@ -130,7 +262,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
           'router': 'BN01, BN27, 204'
         },
-        'markerId': 'bn27-014'
+        'markerId': 'bn27-020'
       },
       {
         'type': 'Feature',
@@ -143,7 +275,7 @@ export let bus_stop_list_bn27 = {
           'description': '154-156 Âu Cơ, Thị xã Thuận Thành',
           'router': 'BN01, BN27, 204'
         },
-        'markerId': 'bn27-015'
+        'markerId': 'bn27-021'
       },
       {
         'type': 'Feature',
@@ -156,7 +288,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-016'
+        'markerId': 'bn27-022'
       },
       {
         'type': 'Feature',
@@ -169,7 +301,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-017'
+        'markerId': 'bn27-023'
       },
       {
         'type': 'Feature',
@@ -182,7 +314,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-018'
+        'markerId': 'bn27-024'
       },
       {
         'type': 'Feature',
@@ -195,7 +327,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-019'
+        'markerId': 'bn27-025'
       },
       {
         'type': 'Feature',
@@ -208,7 +340,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-020'
+        'markerId': 'bn27-026'
       },
       {
         'type': 'Feature',
@@ -221,7 +353,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-021'
+        'markerId': 'bn27-027'
       },
       {
         'type': 'Feature',
@@ -234,7 +366,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-022'
+        'markerId': 'bn27-028'
       },
       {
         'type': 'Feature',
@@ -247,7 +379,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-023'
+        'markerId': 'bn27-029'
       },
       {
         'type': 'Feature',
@@ -260,7 +392,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Đường Lạc Long Quân, Thị xã Thuận Thành',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-024'
+        'markerId': 'bn27-030'
       },
       {
         'type': 'Feature',
@@ -273,7 +405,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Quốc lộ 17',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-025'
+        'markerId': 'bn27-031'
       },
       {
         'type': 'Feature',
@@ -286,7 +418,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Quốc lộ 17',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-026'
+        'markerId': 'bn27-032'
       },
       {
         'type': 'Feature',
@@ -299,7 +431,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Quốc lộ 17',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-027'
+        'markerId': 'bn27-033'
       },
       {
         'type': 'Feature',
@@ -312,7 +444,7 @@ export let bus_stop_list_bn27 = {
           'description': 'Gần cổng Khu đô thị Khai Sơn',
           'router': 'BN27, 204'
         },
-        'markerId': 'bn27-056'
+        'markerId': 'bn27-034'
       }
     ]
   }

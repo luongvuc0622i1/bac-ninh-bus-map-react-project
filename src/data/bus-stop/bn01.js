@@ -728,7 +728,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Nghĩa trang Liệt sỹ xã Tân Lãng',
-        'description': 'Đường Lý Thái Tổ, Thị trấn Thứa',
+        'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
       'markerId': 'bn01-054'
@@ -741,7 +741,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Thôn Ngọc Cục',
-        'description': 'Đường Lý Thái Tổ, Thị trấn Thứa',
+        'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
       'markerId': 'bn01-055'
@@ -754,7 +754,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': '(B) Bến xe Lương Tài',
-        'description': 'Đường Lý Thái Tổ, Thị trấn Thứa',
+        'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
       'markerId': 'bn01-056'

@@ -21,7 +21,7 @@ export let bus_stop_list_bSE = {
       },
       'properties': {
         'title': '(B) Bến xe Lương Tài',
-        'description': 'Đường Lý Thái Tổ',
+        'description': 'Đường Phá Lãng',
         'router': 'BN01'
       },
       'markerId': 'bn01-008'
