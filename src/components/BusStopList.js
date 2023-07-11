@@ -5,6 +5,7 @@ import { bus_stop_list_bn27 } from '../data/bus-stop/bn27';
 import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
 import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
 import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
+import { bus_stop_list_54 } from '../data/bus-stop/54';
 import { bus_stop_list_204 } from '../data/bus-stop/204';
 import { bus_stop_list_217 } from '../data/bus-stop/217';
 
@@ -20,6 +21,7 @@ export default function BusStopList(props) {
                           (props.routeId === "BN68")?bus_stop_list_bn68:
                           (props.routeId === "BN86A")?bus_stop_list_bn86a:
                           (props.routeId === "BN86B")?bus_stop_list_bn86b:
+                          (props.routeId === "54")?bus_stop_list_54:
                           (props.routeId === "204")?bus_stop_list_204:
                           (props.routeId === "217")?bus_stop_list_217:
                                                                        {'features': []};

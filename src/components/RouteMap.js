@@ -17,6 +17,8 @@ import bn86aGo from '../data/bus-routes/bn86a-go.json';
 import bn86aBack from '../data/bus-routes/bn86a-back.json';
 import bn86bGo from '../data/bus-routes/bn86b-go.json';
 import bn86bBack from '../data/bus-routes/bn86b-back.json';
+import b10aGo from '../data/bus-routes/10a-go.json';
+import b10aBack from '../data/bus-routes/10a-back.json';
 import b54Go from '../data/bus-routes/54-go.json';
 import b54Back from '../data/bus-routes/54-back.json';
 import b204Go from '../data/bus-routes/204-go.json';
@@ -31,6 +33,7 @@ import { bus_stop_list_bn27 } from '../data/bus-stop/bn27';
 import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
 import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
 import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
+import { bus_stop_list_54 } from '../data/bus-stop/54';
 import { bus_stop_list_204 } from '../data/bus-stop/204';
 import { bus_stop_list_217 } from '../data/bus-stop/217';
 
@@ -92,9 +95,13 @@ export default class RouteMap extends React.Component {
       setDataSoure(this.map, 'Bus Route Go', [bn86bGo]);
       setDataSoure(this.map, 'Bus Route Back', [bn86bBack]);
       loadMarker(this.map, bus_stop_list_bn86b);
+    } else if (this.props.routeId === "10A") {
+      setDataSoure(this.map, 'Bus Route Go', [b10aGo]);
+      setDataSoure(this.map, 'Bus Route Back', [b10aBack]);
     } else if (this.props.routeId === "54") {
       setDataSoure(this.map, 'Bus Route Go', [b54Go]);
       setDataSoure(this.map, 'Bus Route Back', [b54Back]);
+      loadMarker(this.map, bus_stop_list_54);
     } else if (this.props.routeId === "204") {
       setDataSoure(this.map, 'Bus Route Go', [b204Go]);
       setDataSoure(this.map, 'Bus Route Back', [b204Back]);
@@ -146,6 +153,8 @@ function initPage(map) {
   addSourceLayer(map, 'Init Route BN86A Back', [bn86aBack], 'red');
   addSourceLayer(map, 'Init Route BN86B Go', [bn86bGo], 'blue');
   addSourceLayer(map, 'Init Route BN86B Back', [bn86bBack], 'red');
+  addSourceLayer(map, 'Init Route 10A Go', [b10aGo], 'blue');
+  addSourceLayer(map, 'Init Route 10A Back', [b10aBack], 'red');
   addSourceLayer(map, 'Init Route 54 Go', [b54Go], 'blue');
   addSourceLayer(map, 'Init Route 54 Back', [b54Back], 'red');
   addSourceLayer(map, 'Init Route 204 Go', [b204Go], 'blue');
@@ -213,6 +222,8 @@ function clearInitPage(map) {
   map.removeLayer('Init Route BN86A Back').removeSource('Init Route BN86A Back');
   map.removeLayer('Init Route BN86B Go').removeSource('Init Route BN86B Go');
   map.removeLayer('Init Route BN86B Back').removeSource('Init Route BN86B Back');
+  map.removeLayer('Init Route 10A Go').removeSource('Init Route 10A Go');
+  map.removeLayer('Init Route 10A Back').removeSource('Init Route 10A Back');
   map.removeLayer('Init Route 54 Go').removeSource('Init Route 54 Go');
   map.removeLayer('Init Route 54 Back').removeSource('Init Route 54 Back');
   map.removeLayer('Init Route 204 Go').removeSource('Init Route 204 Go');

@@ -1,87 +1,18 @@
-export let bus_stop_list_bn68 = {
+export let bus_stop_list_54 = {
     'type': 'FeatureCollection',
     'features': [
       {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [105.964877,21.086800]
+          'coordinates': [105.849453,21.041309]
         },
         'properties': {
-          'title': '(A) Khu công nghiệp VSIP',
-          'description': 'Thôn Rích Gạo',
-          'router': 'BN68'
+          'title': '(A) Long Biên',
+          'description': 'Điểm Trung chuyển Long Biên',
+          'router': '10A, 54, 204'
         },
-        'markerId': 'bn68-001'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [105.967381,21.093506]
-        },
-        'properties': {
-          'title': 'UBND Phường Phù Chẩn',
-          'description': '',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-002'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [105.962700,21.103262]
-        },
-        'properties': {
-          'title': 'Chùa Cổ Pháp',
-          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-003',
-        'color': 'blue'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [105.962587,21.103235]
-        },
-        'properties': {
-          'title': 'Siêu thị DABACO Từ Sơn',
-          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-004',
-        'color': 'red'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [105.959972,21.108902]
-        },
-        'properties': {
-          'title': 'Nhà tưởng niệm Đồng chí Lê Quang Đạo',
-          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-005',
-        'color': 'blue'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [105.959970,21.108617]
-        },
-        'properties': {
-          'title': 'Đền Đô',
-          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-006',
-        'color': 'red'
+        'markerId': '54-001'
       },
       {
         'type': 'Feature',
@@ -94,7 +25,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-007',
+        'markerId': '54-036',
         'color': 'blue'
       },
       {
@@ -108,7 +39,7 @@ export let bus_stop_list_bn68 = {
           'description': '366 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-008',
+        'markerId': '54-037',
         'color': 'red'
       },
       {
@@ -122,7 +53,7 @@ export let bus_stop_list_bn68 = {
           'description': '57 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-009',
+        'markerId': '54-038',
         'color': 'blue'
       },
       {
@@ -136,7 +67,7 @@ export let bus_stop_list_bn68 = {
           'description': '98 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-010',
+        'markerId': '54-039',
         'color': 'red'
       },
       {
@@ -150,7 +81,7 @@ export let bus_stop_list_bn68 = {
           'description': '185 Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203'
         },
-        'markerId': 'bn68-011',
+        'markerId': '54-040',
         'color': 'blue'
       },
       {
@@ -164,7 +95,7 @@ export let bus_stop_list_bn68 = {
           'description': '34 Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-012',
+        'markerId': '54-041',
         'color': 'red'
       },
       {
@@ -178,7 +109,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203'
         },
-        'markerId': 'bn68-013',
+        'markerId': '54-042',
         'color': 'blue'
       },
       {
@@ -192,7 +123,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-014',
+        'markerId': '54-043',
         'color': 'red'
       },
       {
@@ -206,7 +137,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-015',
+        'markerId': '54-044',
         'color': 'blue'
       },
       {
@@ -220,7 +151,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-016',
+        'markerId': '54-045',
         'color': 'red'
       },
       {
@@ -234,7 +165,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-017',
+        'markerId': '54-046',
         'color': 'blue'
       },
       {
@@ -248,7 +179,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-018',
+        'markerId': '54-047',
         'color': 'red'
       },
       {
@@ -262,7 +193,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-019',
+        'markerId': '54-048',
         'color': 'blue'
       },
       {
@@ -276,7 +207,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-020',
+        'markerId': '54-049',
         'color': 'red'
       },
       {
@@ -290,7 +221,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-021',
+        'markerId': '54-050',
         'color': 'blue'
       },
       {
@@ -304,7 +235,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-022',
+        'markerId': '54-051',
         'color': 'red'
       },
       {
@@ -318,7 +249,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-023',
+        'markerId': '54-052',
         'color': 'blue'
       },
       {
@@ -332,7 +263,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-024',
+        'markerId': '54-053',
         'color': 'red'
       },
       {
@@ -346,7 +277,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-025',
+        'markerId': '54-054',
         'color': 'blue'
       },
       {
@@ -360,7 +291,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-026',
+        'markerId': '54-055',
         'color': 'red'
       },
       {
@@ -374,7 +305,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-027',
+        'markerId': '54-056',
         'color': 'blue'
       },
       {
@@ -388,7 +319,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-028',
+        'markerId': '54-057',
         'color': 'red'
       },
       {
@@ -402,7 +333,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-029',
+        'markerId': '54-058',
         'color': 'blue'
       },
       {
@@ -416,7 +347,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-030',
+        'markerId': '54-059',
         'color': 'red'
       },
       {
@@ -430,7 +361,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-031',
+        'markerId': '54-060',
         'color': 'blue'
       },
       {
@@ -444,7 +375,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-032',
+        'markerId': '54-061',
         'color': 'red'
       },
       {
@@ -458,7 +389,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-033',
+        'markerId': '54-062',
         'color': 'blue'
       },
       {
@@ -472,78 +403,188 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-034',
-        'color': 'red'
-      },
-      //-------------------------------------------------------------------- Đoạn từ Cột đồng hồ đến Nguyễn Văn Cừ
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.062364,21.171637]
-        },
-        'properties': {
-          'title': 'Cột đồng hồ Thành phố Bắc Ninh',
-          'description': '294 Nguyễn Trãi, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68, 212, 217'
-        },
-        'markerId': 'bn68-039'
-      },
-      //-------------------------------------------------------------------- Đoạn Bình Than, Nguyễn Đăng Đạo
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.072405,21.179653]
-        },
-        'properties': {
-          'title': 'Lilama 69-1 Bắc Ninh',
-          'description': '17 Lý Thái Tổ, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68'
-        },
-        'markerId': 'bn68-044',
-        'color': 'blue'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.072374,21.179947]
-        },
-        'properties': {
-          'title': 'Bưu điện tỉnh Bắc Ninh',
-          'description': '16 Lý Thái Tổ, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68'
-        },
-        'markerId': 'bn68-045',
+        'markerId': '54-063',
         'color': 'red'
       },
       {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [106.075047,21.182785]
+          'coordinates': [106.048113,21.169348]
         },
         'properties': {
-          'title': 'Sở Y Tế Bắc Ninh',
-          'description': '3 Lý Thái Tổ, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68'
+          'title': '',
+          'description': '395 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
         },
-        'markerId': 'bn68-046',
+        'markerId': '54-064',
         'color': 'blue'
       },
       {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [106.075394,21.183512]
+          'coordinates': [106.048333,21.169521]
         },
         'properties': {
-          'title': 'Bảo tàng Bắc Ninh',
-          'description': '2 Lý Thái Tổ, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68'
+          'title': '',
+          'description': '382 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
         },
-        'markerId': 'bn68-047',
+        'markerId': '54-065',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.052770,21.172777]
+        },
+        'properties': {
+          'title': '',
+          'description': '235-237 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
+        },
+        'markerId': '54-066',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.053921,21.173771]
+        },
+        'properties': {
+          'title': '',
+          'description': '160 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
+        },
+        'markerId': '54-067',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.056851,21.176299]
+        },
+        'properties': {
+          'title': 'Bệnh xá Công An tỉnh Bắc Ninh',
+          'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
+        },
+        'markerId': '54-068',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.057052,21.176486]
+        },
+        'properties': {
+          'title': '',
+          'description': '34 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
+          'router': '54, 203'
+        },
+        'markerId': '54-069',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.059702,21.178827]
+        },
+        'properties': {
+          'title': 'Hiệu sách nhân dân tỉnh Bắc Ninh',
+          'description': '687 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B, 54, 203'
+        },
+        'markerId': '54-070',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.061027, 21.180761]
+        },
+        'properties': {
+          'title': 'Bến xe Bắc Ninh',
+          'description': '2 Nguyễn Du, Thành phố Bắc Ninh',
+          'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B, 54, 203'
+        },
+        'markerId': '54-071',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.066108,21.183520]
+        },
+        'properties': {
+          'title': 'Trung tâm bồi dưỡng chính trị Thành phố Bắc Ninh',
+          'description': '395 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 54, 203'
+        },
+        'markerId': '54-072',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.065069,21.182730]
+        },
+        'properties': {
+          'title': '',
+          'description': '410-412 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 54, 203'
+        },
+        'markerId': '54-073',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.068991,21.185725]
+        },
+        'properties': {
+          'title': 'Học viện Ngân Hàng - Phân viện Bắc Ninh',
+          'description': '331 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 54, 203'
+        },
+        'markerId': '54-074'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.073873,21.189184]
+        },
+        'properties': {
+          'title': 'Khách sạn Suối Hoa',
+          'description': '231 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 54, 203'
+        },
+        'markerId': '54-075',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.073011,21.188682]
+        },
+        'properties': {
+          'title': 'Kho bạc Thành phố Bắc Ninh',
+          'description': '120 Ngô Gia Tự, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 54, 203'
+        },
+        'markerId': '54-076',
         'color': 'red'
       },
       {
@@ -553,260 +594,11 @@ export let bus_stop_list_bn68 = {
           'coordinates': [106.076359,21.188028]
         },
         'properties': {
-          'title': 'Bến xe buýt 54',
+          'title': '(B) Thành phố Bắc Ninh',
           'description': 'Đường Kinh Dương Vương, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, BN68, 54'
         },
-        'markerId': 'bn68-048',
-        'color': 'blue'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.075768,21.188515]
-        },
-        'properties': {
-          'title': 'Siêu thị Bình Minh',
-          'description': '10 Kinh Dương Vương, Thành phố Bắc Ninh',
-          'router': 'BN01, BN08, BN68'
-        },
-        'markerId': 'bn68-049',
-        'color': 'red'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.078034,21.191431]
-        },
-        'properties': {
-          'title': 'VNPT Bắc Ninh',
-          'description': '62 Ngô Gia Tự, Thành phố Bắc Ninh',
-          'router': 'BN68, 203'
-        },
-        'markerId': 'bn68-050'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.091796,21.193877]
-        },
-        'properties': {
-          'title': '',
-          'description': '303-305 Hoàng Quốc Việt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-051'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.094836,21.199540]
-        },
-        'properties': {
-          'title': '',
-          'description': '568-570 Hoàng Quốc Việt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-052'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.097075,21.202444]
-        },
-        'properties': {
-          'title': 'Vườn hoa Cảng Đáp Cầu',
-          'description': '132-134 Như Nguyệt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-053'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.099415,21.201884]
-        },
-        'properties': {
-          'title': 'Gầm cầu Như Nguyệt',
-          'description': '250 Như Nguyệt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-054'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.106241,21.200770]
-        },
-        'properties': {
-          'title': 'Thôn Kim Đôi',
-          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-055'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.113367,21.199077]
-        },
-        'properties': {
-          'title': 'Chợ Kim Đôi',
-          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-056'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.122263,21.194835]
-        },
-        'properties': {
-          'title': 'Trạm bơm tiêu Kim Đôi 2',
-          'description': 'Đường Như Nguyệt, Thành phố Bắc Ninh',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-057'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.129828,21.190579]
-        },
-        'properties': {
-          'title': 'Trường THCS Đại Xuân',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-058'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.134651,21.184404]
-        },
-        'properties': {
-          'title': 'Cổng làng Bất Phí',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-059'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.141657,21.180748]
-        },
-        'properties': {
-          'title': 'UBND Phường Đại Xuân',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-060'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.145339,21.175855]
-        },
-        'properties': {
-          'title': 'Cổng làng Trại Đường',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-061'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.148000,21.168530]
-        },
-        'properties': {
-          'title': 'Cửa hàng xăng dầu Âu Lạc',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-062'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.149800,21.163306]
-        },
-        'properties': {
-          'title': 'Trường THPT Quế Võ số 1',
-          'description': '618 Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-063'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.150963,21.159318]
-        },
-        'properties': {
-          'title': 'Đầu phố Phan Châu Trinh',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-064'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.151795,21.154132]
-        },
-        'properties': {
-          'title': 'UBND Phường Phố Mới',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-065'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.151875,21.147460]
-        },
-        'properties': {
-          'title': 'Thôn Mao Lại',
-          'description': 'Đường Quang Trung, Thị xã Quế Võ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-066'
-      },
-      {
-        'type': 'Feature',
-        'geometry': {
-          'type': 'Point',
-          'coordinates': [106.143433,21.098960]
-        },
-        'properties': {
-          'title': '(B) Chi Lăng',
-          'description': 'Thôn Quế Ổ',
-          'router': 'BN68'
-        },
-        'markerId': 'bn68-067'
+        'markerId': '54-077'
       }
     ]
   }
