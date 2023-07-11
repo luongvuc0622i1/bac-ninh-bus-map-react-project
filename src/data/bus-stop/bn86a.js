@@ -619,7 +619,7 @@ export let bus_stop_list_bn86a = {
         'description': 'Gần chợ Văn Thai',
         'router': 'BN68A'
       },
-      'markerId': 'bn86a-050'
+      'markerId': 'bn86a-047'
     }
   ]
 }

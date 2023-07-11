@@ -18,6 +18,215 @@ export let bus_stop_list_bn68 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [105.967381,21.093506]
+        },
+        'properties': {
+          'title': 'UBND Phường Phù Chẩn',
+          'description': '',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-002'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.962700,21.103262]
+        },
+        'properties': {
+          'title': 'Chùa Cổ Pháp',
+          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-003',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.962587,21.103235]
+        },
+        'properties': {
+          'title': 'Siêu thị DABACO Từ Sơn',
+          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-004',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.959972,21.108902]
+        },
+        'properties': {
+          'title': 'Nhà tưởng niệm Đồng chí Lê Quang Đạo',
+          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-005',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.959970,21.108617]
+        },
+        'properties': {
+          'title': 'Đền Đô',
+          'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-006',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.956447,21.116179]
+        },
+        'properties': {
+          'title': 'Bưu điện Thành phố Từ Sơn',
+          'description': 'Đường Trần Phú, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203, 210'
+        },
+        'markerId': 'bn68-007',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.956591,21.116390]
+        },
+        'properties': {
+          'title': 'Cột đồng hồ Thành phố Từ Sơn',
+          'description': '366 Trần Phú, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203, 210'
+        },
+        'markerId': 'bn68-008',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.962529,21.119506]
+        },
+        'properties': {
+          'title': 'Chùa Nhân Thọ',
+          'description': '57 Trần Phú, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203, 210'
+        },
+        'markerId': 'bn68-009',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.961861,21.119148]
+        },
+        'properties': {
+          'title': '',
+          'description': '98 Trần Phú, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203, 210'
+        },
+        'markerId': 'bn68-010',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.967557,21.122355]
+        },
+        'properties': {
+          'title': '',
+          'description': '185 Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203'
+        },
+        'markerId': 'bn68-011',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.964649,21.120715]
+        },
+        'properties': {
+          'title': 'UBND Phường Đông Ngàn',
+          'description': '34 Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203, 210'
+        },
+        'markerId': 'bn68-012',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.971592,21.124479]
+        },
+        'properties': {
+          'title': 'Trung tâm Y tế Từ Sơn',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 10A, 54, 203'
+        },
+        'markerId': 'bn68-013',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.971573,21.124657]
+        },
+        'properties': {
+          'title': 'Đối diện Trung tâm Y tế Từ Sơn',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-014',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.978690,21.128524]
+        },
+        'properties': {
+          'title': 'Chợ Vĩnh Kiều',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-015',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.979071,21.128924]
+        },
+        'properties': {
+          'title': 'Phố Viềng',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-016',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [106.062364,21.171637]
         },
         'properties': {

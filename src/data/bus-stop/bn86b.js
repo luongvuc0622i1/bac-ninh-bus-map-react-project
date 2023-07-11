@@ -508,7 +508,7 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.230890,21.066199]
+        'coordinates': [106.230890, 21.066199]
       },
       'properties': {
         'title': 'UBND Thị trấn Nhân Thắng',
@@ -521,7 +521,7 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.230110,21.074036]
+        'coordinates': [106.230110, 21.074036]
       },
       'properties': {
         'title': 'Cổng làng Nhân Hữu',
@@ -534,7 +534,7 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.229521,21.081386]
+        'coordinates': [106.229521, 21.081386]
       },
       'properties': {
         'title': 'Thôn Bảo Ngọc',
@@ -547,7 +547,7 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.222924,21.082267]
+        'coordinates': [106.222924, 21.082267]
       },
       'properties': {
         'title': 'Nhà văn hóa thôn Phương Triện',
@@ -560,7 +560,7 @@ export let bus_stop_list_bn86b = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.210212,21.089461]
+        'coordinates': [106.210212, 21.089461]
       },
       'properties': {
         'title': 'UBND xã Đại Lai',
