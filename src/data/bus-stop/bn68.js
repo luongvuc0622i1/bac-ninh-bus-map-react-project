@@ -227,6 +227,146 @@ export let bus_stop_list_bn68 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [105.988481,21.131489]
+        },
+        'properties': {
+          'title': 'Trung tâm Logicstic - ICD Tiên Sơn',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-017',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.989044,21.131668]
+        },
+        'properties': {
+          'title': 'Đường vào Chùa Tiêu',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-018',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.995622,21.132431]
+        },
+        'properties': {
+          'title': 'Khu công nghiệp Tiên Sơn',
+          'description': 'Đường Minh Khai, Thành phố Từ Sơn',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-019',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.996923,21.132814]
+        },
+        'properties': {
+          'title': 'Đối diện Khu công nghiệp Tiên Sơn',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-020',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.001908,21.133713]
+        },
+        'properties': {
+          'title': 'Đối diện Lăng thôn Đình Cả',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-021',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.000991,21.133633]
+        },
+        'properties': {
+          'title': 'Lăng thôn Đình Cả',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-022',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.008232,21.135826]
+        },
+        'properties': {
+          'title': 'Trạm Y tế xã Nội Duệ',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-023',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.008314,21.136049]
+        },
+        'properties': {
+          'title': 'Trường THCS Nội Duệ',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-024',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.012267,21.137880]
+        },
+        'properties': {
+          'title': 'Đối diện Cổng làng Lộ Bao',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-025',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.012558,21.138145]
+        },
+        'properties': {
+          'title': 'Cổng làng Lộ Bao',
+          'description': '',
+          'router': 'BN68, 54, 203'
+        },
+        'markerId': 'bn68-026',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [106.062364,21.171637]
         },
         'properties': {
