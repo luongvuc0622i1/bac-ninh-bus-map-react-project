@@ -547,6 +547,71 @@ export let bus_stop_list_bn86a = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.228679, 21.036264]
+      },
+      'properties': {
+        'title': 'Cầu Phương',
+        'description': '',
+        'router': 'BN68A'
+      },
+      'markerId': 'bn86a-042'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228894, 21.027593]
+      },
+      'properties': {
+        'title': 'Cầu Táo Đôi',
+        'description': '',
+        'router': 'BN68A'
+      },
+      'markerId': 'bn86a-043'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.255464, 21.024511]
+      },
+      'properties': {
+        'title': 'Thôn An Mỹ',
+        'description': '',
+        'router': 'BN68A'
+      },
+      'markerId': 'bn86a-044'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.265800, 21.017991]
+      },
+      'properties': {
+        'title': 'Cổng làng Lai Hạ',
+        'description': '',
+        'router': 'BN68A'
+      },
+      'markerId': 'bn86a-045'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.275015, 21.011911]
+      },
+      'properties': {
+        'title': 'Dốc Lai Hạ',
+        'description': '',
+        'router': 'BN68A'
+      },
+      'markerId': 'bn86a-046'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.265589, 20.989173]
       },
       'properties': {
@@ -554,7 +619,7 @@ export let bus_stop_list_bn86a = {
         'description': 'Gần chợ Văn Thai',
         'router': 'BN68A'
       },
-      'markerId': 'bn86a-042'
+      'markerId': 'bn86a-050'
     }
   ]
 }
