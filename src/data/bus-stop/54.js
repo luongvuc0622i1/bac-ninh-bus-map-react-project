@@ -18,6 +18,141 @@ export let bus_stop_list_54 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [105.915917,21.083978]
+        },
+        'properties': {
+          'title': 'Ga Yên Viên',
+          'description': '270-272 Hà Huy Tập, Hà Nội',
+          'router': '10A, 10B, 54, 203, 210'
+        },
+        'markerId': '54-026'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.919987,21.088150]
+        },
+        'properties': {
+          'title': 'Công ty giày Yên Viên',
+          'description': '488 Hà Huy Tập, Hà Nội',
+          'router': '10A, 10B, 54, 203, 210'
+        },
+        'markerId': '54-027'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.924475,21.092673]
+        },
+        'properties': {
+          'title': 'Trường THPT Yên Viên',
+          'description': '664 Hà Huy Tập, Hà Nội',
+          'router': '10A, 10B, 54, 203, 210'
+        },
+        'markerId': '54-028'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.927780,21.096150]
+        },
+        'properties': {
+          'title': 'Dốc Lã',
+          'description': 'Đường Hà Huy Tập, Hà Nội',
+          'router': '10A, 10B, 54, 203, 210'
+        },
+        'markerId': '54-029'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.930906,21.098920]
+        },
+        'properties': {
+          'title': 'Chợ Trùng Quán',
+          'description': 'Đường Hà Huy Tập, Hà Nội',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-030'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.938205,21.104920]
+        },
+        'properties': {
+          'title': 'Đường vào Trường Cao Đẳng Thủy Sản',
+          'description': 'Đường Trần Phú, Thành phố Từ Sơn',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-031',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.938408,21.105286]
+        },
+        'properties': {
+          'title': 'Khu đô thị mới Tân Lập Đình Bảng',
+          'description': 'Đường Trần Phú, Thành phố Từ Sơn',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-032',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.946077,21.110398]
+        },
+        'properties': {
+          'title': 'Đối diện Phòng khám Đa khoa Tâm Đức',
+          'description': 'Đường Trần Phú, Thành phố Từ Sơn',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-033',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.951501,21.113413]
+        },
+        'properties': {
+          'title': '',
+          'description': '259-261 Trần Phú, Thành phố Từ Sơn',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-034',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.951438,21.113567]
+        },
+        'properties': {
+          'title': 'Điện Máy Xanh Trần Phú',
+          'description': '268-270 Trần Phú, Thành phố Từ Sơn',
+          'router': '10A, 54, 203, 210'
+        },
+        'markerId': '54-035',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [105.956447,21.116179]
         },
         'properties': {

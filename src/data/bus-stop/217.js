@@ -18,12 +18,25 @@ export let bus_stop_list_217 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [106.095237,21.038243]
+        },
+        'properties': {
+          'title': 'Ngã tư Đông Côi',
+          'description': '',
+          'router': '217'
+        },
+        'markerId': '217-002'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [106.095894,21.063815]
         },
         'properties': {
           'title': 'Khu đô thị NOXH Lan Hưng',
           'description': 'Đường Kinh Dương Vương, Thị xã Thuận Thành',
-          'router': 'BN01'
+          'router': 'BN01, 217'
         },
         'markerId': 'bn01-030'
       },

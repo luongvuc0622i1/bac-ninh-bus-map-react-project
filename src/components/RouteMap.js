@@ -183,6 +183,10 @@ function initLoadMarker(map) {
     el0886.className = 'marker-node marker-08-86';
     const el27204 = document.createElement('div');
     el27204.className = 'marker-node marker-27-204';
+    const el6854203 = document.createElement('div');
+    el6854203.className = 'marker-node marker-68-54-203';
+    const el1054210 = document.createElement('div');
+    el1054210.className = 'marker-node marker-10-54-210';
 
     // make a marker for each feature and add it to the map
     new mapboxgl.Marker(feature.nodeRoute === '0108217' ? el0108217 :
@@ -191,7 +195,9 @@ function initLoadMarker(map) {
                         feature.nodeRoute === '0286' ? el0286 :
                         feature.nodeRoute === '0886' ? el0886 :
                         feature.nodeRoute === '27204' ? el27204 :
-                                                                  el
+                        feature.nodeRoute === '6854203' ? el6854203 :
+                        feature.nodeRoute === '1054210' ? el1054210 :
+                                                                      el
       ).setLngLat(feature.geometry.coordinates).setPopup(
       new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(

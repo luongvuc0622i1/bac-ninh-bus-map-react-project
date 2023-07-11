@@ -407,7 +407,7 @@ export let bus_stop_list_bn01 = {
       'properties': {
         'title': 'Khu đô thị NOXH Lan Hưng',
         'description': 'Đường Kinh Dương Vương, Thị xã Thuận Thành',
-        'router': 'BN01'
+        'router': 'BN01, 217'
       },
       'markerId': 'bn01-030'
     },

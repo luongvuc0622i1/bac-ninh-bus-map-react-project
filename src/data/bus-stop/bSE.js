@@ -10,7 +10,7 @@ export let bus_stop_list_bSE = {
       'properties': {
         'title': '(A) Bến xe Bắc Ninh',
         'description': '2 Nguyễn Du, Thành phố Bắc Ninh',
-        'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B, 54, 203'
+        'router': 'BN01, BN02, BN03, BN08, BN86A, BN86B'
       }
     },
     {
@@ -343,6 +343,32 @@ export let bus_stop_list_bSE = {
         'router': 'BN27, 204'
       },
       'nodeRoute': '27204'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.019100,21.143711]
+      },
+      'properties': {
+        'title': 'Đường tỉnh 295',
+        'description': 'Đoạn từ Từ Sơn đến Hòa Đình',
+        'router': 'BN68, 54, 203'
+      },
+      'nodeRoute': '6854203'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.915917,21.083978]
+      },
+      'properties': {
+        'title': 'Đường tỉnh 295',
+        'description': 'Đoạn từ Cầu Đuống đến Từ Sơn',
+        'router': '10A, 54, 203, 210'
+      },
+      'nodeRoute': '1054210'
     }
   ]
 }
