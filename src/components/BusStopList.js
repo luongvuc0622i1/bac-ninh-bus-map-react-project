@@ -30,7 +30,7 @@ export default function BusStopList(props) {
         <div>
             {bus_stop_list.features.map(feature => (
                 <div key={feature.markerId}>
-                    <button value={feature.markerId} onClick={sendData} >{feature.properties.title} : {feature.properties.description}</button>
+                    <button id="nav-menu-bus-stop" value={feature.markerId} onClick={sendData} >{feature.properties.title} : {feature.properties.description}</button>
                 </div>
             ))}
         </div>
