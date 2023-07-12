@@ -768,6 +768,110 @@ export let bus_stop_list_bn08 = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.264913,21.085796]
+      },
+      'properties': {
+        'title': 'Đường vào thôn Cao Thọ',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-056'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.283911,21.083846]
+      },
+      'properties': {
+        'title': 'UBND xã Cao Đức',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-057'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.285704,21.076562]
+      },
+      'properties': {
+        'title': 'Thôn Kênh Phố',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-058'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.296750,21.070345]
+      },
+      'properties': {
+        'title': 'Thôn Mỹ Lộc',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-059'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.302924,21.058555]
+      },
+      'properties': {
+        'title': 'Điểm canh Cáp Thủy',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-060'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.301127,21.051964]
+      },
+      'properties': {
+        'title': 'Thôn Cáp Hạ',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-061'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.292015,21.042778]
+      },
+      'properties': {
+        'title': 'Trường THPT Lương Tài số 2',
+        'description': '',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-062'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.290945,21.040881]
+      },
+      'properties': {
+        'title': 'Dốc Kênh Vàng',
+        'description': '',
+        'router': 'BN08, BN27'
+      },
+      'markerId': 'bn08-063'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.276207, 21.044408]
       },
       'properties': {
@@ -775,7 +879,7 @@ export let bus_stop_list_bn08 = {
         'description': 'Gần cầu Đò',
         'router': 'BN08, BN27'
       },
-      'markerId': 'bn08-056'
+      'markerId': 'bn08-064'
     }
   ]
 }
