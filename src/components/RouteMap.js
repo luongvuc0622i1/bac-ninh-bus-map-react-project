@@ -75,6 +75,8 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "BN03") {
       setDataSoure(this.map, 'Bus Route Go', [bn03Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn03Back]);
+      const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
+      while (elements.length > 0) elements[0].remove();
     } else if (this.props.routeId === "BN08") {
       setDataSoure(this.map, 'Bus Route Go', [bn08Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn08Back]);
@@ -98,6 +100,8 @@ export default class RouteMap extends React.Component {
     } else if (this.props.routeId === "10A") {
       setDataSoure(this.map, 'Bus Route Go', [b10aGo]);
       setDataSoure(this.map, 'Bus Route Back', [b10aBack]);
+      const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
+      while (elements.length > 0) elements[0].remove();
     } else if (this.props.routeId === "54") {
       setDataSoure(this.map, 'Bus Route Go', [b54Go]);
       setDataSoure(this.map, 'Bus Route Back', [b54Back]);
