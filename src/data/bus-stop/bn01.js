@@ -554,7 +554,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Trung tâm Giáo dục thường xuyên Thuận Thành',
-        'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
+        'description': '474 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
       'markerId': 'bn01-039c'
@@ -567,7 +567,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Nhà văn hóa Khu phố Lẽ Đông Côi',
-        'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
+        'description': '614 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
       'markerId': 'bn01-039d'
@@ -580,7 +580,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Khu đô thị LITTLE SAIGON',
-        'description': '154-156 Âu Cơ, Thị xã Thuận Thành',
+        'description': '1055-1057 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
       'markerId': 'bn01-039e'
