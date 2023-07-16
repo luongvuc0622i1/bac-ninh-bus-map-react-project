@@ -61,7 +61,7 @@ export let bus_stop_list_54 = {
         },
         'properties': {
           'title': 'Dốc Lã',
-          'description': 'Đường Hà Huy Tập, Hà Nội',
+          'description': 'Đường Đặng Phúc Thông, Hà Nội',
           'router': '10A, 10B, 54, 203, 210'
         },
         'markerId': '54-029'
@@ -74,7 +74,7 @@ export let bus_stop_list_54 = {
         },
         'properties': {
           'title': 'Chợ Trùng Quán',
-          'description': 'Đường Hà Huy Tập, Hà Nội',
+          'description': 'Đường Đặng Phúc Thông, Hà Nội',
           'router': '10A, 54, 203, 210'
         },
         'markerId': '54-030'
