@@ -271,7 +271,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Cầu Bồ Sơn',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': '678-680 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn01-020'
@@ -284,7 +284,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Nhà máy thức ăn chăn nuôi DABACO',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': 'Đối diện 930 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn01-021',
@@ -325,8 +325,8 @@ export let bus_stop_list_bn01 = {
         'coordinates': [106.074921,21.140863]
       },
       'properties': {
-        'title': 'Gầm cầu vượt Đường vành đai VI',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'title': 'Cống Nguyễn',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn01-024',
@@ -339,8 +339,8 @@ export let bus_stop_list_bn01 = {
         'coordinates': [106.074997,21.140984]
       },
       'properties': {
-        'title': 'Gầm cầu vượt Đường vành đai VI',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'title': 'Khu phố Tiên Xá',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn01-025',
@@ -350,27 +350,71 @@ export let bus_stop_list_bn01 = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.079592,21.134971]
+        'coordinates': [106.079418,21.136162]
       },
       'properties': {
         'title': 'Vòng xuyến Phố Và',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': '1346-1348 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn01-026'
+      'markerId': 'bn01-026',
+      'color': 'blue'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.077453,21.132870]
+        'coordinates': [106.077988,21.133502]
       },
       'properties': {
         'title': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '1466-1468 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn01-027',
+      'color': 'blue'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.077735,21.133288]
+      },
+      'properties': {
+        'title': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '1017-1019 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn01-028',
+      'color': 'red'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.076817,21.130041]
+      },
+      'properties': {
+        'title': 'Đối diện Trường THPT Lý Thường Kiệt',
         'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn01-027'
+      'markerId': 'bn01-029',
+      'color': 'blue'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.076430,21.128337]
+      },
+      'properties': {
+        'title': 'Trường THPT Lý Thường Kiệt',
+        'description': '1147-1149 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn01-030',
+      'color': 'red'
     },
     {
       'type': 'Feature',
@@ -380,23 +424,88 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Siêu thị DABACO Lạc Vệ',
-        'description': '',
+        'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn01-028'
+      'markerId': 'bn01-031'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.082371,21.091915]
+        'coordinates': [106.077735,21.115504]
+      },
+      'properties': {
+        'title': 'Thôn Hương Vân',
+        'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn01-032'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.079478,21.101878]
+      },
+      'properties': {
+        'title': 'Cầu Trầm',
+        'description': 'Km5+230 Quốc lộ 38, xã Tân Chi, huyện Tiên Du',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn01-033'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.082073,21.092923]
       },
       'properties': {
         'title': 'Chùa Phổ Âm',
-        'description': '',
+        'description': 'Quốc lộ 38, thôn Tư Chi, xã Tân Chi, huyện Tiên Du',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn01-029'
+      'markerId': 'bn01-034'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.083966,21.087006]
+      },
+      'properties': {
+        'title': 'Kho xăng dầu Hải Linh - Bắc Ninh',
+        'description': 'xã Tân Chi, huyện Tiên Du',
+        'router': 'BN01'
+      },
+      'markerId': 'bn01-035'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.086243,21.079762]
+      },
+      'properties': {
+        'title': 'Nhà văn hoá thôn Chi Hồ',
+        'description': 'xã Tân Chi, huyện Tiên Du',
+        'router': 'BN01'
+      },
+      'markerId': 'bn01-036'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.086353,21.076524]
+      },
+      'properties': {
+        'title': 'Di tích Đình Đông - Chi Hồ',
+        'description': 'thôn Chi Hồ, xã Tân Chi, huyện Tiên Du',
+        'router': 'BN01'
+      },
+      'markerId': 'bn01-037'
     },
     {
       'type': 'Feature',
@@ -409,7 +518,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Kinh Dương Vương, Thị xã Thuận Thành',
         'router': 'BN01, 217'
       },
-      'markerId': 'bn01-030'
+      'markerId': 'bn01-038'
     },
     {
       'type': 'Feature',
@@ -422,7 +531,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Vương Văn Trà, Thị xã Thuận Thành',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-031'
+      'markerId': 'bn01-039a'
     },
     {
       'type': 'Feature',
@@ -435,7 +544,7 @@ export let bus_stop_list_bn01 = {
         'description': '213 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-032'
+      'markerId': 'bn01-039b'
     },
     {
       'type': 'Feature',
@@ -448,7 +557,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-033'
+      'markerId': 'bn01-039c'
     },
     {
       'type': 'Feature',
@@ -461,7 +570,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-034'
+      'markerId': 'bn01-039d'
     },
     {
       'type': 'Feature',
@@ -474,7 +583,7 @@ export let bus_stop_list_bn01 = {
         'description': '154-156 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-035'
+      'markerId': 'bn01-039e'
     },
     {
       'type': 'Feature',
@@ -487,7 +596,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Trường Đại học Kỹ thuật - Hậu cần CAND',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-036'
+      'markerId': 'bn01-039f'
     },
     {
       'type': 'Feature',
@@ -500,7 +609,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Ngã ba phố Nguyễn Cư Đạo',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-037'
+      'markerId': 'bn01-039g'
     },
     {
       'type': 'Feature',
@@ -513,7 +622,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Quốc lộ 17, Phường An Bình',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-038'
+      'markerId': 'bn01-039h'
     },
     {
       'type': 'Feature',
@@ -526,7 +635,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039'
+      'markerId': 'bn01-039i'
     },
     {
       'type': 'Feature',
@@ -549,7 +658,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Đối diện Công ty may Đông Bình',
-        'description': 'Đường Nguyễn Văn Cừ, Thị trấn Gia Bình',
+        'description': '385-387 Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
       'markerId': 'bn01-041',
@@ -577,7 +686,7 @@ export let bus_stop_list_bn01 = {
       },
       'properties': {
         'title': 'Đối diện Bến xe Gia Bình',
-        'description': 'Đường Nguyễn Văn Cừ, Thị trấn Gia Bình',
+        'description': '243-245 Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
       'markerId': 'bn01-043',

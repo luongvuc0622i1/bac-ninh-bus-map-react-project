@@ -5,11 +5,11 @@ export let bus_stop_list_bn68 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [105.964877,21.086800]
+          'coordinates': [105.967206,21.087379]
         },
         'properties': {
           'title': '(A) Khu công nghiệp VSIP',
-          'description': 'Thôn Rích Gạo',
+          'description': 'Khu phố Rích Gạo',
           'router': 'BN68'
         },
         'markerId': 'bn68-001'
@@ -18,14 +18,27 @@ export let bus_stop_list_bn68 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [105.967381,21.093506]
+          'coordinates': [105.966597,21.088116]
         },
         'properties': {
-          'title': 'UBND Phường Phù Chẩn',
-          'description': '',
+          'title': 'Khu phố Rích Gạo',
+          'description': 'Gần Trung tâm văn hoá thể thao Khu phố Rích Gạo',
           'router': 'BN68'
         },
         'markerId': 'bn68-002'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [105.967381,21.093506]
+        },
+        'properties': {
+          'title': 'Cổng Khu công nghiệp VSIP',
+          'description': '',
+          'router': 'BN68'
+        },
+        'markerId': 'bn68-003'
       },
       {
         'type': 'Feature',
@@ -38,7 +51,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
           'router': 'BN68'
         },
-        'markerId': 'bn68-003',
+        'markerId': 'bn68-004',
         'color': 'blue'
       },
       {
@@ -52,7 +65,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
           'router': 'BN68'
         },
-        'markerId': 'bn68-004',
+        'markerId': 'bn68-005',
         'color': 'red'
       },
       {
@@ -66,7 +79,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
           'router': 'BN68'
         },
-        'markerId': 'bn68-005',
+        'markerId': 'bn68-006',
         'color': 'blue'
       },
       {
@@ -80,7 +93,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thái Tổ, Thành phố Từ Sơn',
           'router': 'BN68'
         },
-        'markerId': 'bn68-006',
+        'markerId': 'bn68-007',
         'color': 'red'
       },
       {
@@ -94,7 +107,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-007',
+        'markerId': 'bn68-008',
         'color': 'blue'
       },
       {
@@ -108,7 +121,7 @@ export let bus_stop_list_bn68 = {
           'description': '366 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-008',
+        'markerId': 'bn68-009',
         'color': 'red'
       },
       {
@@ -122,7 +135,7 @@ export let bus_stop_list_bn68 = {
           'description': '57 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-009',
+        'markerId': 'bn68-010',
         'color': 'blue'
       },
       {
@@ -136,7 +149,7 @@ export let bus_stop_list_bn68 = {
           'description': '98 Trần Phú, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-010',
+        'markerId': 'bn68-011',
         'color': 'red'
       },
       {
@@ -150,7 +163,7 @@ export let bus_stop_list_bn68 = {
           'description': '185 Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203'
         },
-        'markerId': 'bn68-011',
+        'markerId': 'bn68-012',
         'color': 'blue'
       },
       {
@@ -164,7 +177,7 @@ export let bus_stop_list_bn68 = {
           'description': '34 Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203, 210'
         },
-        'markerId': 'bn68-012',
+        'markerId': 'bn68-013',
         'color': 'red'
       },
       {
@@ -178,7 +191,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 10A, 54, 203'
         },
-        'markerId': 'bn68-013',
+        'markerId': 'bn68-014',
         'color': 'blue'
       },
       {
@@ -192,7 +205,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-014',
+        'markerId': 'bn68-015',
         'color': 'red'
       },
       {
@@ -206,7 +219,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-015',
+        'markerId': 'bn68-016',
         'color': 'blue'
       },
       {
@@ -220,7 +233,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-016',
+        'markerId': 'bn68-017',
         'color': 'red'
       },
       {
@@ -234,7 +247,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-017',
+        'markerId': 'bn68-018',
         'color': 'blue'
       },
       {
@@ -248,7 +261,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-018',
+        'markerId': 'bn68-019',
         'color': 'red'
       },
       {
@@ -262,7 +275,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-019',
+        'markerId': 'bn68-020',
         'color': 'blue'
       },
       {
@@ -276,7 +289,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Minh Khai, Thành phố Từ Sơn',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-020',
+        'markerId': 'bn68-021',
         'color': 'red'
       },
       {
@@ -290,7 +303,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-021',
+        'markerId': 'bn68-022',
         'color': 'blue'
       },
       {
@@ -304,7 +317,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-022',
+        'markerId': 'bn68-023',
         'color': 'red'
       },
       {
@@ -318,7 +331,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-023',
+        'markerId': 'bn68-024',
         'color': 'blue'
       },
       {
@@ -332,7 +345,7 @@ export let bus_stop_list_bn68 = {
           'description': '',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-024',
+        'markerId': 'bn68-025',
         'color': 'red'
       },
       {
@@ -346,7 +359,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-025',
+        'markerId': 'bn68-026',
         'color': 'blue'
       },
       {
@@ -360,7 +373,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-026',
+        'markerId': 'bn68-027',
         'color': 'red'
       },
       {
@@ -374,7 +387,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-027',
+        'markerId': 'bn68-028',
         'color': 'blue'
       },
       {
@@ -388,7 +401,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Lý Thường Kiệt, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-028',
+        'markerId': 'bn68-029',
         'color': 'red'
       },
       {
@@ -402,7 +415,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-029',
+        'markerId': 'bn68-030',
         'color': 'blue'
       },
       {
@@ -416,7 +429,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-030',
+        'markerId': 'bn68-031',
         'color': 'red'
       },
       {
@@ -430,7 +443,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-031',
+        'markerId': 'bn68-032',
         'color': 'blue'
       },
       {
@@ -444,7 +457,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Hai Bà Trưng, Thị trấn Lim',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-032',
+        'markerId': 'bn68-033',
         'color': 'red'
       },
       {
@@ -458,7 +471,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-033',
+        'markerId': 'bn68-034',
         'color': 'blue'
       },
       {
@@ -472,7 +485,7 @@ export let bus_stop_list_bn68 = {
           'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
           'router': 'BN68, 54, 203'
         },
-        'markerId': 'bn68-034',
+        'markerId': 'bn68-035',
         'color': 'red'
       },
       //-------------------------------------------------------------------- Đoạn từ Cột đồng hồ đến Nguyễn Văn Cừ

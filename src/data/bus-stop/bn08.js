@@ -271,7 +271,7 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Cầu Bồ Sơn',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': '678-680 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn08-020'
@@ -284,7 +284,7 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Nhà máy thức ăn chăn nuôi DABACO',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': 'Đối diện 930 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn08-021',
@@ -325,8 +325,8 @@ export let bus_stop_list_bn08 = {
         'coordinates': [106.074921,21.140863]
       },
       'properties': {
-        'title': 'Gầm cầu vượt Đường vành đai VI',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'title': 'Cống Nguyễn',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn08-024',
@@ -339,8 +339,8 @@ export let bus_stop_list_bn08 = {
         'coordinates': [106.074997,21.140984]
       },
       'properties': {
-        'title': 'Gầm cầu vượt Đường vành đai VI',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'title': 'Khu phố Tiên Xá',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
         'router': 'BN01, BN08, 217'
       },
       'markerId': 'bn08-025',
@@ -350,27 +350,71 @@ export let bus_stop_list_bn08 = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.079592,21.134971]
+        'coordinates': [106.079418,21.136162]
       },
       'properties': {
         'title': 'Vòng xuyến Phố Và',
-        'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+        'description': '1346-1348 Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn08-026'
+      'markerId': 'bn08-026',
+      'color': 'blue'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.077453,21.132870]
+        'coordinates': [106.077988,21.133502]
       },
       'properties': {
         'title': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '1466-1468 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn08-027',
+      'color': 'blue'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.077735,21.133288]
+      },
+      'properties': {
+        'title': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '1017-1019 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn08-028',
+      'color': 'red'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.076817,21.130041]
+      },
+      'properties': {
+        'title': 'Đối diện Trường THPT Lý Thường Kiệt',
         'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn08-027'
+      'markerId': 'bn08-029',
+      'color': 'blue'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.076430,21.128337]
+      },
+      'properties': {
+        'title': 'Trường THPT Lý Thường Kiệt',
+        'description': '1147-1149 Nguyễn Trãi, Thành phố Bắc Ninh',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn08-030',
+      'color': 'red'
     },
     {
       'type': 'Feature',
@@ -380,23 +424,49 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Siêu thị DABACO Lạc Vệ',
-        'description': '',
+        'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn08-028'
+      'markerId': 'bn08-031'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.082371,21.091915]
+        'coordinates': [106.077735,21.115504]
+      },
+      'properties': {
+        'title': 'Thôn Hương Vân',
+        'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn08-032'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.079478,21.101878]
+      },
+      'properties': {
+        'title': 'Cầu Trầm',
+        'description': 'Km5+230 Quốc lộ 38, xã Tân Chi, huyện Tiên Du',
+        'router': 'BN01, BN08, 217'
+      },
+      'markerId': 'bn08-033'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.082073,21.092923]
       },
       'properties': {
         'title': 'Chùa Phổ Âm',
-        'description': '',
+        'description': 'Quốc lộ 38, thôn Tư Chi, xã Tân Chi, huyện Tiên Du',
         'router': 'BN01, BN08, 217'
       },
-      'markerId': 'bn08-029'
+      'markerId': 'bn08-034'
     },
     {
       'type': 'Feature',
@@ -410,7 +480,7 @@ export let bus_stop_list_bn08 = {
         'router': 'BN08, 217'
       },
       'color': 'blue',
-      'markerId': 'bn08-030'
+      'markerId': 'bn08-036'
     },
     {
       'type': 'Feature',
@@ -424,20 +494,59 @@ export let bus_stop_list_bn08 = {
         'router': 'BN08, 217'
       },
       'color': 'red',
-      'markerId': 'bn08-031'
+      'markerId': 'bn08-037'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.096132,21.067050]
+        'coordinates': [106.098160,21.067615]
       },
       'properties': {
-        'title': 'Cầu Hồ',
-        'description': '',
+        'title': 'Điếm văn hoá Ngọ Xá',
+        'description': 'Gần ngã tư Cầu Hồ',
         'router': 'BN08'
       },
-      'markerId': 'bn08-031a'
+      'markerId': 'bn08-038'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.107052,21.070101]
+      },
+      'properties': {
+        'title': 'Thôn Thượng Trì',
+        'description': 'Đường tỉnh 280, xã Hoài Thượng, Thị xã Thuận Thành',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-039'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.113481,21.071883]
+      },
+      'properties': {
+        'title': 'UBND xã Hoài Thượng',
+        'description': 'Đường tỉnh 280, xã Hoài Thượng, Thị xã Thuận Thành',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-040'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.123489,21.073825]
+      },
+      'properties': {
+        'title': 'Điếm văn hoá Thuỵ Mão',
+        'description': 'Đường tỉnh 280, xã Mão Điền, Thị xã Thuận Thành',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-041'
     },
     {
       'type': 'Feature',
@@ -446,24 +555,11 @@ export let bus_stop_list_bn08 = {
         'coordinates': [106.134261,21.076401]
       },
       'properties': {
-        'title': 'Bến đò Chi Lăng',
-        'description': '',
+        'title': 'Điếm văn hoá Ngăm Lương',
+        'description': 'Đường tỉnh 280, xã Lãng Ngâm, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-032'
-    },
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [106.134261,21.076401]
-      },
-      'properties': {
-        'title': 'Bến đò Chi Lăng',
-        'description': '',
-        'router': 'BN08'
-      },
-      'markerId': 'bn08-032'
+      'markerId': 'bn08-042'
     },
     {
       'type': 'Feature',
@@ -473,10 +569,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'UBND xã Lãng Ngâm',
-        'description': '',
+        'description': 'Đường tỉnh 280, xã Lãng Ngâm, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-033'
+      'markerId': 'bn08-043'
     },
     {
       'type': 'Feature',
@@ -486,10 +582,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Dốc Lãng Ngâm',
-        'description': '',
+        'description': 'Gần Nghĩa trang Liệt sỹ xã Lãng Ngâm',
         'router': 'BN08'
       },
-      'markerId': 'bn08-034'
+      'markerId': 'bn08-044'
     },
     {
       'type': 'Feature',
@@ -499,23 +595,23 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Đình An Quang',
-        'description': '',
+        'description': 'Đường tỉnh 280, thôn An Quang, xã Lãng Ngâm, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-035'
+      'markerId': 'bn08-045'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.154497,21.074803]
+        'coordinates': [106.156426,21.074710]
       },
       'properties': {
         'title': 'Chợ Núi',
-        'description': '',
+        'description': 'Đường vào thôn Du Tràng',
         'router': 'BN08'
       },
-      'markerId': 'bn08-036'
+      'markerId': 'bn08-046'
     },
     {
       'type': 'Feature',
@@ -525,10 +621,37 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Bưu điện Phố Núi',
-        'description': '',
+        'description': 'Đường tỉnh 280, thôn Bảo Tháp, xã Đông Cứu, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-037'
+      'markerId': 'bn08-047'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.159910,21.069926]
+      },
+      'properties': {
+        'title': 'Ngã 3 đường tránh Phố Núi',
+        'description': 'Đường tỉnh 280, xã Đông Cứu, huyện Gia Bình',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-048'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.162400,21.066495]
+      },
+      'properties': {
+        'title': 'Thôn Yên Việt',
+        'description': 'Đường tỉnh 280, xã Đông Cứu, huyện Gia Bình',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-049',
+      'color': 'blue'
     },
     {
       'type': 'Feature',
@@ -541,7 +664,22 @@ export let bus_stop_list_bn08 = {
         'description': 'Đường Lê Văn Thịnh, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-038'
+      'markerId': 'bn08-050',
+      'color': 'red'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.171884,21.060606]
+      },
+      'properties': {
+        'title': 'Đối diện Trường THPT Lê Văn Thịnh',
+        'description': '171 Lê Văn Thịnh, Thị trấn Gia Bình',
+        'router': 'BN08'
+      },
+      'markerId': 'bn08-051',
+      'color': 'blue'
     },
     {
       'type': 'Feature',
@@ -551,23 +689,24 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Trường THPT Lê Văn Thịnh',
-        'description': 'Đường Lê Văn Thịnh, Thị trấn Gia Bình',
+        'description': '210 Lê Văn Thịnh, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-039'
+      'markerId': 'bn08-052',
+      'color': 'red'
     },
     {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.174381, 21.058381]
+        'coordinates': [106.176247,21.056675]
       },
       'properties': {
         'title': 'Cổng làng Hương Vinh',
         'description': '119 Lê Văn Thịnh, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-040'
+      'markerId': 'bn08-053'
     },
     {
       'type': 'Feature',
@@ -580,7 +719,7 @@ export let bus_stop_list_bn08 = {
         'description': '5-7 Lê Văn Thịnh, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-041'
+      'markerId': 'bn08-054'
     },
     {
       'type': 'Feature',
@@ -593,7 +732,7 @@ export let bus_stop_list_bn08 = {
         'description': '56-58 Bình Than, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-042'
+      'markerId': 'bn08-055'
     },
     {
       'type': 'Feature',
@@ -606,7 +745,7 @@ export let bus_stop_list_bn08 = {
         'description': '257-259 Bình Than, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-043'
+      'markerId': 'bn08-056'
     },
     {
       'type': 'Feature',
@@ -616,10 +755,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'UBND xã Xuân Lai',
-        'description': '',
+        'description': 'Đường Bình Than, Thị trấn Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-044'
+      'markerId': 'bn08-057'
     },
     {
       'type': 'Feature',
@@ -629,10 +768,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Thôn Đĩnh Cương',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Xuân Lai, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-045'
+      'markerId': 'bn08-058'
     },
     {
       'type': 'Feature',
@@ -642,10 +781,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Công ty TNHH May và Thương mại Việt Thành',
-        'description': '',
+        'description': 'Quốc lộ 17, thôn Khoái Khê, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-046'
+      'markerId': 'bn08-059'
     },
     {
       'type': 'Feature',
@@ -655,10 +794,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Thôn Khoái Khê',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-047'
+      'markerId': 'bn08-060'
     },
     {
       'type': 'Feature',
@@ -668,10 +807,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Chùa Ngụ',
-        'description': '',
+        'description': 'Quốc lộ 17, thôn Cầu Đào, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08, BN68A'
       },
-      'markerId': 'bn08-048'
+      'markerId': 'bn08-061'
     },
     {
       'type': 'Feature',
@@ -681,10 +820,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Khu dãn dân thôn Cầu Đào',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-049'
+      'markerId': 'bn08-062'
     },
     {
       'type': 'Feature',
@@ -694,10 +833,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Cổng làng Lê Lợi',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-050'
+      'markerId': 'bn08-063'
     },
     {
       'type': 'Feature',
@@ -707,10 +846,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Cổng làng Cẩm Xá',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-051'
+      'markerId': 'bn08-064'
     },
     {
       'type': 'Feature',
@@ -720,10 +859,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Trại Vối',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Nhân Thắng, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-052'
+      'markerId': 'bn08-065'
     },
     {
       'type': 'Feature',
@@ -733,10 +872,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Thôn Đìa',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Bình Dương, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-053'
+      'markerId': 'bn08-066'
     },
     {
       'type': 'Feature',
@@ -746,10 +885,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'UBND xã Bình Dương',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Bình Dương, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-054'
+      'markerId': 'bn08-067'
     },
     {
       'type': 'Feature',
@@ -759,10 +898,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Vòng xuyến cầu Bình Than',
-        'description': '',
+        'description': 'Quốc lộ 17, xã Bình Dương, huyện Gia Bình',
         'router': 'BN08, BN68A, BN68B'
       },
-      'markerId': 'bn08-055'
+      'markerId': 'bn08-068'
     },
     {
       'type': 'Feature',
@@ -772,10 +911,10 @@ export let bus_stop_list_bn08 = {
       },
       'properties': {
         'title': 'Đường vào thôn Cao Thọ',
-        'description': '',
+        'description': 'Đường tỉnh 282, xã Vạn Ninh, huyện Gia Bình',
         'router': 'BN08'
       },
-      'markerId': 'bn08-056'
+      'markerId': 'bn08-069'
     },
     {
       'type': 'Feature',
@@ -788,7 +927,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-057'
+      'markerId': 'bn08-070'
     },
     {
       'type': 'Feature',
@@ -801,7 +940,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-058'
+      'markerId': 'bn08-071'
     },
     {
       'type': 'Feature',
@@ -814,7 +953,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-059'
+      'markerId': 'bn08-072'
     },
     {
       'type': 'Feature',
@@ -827,7 +966,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-060'
+      'markerId': 'bn08-073'
     },
     {
       'type': 'Feature',
@@ -840,7 +979,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-061'
+      'markerId': 'bn08-074'
     },
     {
       'type': 'Feature',
@@ -853,7 +992,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08'
       },
-      'markerId': 'bn08-062'
+      'markerId': 'bn08-075'
     },
     {
       'type': 'Feature',
@@ -866,7 +1005,7 @@ export let bus_stop_list_bn08 = {
         'description': '',
         'router': 'BN08, BN27'
       },
-      'markerId': 'bn08-063'
+      'markerId': 'bn08-076'
     },
     {
       'type': 'Feature',
@@ -879,7 +1018,7 @@ export let bus_stop_list_bn08 = {
         'description': 'Gần cầu Đò',
         'router': 'BN08, BN27'
       },
-      'markerId': 'bn08-064'
+      'markerId': 'bn08-077'
     }
   ]
 }

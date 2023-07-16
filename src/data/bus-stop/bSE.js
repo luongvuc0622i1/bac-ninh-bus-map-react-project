@@ -90,11 +90,11 @@ export let bus_stop_list_bSE = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [105.964877,21.086800]
+        'coordinates': [105.967206,21.087379]
       },
       'properties': {
         'title': '(A) Khu công nghiệp VSIP',
-        'description': 'Thôn Rích Gạo',
+        'description': 'Gần Trung tâm văn hoá thể thao Khu phố Rích Gạo',
         'router': 'BN68'
       }
     },

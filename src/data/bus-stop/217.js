@@ -72,7 +72,7 @@ export let bus_stop_list_217 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [106.082371,21.091915]
+          'coordinates': [106.082073,21.092923]
         },
         'properties': {
           'title': 'Chùa Phổ Âm',
@@ -85,40 +85,110 @@ export let bus_stop_list_217 = {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
+          'coordinates': [106.079478,21.101878]
+        },
+        'properties': {
+          'title': 'Cầu Trầm',
+          'description': 'Km5+230 Quốc lộ 38, xã Tân Chi, huyện Tiên Du',
+          'router': 'BN01, BN08, 217'
+        },
+        'markerId': 'bn08-033'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.077735,21.115504]
+        },
+        'properties': {
+          'title': 'Thôn Hương Vân',
+          'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
+          'router': 'BN01, BN08, 217'
+        },
+        'markerId': 'bn08-032'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
           'coordinates': [106.076709,21.123030]
         },
         'properties': {
           'title': 'Siêu thị DABACO Lạc Vệ',
-          'description': '',
+          'description': 'Quốc lộ 38, xã Lạc Vệ, huyện Tiên Du',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-028'
+        'markerId': 'bn08-031'
       },
       {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [106.077453,21.132870]
+          'coordinates': [106.076430,21.128337]
+        },
+        'properties': {
+          'title': 'Trường THPT Lý Thường Kiệt',
+          'description': '1147-1149 Nguyễn Trãi, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 217'
+        },
+        'markerId': 'bn08-030',
+        'color': 'blue'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.076817,21.130041]
+        },
+        'properties': {
+          'title': 'Đối diện Trường THPT Lý Thường Kiệt',
+          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 217'
+        },
+        'markerId': 'bn08-029',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.077735,21.133288]
         },
         'properties': {
           'title': 'Bệnh viện Mắt Bắc Ninh',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'description': '1017-1019 Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-027'
+        'markerId': 'bn08-028',
+        'color': 'blue'
       },
       {
         'type': 'Feature',
         'geometry': {
           'type': 'Point',
-          'coordinates': [106.079592,21.134971]
+          'coordinates': [106.077988,21.133502]
+        },
+        'properties': {
+          'title': 'Bệnh viện Mắt Bắc Ninh',
+          'description': '1466-1468 Nguyễn Trãi, Thành phố Bắc Ninh',
+          'router': 'BN01, BN08, 217'
+        },
+        'markerId': 'bn08-027',
+        'color': 'red'
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [106.079418,21.136162]
         },
         'properties': {
           'title': 'Vòng xuyến Phố Và',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'description': '1346-1348 Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-026'
+        'markerId': 'bn08-026',
+        'color': 'red'
       },
       {
         'type': 'Feature',
@@ -127,11 +197,11 @@ export let bus_stop_list_217 = {
           'coordinates': [106.074997,21.140984]
         },
         'properties': {
-          'title': 'Gầm cầu vượt Đường vành đai VI',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'title': 'Khu phố Tiên Xá',
+          'description': 'Gầm cầu vượt Đường vành đai VI',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-025',
+        'markerId': 'bn08-025',
         'color': 'blue'
       },
       {
@@ -141,11 +211,11 @@ export let bus_stop_list_217 = {
           'coordinates': [106.074921,21.140863]
         },
         'properties': {
-          'title': 'Gầm cầu vượt Đường vành đai VI',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'title': 'Cống Nguyễn',
+          'description': 'Gầm cầu vượt Đường vành đai VI',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-024',
+        'markerId': 'bn08-024',
         'color': 'red'
       },
       {
@@ -159,7 +229,7 @@ export let bus_stop_list_217 = {
           'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-023',
+        'markerId': 'bn08-023',
         'color': 'blue'
       },
       {
@@ -173,7 +243,7 @@ export let bus_stop_list_217 = {
           'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-022',
+        'markerId': 'bn08-022',
         'color': 'red'
       },
       {
@@ -184,10 +254,10 @@ export let bus_stop_list_217 = {
         },
         'properties': {
           'title': 'Nhà máy thức ăn chăn nuôi DABACO',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'description': 'Đối diện 930 Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-021',
+        'markerId': 'bn08-021',
         'color': 'blue'
       },
       {
@@ -198,10 +268,10 @@ export let bus_stop_list_217 = {
         },
         'properties': {
           'title': 'Cầu Bồ Sơn',
-          'description': 'Đường Nguyễn Trãi, Thành phố Bắc Ninh',
+          'description': '678-680 Nguyễn Trãi, Thành phố Bắc Ninh',
           'router': 'BN01, BN08, 217'
         },
-        'markerId': 'bn01-020'
+        'markerId': 'bn08-020'
       },
       {
         'type': 'Feature',

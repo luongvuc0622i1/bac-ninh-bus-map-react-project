@@ -62,7 +62,7 @@ export let bus_stop_list_bn27 = {
         },
         'properties': {
           'title': 'Nhà văn hóa thôn Giàng',
-          'description': 'Đường Hàn Thuyên, Thị trấn Thứa',
+          'description': '438-440 Hàn Thuyên, Thị trấn Thứa',
           'router': 'BN27'
         },
         'markerId': 'bn27-005'
@@ -114,7 +114,7 @@ export let bus_stop_list_bn27 = {
         },
         'properties': {
           'title': 'Trường THPT Lương Tài số 1',
-          'description': '38 Lý Thái Tổ, Thị trấn Thứa',
+          'description': '61-63 Lý Thái Tổ, Thị trấn Thứa',
           'router': 'BN27'
         },
         'markerId': 'bn27-009'
