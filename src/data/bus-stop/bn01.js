@@ -524,14 +524,29 @@ export let bus_stop_list_bn01 = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.088935,21.059475]
+        'coordinates': [106.091635,21.059202]
+      },
+      'properties': {
+        'title': 'Trường THPT Thuận Thành số 3',
+        'description': 'Đường Vương Văn Trà, Thị xã Thuận Thành',
+        'router': 'BN01, BN27'
+      },
+      'markerId': 'bn01-039',
+      'color': 'blue'
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.091299,21.059254]
       },
       'properties': {
         'title': 'Chợ trung tâm Thuận Thành',
         'description': 'Đường Vương Văn Trà, Thị xã Thuận Thành',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039a'
+      'markerId': 'bn01-040',
+      'color': 'red'
     },
     {
       'type': 'Feature',
@@ -544,7 +559,7 @@ export let bus_stop_list_bn01 = {
         'description': '213 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-039b'
+      'markerId': 'bn01-041'
     },
     {
       'type': 'Feature',
@@ -557,7 +572,7 @@ export let bus_stop_list_bn01 = {
         'description': '474 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-039c'
+      'markerId': 'bn01-042'
     },
     {
       'type': 'Feature',
@@ -570,7 +585,7 @@ export let bus_stop_list_bn01 = {
         'description': '614 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-039d'
+      'markerId': 'bn01-043'
     },
     {
       'type': 'Feature',
@@ -583,7 +598,7 @@ export let bus_stop_list_bn01 = {
         'description': '1055-1057 Âu Cơ, Thị xã Thuận Thành',
         'router': 'BN01, BN27, 204'
       },
-      'markerId': 'bn01-039e'
+      'markerId': 'bn01-044'
     },
     {
       'type': 'Feature',
@@ -596,7 +611,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Trường Đại học Kỹ thuật - Hậu cần CAND',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039f'
+      'markerId': 'bn01-045'
     },
     {
       'type': 'Feature',
@@ -609,7 +624,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Ngã ba phố Nguyễn Cư Đạo',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039g'
+      'markerId': 'bn01-046'
     },
     {
       'type': 'Feature',
@@ -622,7 +637,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Quốc lộ 17, Phường An Bình',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039h'
+      'markerId': 'bn01-047'
     },
     {
       'type': 'Feature',
@@ -635,7 +650,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01, BN27'
       },
-      'markerId': 'bn01-039i'
+      'markerId': 'bn01-048'
     },
     {
       'type': 'Feature',
@@ -648,7 +663,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01'
       },
-      'markerId': 'bn01-040'
+      'markerId': 'bn01-049'
     },
     {
       'type': 'Feature',
@@ -661,7 +676,7 @@ export let bus_stop_list_bn01 = {
         'description': '385-387 Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-041',
+      'markerId': 'bn01-050',
       'color': 'blue'
     },
     {
@@ -675,7 +690,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-042',
+      'markerId': 'bn01-051',
       'color': 'red'
     },
     {
@@ -689,7 +704,7 @@ export let bus_stop_list_bn01 = {
         'description': '243-245 Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-043',
+      'markerId': 'bn01-052',
       'color': 'blue'
     },
     {
@@ -703,7 +718,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Nguyễn Văn Cừ, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-044',
+      'markerId': 'bn01-053',
       'color': 'red'
     },
     {
@@ -717,7 +732,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Vườn hoa đối diện CA huyện Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-045',
+      'markerId': 'bn01-054',
       'color': 'blue'
     },
     {
@@ -731,7 +746,7 @@ export let bus_stop_list_bn01 = {
         'description': '142-144 Nguyễn Văn Cừ',
         'router': 'BN01'
       },
-      'markerId': 'bn01-046',
+      'markerId': 'bn01-055',
       'color': 'red'
     },
     {
@@ -745,7 +760,7 @@ export let bus_stop_list_bn01 = {
         'description': '20-22 Thiên Thai, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-047',
+      'markerId': 'bn01-056',
       'color': 'blue'
     },
     {
@@ -759,7 +774,7 @@ export let bus_stop_list_bn01 = {
         'description': '22-24 Nguyễn Văn Cừ',
         'router': 'BN01'
       },
-      'markerId': 'bn01-048',
+      'markerId': 'bn01-057',
       'color': 'red'
     },
     {
@@ -773,7 +788,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Thiên Thai, Thị trấn Gia Bình',
         'router': 'BN01'
       },
-      'markerId': 'bn01-049'
+      'markerId': 'bn01-058'
     },
     {
       'type': 'Feature',
@@ -786,7 +801,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01'
       },
-      'markerId': 'bn01-050'
+      'markerId': 'bn01-059'
     },
     {
       'type': 'Feature',
@@ -799,7 +814,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01'
       },
-      'markerId': 'bn01-051'
+      'markerId': 'bn01-060'
     },
     {
       'type': 'Feature',
@@ -812,7 +827,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01'
       },
-      'markerId': 'bn01-052',
+      'markerId': 'bn01-061',
       'color': 'blue'
     },
     {
@@ -826,7 +841,7 @@ export let bus_stop_list_bn01 = {
         'description': '',
         'router': 'BN01'
       },
-      'markerId': 'bn01-053',
+      'markerId': 'bn01-062',
       'color': 'red'
     },
     {
@@ -840,7 +855,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
-      'markerId': 'bn01-054'
+      'markerId': 'bn01-063'
     },
     {
       'type': 'Feature',
@@ -853,7 +868,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
-      'markerId': 'bn01-055'
+      'markerId': 'bn01-064'
     },
     {
       'type': 'Feature',
@@ -866,7 +881,7 @@ export let bus_stop_list_bn01 = {
         'description': 'Đường Phá Lãng, Thị trấn Thứa',
         'router': 'BN01'
       },
-      'markerId': 'bn01-056'
+      'markerId': 'bn01-065'
     }
   ]
 }
