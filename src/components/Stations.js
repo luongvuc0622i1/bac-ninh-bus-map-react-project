@@ -9,7 +9,7 @@ import { bus_stop_list_54 } from '../data/bus-stop/54';
 import { bus_stop_list_204 } from '../data/bus-stop/204';
 import { bus_stop_list_217 } from '../data/bus-stop/217';
 
-export default function BusStopList(props) {
+export default function Stations(props) {
     const sendData = (e) => {
         props.parentCallback(e.target.value);
     }
