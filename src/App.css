@@ -6,12 +6,39 @@
   background-color: #3e8e41;
 }
 
+.select {
+  display: inline-block;
+  height: 30px;
+  width: 290px;
+  border-radius: 3px;
+  border: none;
+  background-color: #4CAF50; /* green */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.select .option {
+  color: white;
+  height: 30px;
+  font-size: 16px;
+}
+
+.select .option:hover {
+  color: white;
+  height: 30px;
+  font-size: 16px;
+  background-color: #245326 !important;
+}
+
 .btn-group {
   padding: 10px;
   background-color: #3e8e41;
   margin: 6px auto;
   border-radius: 5px;
   width: 100%;
+  color: white;
+  font-size: 16px;
 }
 
 .btn-group .button {

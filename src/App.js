@@ -24,7 +24,7 @@ export default function App() {
     setChooseId(parseInt(e.target.value));
   }
 
-  const optionItems = busRoutersList.map((bus) => <option key={bus.route_id} value={bus.route_id}>{bus.route_id + " : " + bus.route_name}</option>);
+  const optionItems = busRoutersList.map((bus) => <option className='option' key={bus.route_id} value={bus.route_id}>{bus.route_id + " : " + bus.route_name}</option>);
 
   return (
     <div className='container'>
@@ -34,8 +34,8 @@ export default function App() {
       <div className='row'>
         <div className='col-lg-4' style={{ width: '390px', padding: "6px 12px" }}>
           <div className='btn-group'>
-            Tuyến:
-            <select defaultValue="default" onChange={handleInputChange} style={{ display: "inline-block", marginLeft: 5, height: "30px", width: "290px", borderRadius: "3px", border: "none" }}>
+            <label style={{ width: '56px', marginTop: '4px' }}>Tuyến:</label>
+            <select className='select' defaultValue="default" onChange={handleInputChange} >
               <option value="default" disabled hidden>Chọn tuyến buýt</option>
               {optionItems}
             </select>
@@ -49,7 +49,7 @@ export default function App() {
             <div style={{ display: chooseId === 1 ? "block" : "none" }}>
               <Infomation routeId={routeId} />
             </div>
-            <div style={{ display: chooseId === 2 ? "block" : "none", overflow: 'auto', height: "calc(100vh - 224px)" }}>
+            <div style={{ display: chooseId === 2 ? "block" : "none", height: "calc(100vh - 205px)" }}>
               <Stations routeId={routeId} parentCallback={handleClick} />
             </div>
             <div style={{ display: chooseId === 3 ? "block" : "none" }}>
