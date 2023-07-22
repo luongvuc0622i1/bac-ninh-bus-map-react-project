@@ -9,7 +9,9 @@
 .btn-group {
   padding: 10px;
   background-color: #3e8e41;
-  margin: 20px auto;
+  margin: 6px auto;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .btn-group .button {
@@ -24,13 +26,9 @@
   cursor: pointer;
   float: left;
   border-radius: 3px;
-  width: calc(326px/3);
+  width: calc(100%/3);
 }
 
 .btn-group .button:hover {
-  background-color: #245326;
-}
-
-.btn-group .button:focus {
-  background-color: #4CAF50; /* Green */
+  background-color: #245326 !important;
 }

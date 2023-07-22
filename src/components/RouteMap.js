@@ -134,7 +134,7 @@ export default class RouteMap extends React.Component {
   render() {
     return (
       <div>
-        <div ref={el => this.mapContainer = el} style={{ width: 'calc(100vw - 370px)', height: 'calc(100vh - 55px)' }} />
+        <div ref={el => this.mapContainer = el} style={{ width: 'calc(100vw - 390px)', height: 'calc(100vh - 55px)' }} />
       </div>
     );
   }

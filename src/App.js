@@ -32,19 +32,19 @@ export default function App() {
         <h2 style={{ height: '55px', marginBottom: '0px' }}>Bản đồ xe buýt Bắc Ninh</h2>
       </div>
       <div className='row'>
-        <div className='col-lg-4' style={{ width: '370px', padding: "20px 12px" }}>
-          <div>
+        <div className='col-lg-4' style={{ width: '390px', padding: "6px 12px" }}>
+          <div className='btn-group'>
             Tuyến:
-            <select defaultValue="default" onChange={handleInputChange} style={{ display: "inline-block", marginLeft: 5, height: "30px", width: "290px", borderRadius: "3px" }}>
+            <select defaultValue="default" onChange={handleInputChange} style={{ display: "inline-block", marginLeft: 5, height: "30px", width: "290px", borderRadius: "3px", border: "none" }}>
               <option value="default" disabled hidden>Chọn tuyến buýt</option>
               {optionItems}
             </select>
           </div>
           <div style={{ display: routeId ? "block" : "none" }}>
             <div className='btn-group' >
-              <button className='button' onClick={handleChoose} value="1" >Thông tin</button>
-              <button className='button' onClick={handleChoose} value="2" >Trạm dừng</button>
-              <button className='button' onClick={handleChoose} value="3" >Biểu đồ giờ</button>
+              <button className='button' style={{ backgroundColor: chooseId === 1 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="1" >Thông tin</button>
+              <button className='button' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="2" >Trạm dừng</button>
+              <button className='button' style={{ backgroundColor: chooseId === 3 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="3" >Biểu đồ giờ</button>
             </div>
             <div style={{ display: chooseId === 1 ? "block" : "none" }}>
               <Infomation routeId={routeId} />
