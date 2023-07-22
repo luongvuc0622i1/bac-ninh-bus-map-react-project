@@ -22,5 +22,9 @@ button#nav-menu-bus-stop {
 }
 
 button#nav-menu-bus-stop:hover {
-  background-color: rgb(172, 172, 172);
+  background-color: #4CAF50;
+}
+
+button#nav-menu-bus-stop:focus {
+  background-color: #245326;
 }

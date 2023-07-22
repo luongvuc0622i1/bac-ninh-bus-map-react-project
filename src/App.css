@@ -1,3 +1,36 @@
 .container {
   max-width: 100% !important;
 }
+
+.header {
+  background-color: #3e8e41;
+}
+
+.btn-group {
+  padding: 10px;
+  background-color: #3e8e41;
+  margin: 20px auto;
+}
+
+.btn-group .button {
+  background-color: #3e8e41;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  border-radius: 3px;
+  width: calc(326px/3);
+}
+
+.btn-group .button:hover {
+  background-color: #245326;
+}
+
+.btn-group .button:focus {
+  background-color: #4CAF50; /* Green */
+}

@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div className='container'>
-      <div className='row' style={{ backgroundColor: 'lightblue' }} >
+      <div className='header row' >
         <h2 style={{ height: '55px', marginBottom: '0px' }}>Bản đồ xe buýt Bắc Ninh</h2>
       </div>
       <div className='row'>
@@ -41,16 +41,15 @@ export default function App() {
             </select>
           </div>
           <div style={{ display: routeId ? "block" : "none" }}>
-            <div style={{ height: "20px" }}>
-              <button onClick={handleChoose} value="1" >Thông tin</button>
-              <button onClick={handleChoose} value="2" >Trạm dừng</button>
-              <button onClick={handleChoose} value="3" >Biểu đồ giờ</button>
+            <div className='btn-group' >
+              <button className='button' onClick={handleChoose} value="1" >Thông tin</button>
+              <button className='button' onClick={handleChoose} value="2" >Trạm dừng</button>
+              <button className='button' onClick={handleChoose} value="3" >Biểu đồ giờ</button>
             </div>
-            <hr />
             <div style={{ display: chooseId === 1 ? "block" : "none" }}>
               <Infomation routeId={routeId} />
             </div>
-            <div style={{ display: chooseId === 2 ? "block" : "none", overflow: 'auto', height: "calc(100vh - 120px)" }}>
+            <div style={{ display: chooseId === 2 ? "block" : "none", overflow: 'auto', height: "calc(100vh - 224px)" }}>
               <Stations routeId={routeId} parentCallback={handleClick} />
             </div>
             <div style={{ display: chooseId === 3 ? "block" : "none" }}>
