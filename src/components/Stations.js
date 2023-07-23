@@ -1,34 +1,15 @@
 import '../styles/Stations.css';
-import { bus_stop_list_bn01 } from '../data/bus-stop/bn01';
-import { bus_stop_list_bn02 } from '../data/bus-stop/bn02';
-import { bus_stop_list_bn08 } from '../data/bus-stop/bn08';
-import { bus_stop_list_bn27 } from '../data/bus-stop/bn27';
-import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
-import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
-import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
-import { bus_stop_list_54 } from '../data/bus-stop/54';
-import { bus_stop_list_204 } from '../data/bus-stop/204';
-import { bus_stop_list_217 } from '../data/bus-stop/217';
+import { stations } from '../data/stations/stations';
 import { useState } from 'react';
 
 export default function Stations(props) {
   const [chooseId, setChooseId] = useState(1);
+  const stations_go = stations.features.filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'red').sort((firstEl, secondEl) => {if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return -1; else return 0;});
+  const stations_back = stations.features.filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'blue').sort((firstEl, secondEl) => {if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return 0; else return -1;});
 
   const sendData = (e) => {
     props.parentCallback(e.target.value);
   }
-
-  const bus_stop_list = (props.routeId === "BN01")  ? bus_stop_list_bn01  :
-                        (props.routeId === "BN02")  ? bus_stop_list_bn02  :
-                        (props.routeId === "BN08")  ? bus_stop_list_bn08  :
-                        (props.routeId === "BN27")  ? bus_stop_list_bn27  :
-                        (props.routeId === "BN68")  ? bus_stop_list_bn68  :
-                        (props.routeId === "BN86A") ? bus_stop_list_bn86a :
-                        (props.routeId === "BN86B") ? bus_stop_list_bn86b :
-                        (props.routeId === "54")    ? bus_stop_list_54    :
-                        (props.routeId === "204")   ? bus_stop_list_204   :
-                        (props.routeId === "217")   ? bus_stop_list_217   :
-                                                                            {'features': []};
 
   const handleChoose = (e) => {
     setChooseId(parseInt(e.target.value));
@@ -41,11 +22,9 @@ export default function Stations(props) {
         <button className='button back' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="2" >Chiều về</button>
       </div>
       <div className='list' >
-        {(chooseId === 1 ? bus_stop_list.features.filter(feature => feature.color !== 'red') :
-                           bus_stop_list.features.filter(feature => feature.color !== 'blue').reverse()
-         ).map(feature => (
-          <div key={feature.markerId}>
-            <button id="nav-menu-bus-stop" value={feature.markerId} onClick={sendData} >{feature.properties.title} : {feature.properties.description}</button>
+        {(chooseId === 1 ? stations_go : stations_back).map(feature => (
+          <div key={feature.properties.routers.filter(route => route.name === props.routeId)[0].id}>
+            <button id="nav-menu-bus-stop" value={feature.properties.routers.filter(route => route.name === props.routeId)[0].id} onClick={sendData} >{feature.properties.name} : {feature.properties.address}</button>
           </div>
         ))}
       </div>

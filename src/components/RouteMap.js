@@ -26,16 +26,7 @@ import b204Back from '../data/bus-routes/204-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
 import { bus_stop_list_bSE } from '../data/bus-stop/bSE';
-import { bus_stop_list_bn01 } from '../data/bus-stop/bn01';
-import { bus_stop_list_bn02 } from '../data/bus-stop/bn02';
-import { bus_stop_list_bn08 } from '../data/bus-stop/bn08';
-import { bus_stop_list_bn27 } from '../data/bus-stop/bn27';
-import { bus_stop_list_bn68 } from '../data/bus-stop/bn68';
-import { bus_stop_list_bn86a } from '../data/bus-stop/bn86a';
-import { bus_stop_list_bn86b } from '../data/bus-stop/bn86b';
-import { bus_stop_list_54 } from '../data/bus-stop/54';
-import { bus_stop_list_204 } from '../data/bus-stop/204';
-import { bus_stop_list_217 } from '../data/bus-stop/217';
+import { stations } from '../data/stations/stations';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -67,54 +58,41 @@ export default class RouteMap extends React.Component {
     if (this.props.routeId === "BN01") {
       setDataSoure(this.map, 'Bus Route Go', [bn01Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn01Back]);
-      loadMarker(this.map, bus_stop_list_bn01);
     } else if (this.props.routeId === "BN02") {
       setDataSoure(this.map, 'Bus Route Go', [bn02Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn02Back]);
-      loadMarker(this.map, bus_stop_list_bn02);
     } else if (this.props.routeId === "BN03") {
       setDataSoure(this.map, 'Bus Route Go', [bn03Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn03Back]);
-      const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
-      while (elements.length > 0) elements[0].remove();
     } else if (this.props.routeId === "BN08") {
       setDataSoure(this.map, 'Bus Route Go', [bn08Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn08Back]);
-      loadMarker(this.map, bus_stop_list_bn08);
     } else if (this.props.routeId === "BN27") {
       setDataSoure(this.map, 'Bus Route Go', [bn27Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn27Back]);
-      loadMarker(this.map, bus_stop_list_bn27);
     } else if (this.props.routeId === "BN68") {
       setDataSoure(this.map, 'Bus Route Go', [bn68Go]);
       setDataSoure(this.map, 'Bus Route Back', [bn68Back]);
-      loadMarker(this.map, bus_stop_list_bn68);
     } else if (this.props.routeId === "BN86A") {
       setDataSoure(this.map, 'Bus Route Go', [bn86aGo]);
       setDataSoure(this.map, 'Bus Route Back', [bn86aBack]);
-      loadMarker(this.map, bus_stop_list_bn86a);
     } else if (this.props.routeId === "BN86B") {
       setDataSoure(this.map, 'Bus Route Go', [bn86bGo]);
       setDataSoure(this.map, 'Bus Route Back', [bn86bBack]);
-      loadMarker(this.map, bus_stop_list_bn86b);
     } else if (this.props.routeId === "10A") {
       setDataSoure(this.map, 'Bus Route Go', [b10aGo]);
       setDataSoure(this.map, 'Bus Route Back', [b10aBack]);
-      const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
-      while (elements.length > 0) elements[0].remove();
     } else if (this.props.routeId === "54") {
       setDataSoure(this.map, 'Bus Route Go', [b54Go]);
       setDataSoure(this.map, 'Bus Route Back', [b54Back]);
-      loadMarker(this.map, bus_stop_list_54);
     } else if (this.props.routeId === "204") {
       setDataSoure(this.map, 'Bus Route Go', [b204Go]);
       setDataSoure(this.map, 'Bus Route Back', [b204Back]);
-      loadMarker(this.map, bus_stop_list_204);
     } else if (this.props.routeId === "217") {
       setDataSoure(this.map, 'Bus Route Go', [b217Go]);
       setDataSoure(this.map, 'Bus Route Back', [b217Back]);
-      loadMarker(this.map, bus_stop_list_217);
     };
+    loadMarker(this.map, this.props.routeId);
 
     // event click list bus stop in menu => map
     if (document.getElementById(this.props.markerId)) {
@@ -274,32 +252,45 @@ function setDataSoure(map, idSoureLayer, coordinates) {
   map.getSource(idSoureLayer).setData(geojson);
 }
 
-function loadMarker(map, bus_stop_list) {
+function loadMarker(map, routeId) {
   const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
   while (elements.length > 0) elements[0].remove();
   // add markers to map
-  for (const feature of bus_stop_list.features) {
+  const features = stations.features.filter(feature => feature.properties.routers.some(route => route.name === routeId));
+  for (const feature of features) {
+    const matchId = feature.properties.routers.filter(route => route.name === routeId)[0].id;
+    const matchColor = feature.properties.routers.filter(route => route.name === routeId)[0].color;
     // create a HTML element for each feature
     const el = document.createElement('div');
     el.className = 'marker';
-    el.id = feature.markerId;
+    el.id = matchId;
     const elGo = document.createElement('div');
     elGo.className = 'marker-blue';
-    elGo.id = feature.markerId;
+    elGo.id = matchId;
     const elBack = document.createElement('div');
     elBack.className = 'marker-red';
-    elBack.id = feature.markerId;
+    elBack.id = matchId;
 
     // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(feature.color ? (feature.color === 'blue' ? elGo : elBack) : el).setLngLat(feature.geometry.coordinates).setPopup(
+    new mapboxgl.Marker(matchColor ? (matchColor === 'blue' ? elGo : elBack) : el).setLngLat(feature.geometry.coordinates).setPopup(
       new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(
-          `<div>`
-          + (feature.properties.title ? (`<b>` + feature.properties.title + `</b></br>`) : '')
-          + (feature.properties.description ? (`<small>Đ/c: ` + feature.properties.description + `</small></br>`) : '')
-          + (feature.properties.router ? (`<small>Tuyến: ` + feature.properties.router + `</small>`) : '') +
-          `</div>`
+          '<div>'
+          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
+          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
+          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+          + ('<small>' + feature.properties.district + '</small><br/>')
+          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
+          '</div>'
         )
     ).addTo(map);
   };
+}
+
+function renderRouteList(routes) {
+  const routeList = [];
+  for (const route of routes) {
+    routeList.push(route.name);
+  }
+  return routeList.join(', ');
 }
