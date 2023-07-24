@@ -3848,448 +3848,564 @@ export let stations = {
       }
     },
     // ---------------------------------------------------------------- Route BN86A: Bac Ninh - Minh Tan ------------------------------------------------------
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.249467, 21.105088]
-    //   },
-    //   'properties': {
-    //     'title': 'Thôn Chính Thượng',
-    //     'description': '',
-    //     'router': 'BN68A, BN68B'
-    //   },
-    //   'markerId': 'bn86a-030'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.251166, 21.098230]
-    //   },
-    //   'properties': {
-    //     'title': 'KCN Hanaka Gia Bình II',
-    //     'description': '',
-    //     'router': 'BN68A, BN68B'
-    //   },
-    //   'markerId': 'bn86a-031'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.228167, 21.060662]
-    //   },
-    //   'properties': {
-    //     'title': 'Cống Ngụ',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-040'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.228362, 21.054020]
-    //   },
-    //   'properties': {
-    //     'title': 'Cống Duối',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-041'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.228679, 21.036264]
-    //   },
-    //   'properties': {
-    //     'title': 'Cầu Phương',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-042'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.228894, 21.027593]
-    //   },
-    //   'properties': {
-    //     'title': 'Cầu Táo Đôi',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-043'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.255464, 21.024511]
-    //   },
-    //   'properties': {
-    //     'title': 'Thôn An Mỹ',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-044'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.265800, 21.017991]
-    //   },
-    //   'properties': {
-    //     'title': 'Cổng làng Lai Hạ',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-045'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.275015, 21.011911]
-    //   },
-    //   'properties': {
-    //     'title': 'Dốc Lai Hạ',
-    //     'description': '',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-046'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.265589, 20.989173]
-    //   },
-    //   'properties': {
-    //     'title': '(B) Minh Tân',
-    //     'description': 'Gần chợ Văn Thai',
-    //     'router': 'BN68A'
-    //   },
-    //   'markerId': 'bn86a-047'
-    // },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.249467, 21.105088]
+      },
+      'properties': {
+        'name': 'Thôn Chính Thượng',
+        'address': 'Quốc lộ 17',
+        'ward': 'Vạn Ninh',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 30, 'name': 'BN86A' },
+          { 'id': 30, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.251166, 21.098230]
+      },
+      'properties': {
+        'name': 'KCN Hanaka Gia Bình II',
+        'address': 'Quốc lộ 17',
+        'ward': 'Vạn Ninh',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 31, 'name': 'BN86A' },
+          { 'id': 31, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228167, 21.060662]
+      },
+      'properties': {
+        'name': 'Cống Ngụ',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 40, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228362, 21.054020]
+      },
+      'properties': {
+        'name': 'Cống Duối',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 41, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228679, 21.036264]
+      },
+      'properties': {
+        'name': 'Cầu Phương',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 42, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.228894, 21.027593]
+      },
+      'properties': {
+        'name': 'Cầu Táo Đôi',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Trung Chính',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 43, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.255464, 21.024511]
+      },
+      'properties': {
+        'name': 'Thôn An Mỹ',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Mỹ Hương',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 44, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.265800, 21.017991]
+      },
+      'properties': {
+        'name': 'Cổng làng Lai Hạ',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Lai Hạ',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 45, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.275015, 21.011911]
+      },
+      'properties': {
+        'name': 'Dốc Lai Hạ',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Lai Hạ',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 46, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.265589, 20.989173]
+      },
+      'properties': {
+        'name': '(B) Minh Tân',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Minh Tân',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 47, 'name': 'BN86A' }
+        ]
+      }
+    },
     // ---------------------------------------------------------------- Route BN86B: Bac Ninh - Dai Lai ------------------------------------------------------
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.230890, 21.066199]
-    //   },
-    //   'properties': {
-    //     'title': 'UBND Thị trấn Nhân Thắng',
-    //     'description': '',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-039'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.230110, 21.074036]
-    //   },
-    //   'properties': {
-    //     'title': 'Cổng làng Nhân Hữu',
-    //     'description': '',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-040'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.229521, 21.081386]
-    //   },
-    //   'properties': {
-    //     'title': 'Thôn Bảo Ngọc',
-    //     'description': '',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-041'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.222924, 21.082267]
-    //   },
-    //   'properties': {
-    //     'title': 'Nhà văn hóa thôn Phương Triện',
-    //     'description': '',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-042'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.210212, 21.089461]
-    //   },
-    //   'properties': {
-    //     'title': 'UBND xã Đại Lai',
-    //     'description': '',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-043'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.201397, 21.086935]
-    //   },
-    //   'properties': {
-    //     'title': '(B) Đại Lai',
-    //     'description': 'Khu di tích Lệ Chi Viên',
-    //     'router': 'BN68B'
-    //   },
-    //   'markerId': 'bn86b-044'
-    // }
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.230890, 21.066199]
+      },
+      'properties': {
+        'name': 'UBND Thị trấn Nhân Thắng',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Thị trấn Nhân Thắng',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 39, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.230110, 21.074036]
+      },
+      'properties': {
+        'name': 'Cổng làng Nhân Hữu',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Thị trấn Nhân Thắng',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 40, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.229521, 21.081386]
+      },
+      'properties': {
+        'name': 'Thôn Bảo Ngọc',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Thái Bảo',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 41, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.222924, 21.082267]
+      },
+      'properties': {
+        'name': 'Nhà văn hóa thôn Phương Triện',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Đại Lai',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 42, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.210212, 21.089461]
+      },
+      'properties': {
+        'name': 'UBND xã Đại Lai',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Đại Lai',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 43, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.201397, 21.086935]
+      },
+      'properties': {
+        'name': '(B) Đại Lai',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Đại Lai',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 44, 'name': 'BN86B' }
+        ]
+      }
+    },
     // ---------------------------------------------------------------- Route 54: Long Bien - Thanh Pho Bac Ninh ------------------------------------------------------
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.849453,21.041309]
-    //   },
-    //   'properties': {
-    //     'title': '(A) Long Biên',
-    //     'description': 'Điểm Trung chuyển Long Biên',
-    //     'router': '10A, 54, 204'
-    //   },
-    //   'markerId': '54-001'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.915917,21.083978]
-    //   },
-    //   'properties': {
-    //     'title': 'Ga Yên Viên',
-    //     'description': '270-272 Hà Huy Tập, Hà Nội',
-    //     'router': '10A, 10B, 54, 203, 210'
-    //   },
-    //   'markerId': '54-026'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.919987,21.088150]
-    //   },
-    //   'properties': {
-    //     'title': 'Công ty giày Yên Viên',
-    //     'description': '488 Hà Huy Tập, Hà Nội',
-    //     'router': '10A, 10B, 54, 203, 210'
-    //   },
-    //   'markerId': '54-027'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.924475,21.092673]
-    //   },
-    //   'properties': {
-    //     'title': 'Trường THPT Yên Viên',
-    //     'description': '664 Hà Huy Tập, Hà Nội',
-    //     'router': '10A, 10B, 54, 203, 210'
-    //   },
-    //   'markerId': '54-028'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.927780,21.096150]
-    //   },
-    //   'properties': {
-    //     'title': 'Dốc Lã',
-    //     'description': 'Đường Đặng Phúc Thông, Hà Nội',
-    //     'router': '10A, 10B, 54, 203, 210'
-    //   },
-    //   'markerId': '54-029'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.930906,21.098920]
-    //   },
-    //   'properties': {
-    //     'title': 'Chợ Trùng Quán',
-    //     'description': 'Đường Đặng Phúc Thông, Hà Nội',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-030'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.938205,21.104920]
-    //   },
-    //   'properties': {
-    //     'title': 'Đường vào Trường Cao Đẳng Thủy Sản',
-    //     'description': 'Đường Trần Phú, Thành phố Từ Sơn',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-031',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.938408,21.105286]
-    //   },
-    //   'properties': {
-    //     'title': 'Khu đô thị mới Tân Lập Đình Bảng',
-    //     'description': 'Đường Trần Phú, Thành phố Từ Sơn',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-032',
-    //   'color': 'red'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.946077,21.110398]
-    //   },
-    //   'properties': {
-    //     'title': 'Đối diện Phòng khám Đa khoa Tâm Đức',
-    //     'description': 'Đường Trần Phú, Thành phố Từ Sơn',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-033',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.951501,21.113413]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '259-261 Trần Phú, Thành phố Từ Sơn',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-034',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [105.951438,21.113567]
-    //   },
-    //   'properties': {
-    //     'title': 'Điện Máy Xanh Trần Phú',
-    //     'description': '268-270 Trần Phú, Thành phố Từ Sơn',
-    //     'router': '10A, 54, 203, 210'
-    //   },
-    //   'markerId': '54-035',
-    //   'color': 'red'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.048113,21.169348]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '395 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-064',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.048333,21.169521]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '382 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-065',
-    //   'color': 'red'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.052770,21.172777]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '235-237 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-066',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.053921,21.173771]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '160 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-067',
-    //   'color': 'red'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.056851,21.176299]
-    //   },
-    //   'properties': {
-    //     'title': 'Bệnh xá Công An tỉnh Bắc Ninh',
-    //     'description': 'Đường Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-068',
-    //   'color': 'blue'
-    // },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.057052,21.176486]
-    //   },
-    //   'properties': {
-    //     'title': '',
-    //     'description': '34 Nguyễn Văn Cừ, Thành phố Bắc Ninh',
-    //     'router': '54, 203'
-    //   },
-    //   'markerId': '54-069',
-    //   'color': 'red'
-    // },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.849453,21.041309]
+      },
+      'properties': {
+        'name': '(A) Long Biên',
+        'address': '',
+        'ward': 'Trung chuyển Long Biên',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 1, 'name': '10A' },
+          { 'id': 1, 'name': '54' },
+          { 'id': 99, 'name': '204' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.915917,21.083978]
+      },
+      'properties': {
+        'name': 'Ga Yên Viên',
+        'address': '270-272 Hà Huy Tập',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 26, 'name': '10A' },
+          { 'name': '10B' },
+          { 'id': 26, 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.919987,21.088150]
+      },
+      'properties': {
+        'name': 'Công ty giày Yên Viên',
+        'address': '488 Hà Huy Tập',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 27, 'name': '10A' },
+          { 'name': '10B' },
+          { 'id': 27, 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.924475,21.092673]
+      },
+      'properties': {
+        'name': 'Trường THPT Yên Viên',
+        'address': '664 Hà Huy Tập',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 28, 'name': '10A' },
+          { 'name': '10B' },
+          { 'id': 28, 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.927780,21.096150]
+      },
+      'properties': {
+        'name': 'Dốc Lã',
+        'address': 'Đường Đặng Phúc Thông',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 29, 'name': '10A' },
+          { 'name': '10B' },
+          { 'id': 29, 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.930906,21.098920]
+      },
+      'properties': {
+        'name': 'Chợ Trùng Quán',
+        'address': 'Đường Đặng Phúc Thông',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 30, 'name': '10A' },
+          { 'id': 30, 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.938205,21.104920]
+      },
+      'properties': {
+        'name': 'Đường vào Trường Cao Đẳng Thủy Sản',
+        'address': 'Đường Trần Phú',
+        'district': 'Thành phố Từ Sơn',
+        'routers': [
+          { 'id': 31, 'name': '10A', 'color': 'blue' },
+          { 'id': 31, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' },
+          { 'name': '210', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.938408,21.105286]
+      },
+      'properties': {
+        'name': 'Khu đô thị mới Tân Lập Đình Bảng',
+        'address': 'Đường Trần Phú',
+        'district': 'Thành phố Từ Sơn',
+        'routers': [
+          { 'id': 32, 'name': '10A', 'color': 'red' },
+          { 'id': 32, 'name': '54', 'color': 'red' },
+          { 'name': '203', 'color': 'red' },
+          { 'name': '210', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.946077,21.110398]
+      },
+      'properties': {
+        'name': 'Đối diện Phòng khám Đa khoa Tâm Đức',
+        'address': 'Đường Trần Phú',
+        'district': 'Thành phố Từ Sơn',
+        'routers': [
+          { 'id': 33, 'name': '10A', 'color': 'blue' },
+          { 'id': 33, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' },
+          { 'name': '210', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.951501,21.113413]
+      },
+      'properties': {
+        'name': '',
+        'address': '259-261 Trần Phú',
+        'district': 'Thành phố Từ Sơn',
+        'routers': [
+          { 'id': 34, 'name': '10A', 'color': 'blue' },
+          { 'id': 34, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' },
+          { 'name': '210', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [105.951438,21.113567]
+      },
+      'properties': {
+        'name': 'Điện Máy Xanh Trần Phú',
+        'address': '268-270 Trần Phú',
+        'district': 'Thành phố Từ Sơn',
+        'routers': [
+          { 'id': 35, 'name': '10A', 'color': 'red' },
+          { 'id': 35, 'name': '54', 'color': 'red' },
+          { 'name': '203', 'color': 'red' },
+          { 'name': '210', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.048113,21.169348]
+      },
+      'properties': {
+        'name': '',
+        'address': '395 Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 64, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.048333,21.169521]
+      },
+      'properties': {
+        'name': '',
+        'address': '382 Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 65, 'name': '54', 'color': 'red' },
+          { 'name': '203', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.052770,21.172777]
+      },
+      'properties': {
+        'name': '',
+        'address': '235-237 Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 66, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.053921,21.173771]
+      },
+      'properties': {
+        'name': '',
+        'address': '160 Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 67, 'name': '54', 'color': 'red' },
+          { 'name': '203', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.056851,21.176299]
+      },
+      'properties': {
+        'name': 'Bệnh xá Công An tỉnh Bắc Ninh',
+        'address': 'Đường Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 68, 'name': '54', 'color': 'blue' },
+          { 'name': '203', 'color': 'blue' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.057052,21.176486]
+      },
+      'properties': {
+        'name': '',
+        'address': '34 Nguyễn Văn Cừ',
+        'district': 'Thành phố Bắc Ninh',
+        'routers': [
+          { 'id': 69, 'name': '54', 'color': 'red' },
+          { 'name': '203', 'color': 'red' }
+        ]
+      }
+    },
     // {
     //   'type': 'Feature',
     //   'geometry': {
@@ -4297,11 +4413,13 @@ export let stations = {
     //     'coordinates': [106.076359,21.188028]
     //   },
     //   'properties': {
-    //     'title': '(B) Thành phố Bắc Ninh',
-    //     'description': 'Đường Kinh Dương Vương, Thành phố Bắc Ninh',
-    //     'router': 'BN01, BN08, BN68, 54'
-    //   },
-    //   'markerId': '54-077'
+    //     'name': '(B) Thành phố Bắc Ninh',
+    //     'address': 'Đường Kinh Dương Vương',
+    //     'district': 'Thành phố Bắc Ninh',
+    //     'routers': [
+    //       { 'id': 77, 'name': '54' }
+    //     ]
+    //   }
     // },
     // ---------------------------------------------------------------- Route 204: Long Bien - Thuan Thanh ------------------------------------------------------
     {
