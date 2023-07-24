@@ -28,6 +28,15 @@
   margin-top: -25px;
 }
 
+.marker-init {
+  background-image: url('../images/node-combo.png');
+  background-size: cover;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* .mapboxgl-popup {
     max-width: 200px;
   } */

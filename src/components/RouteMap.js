@@ -148,6 +148,23 @@ function initPage(map) {
 }
 
 function initLoadMarker(map) {
+  for (const feature of stations.features) {
+    // create a HTML element for each feature
+    const el = document.createElement('div');
+    el.className = 'marker-init';
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
+      new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML(
+          `<div>`
+          + (feature.properties.title ? (`<b>` + feature.properties.title + `</b></br>`) : '')
+          + (feature.properties.description ? (`<small>Đ/c: ` + feature.properties.description + `</small></br>`) : '')
+          + (feature.properties.router ? (`<small>Tuyến: ` + feature.properties.router + `</small>`) : '') +
+          `</div>`
+        )
+    ).addTo(map);
+  }
+
   // add markers to map
   for (const feature of bus_stop_list_bSE.features) {
     // create a HTML element for each feature
