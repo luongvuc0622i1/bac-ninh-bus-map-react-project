@@ -119,32 +119,32 @@ export default class RouteMap extends React.Component {
 }
 
 function initPage(map) {
-  addSourceLayer(map, 'Init Route BN01 Go', [bn01Go], 'blue');
   addSourceLayer(map, 'Init Route BN01 Back', [bn01Back], 'red');
-  addSourceLayer(map, 'Init Route BN02 Go', [bn02Go], 'blue');
+  addSourceLayer(map, 'Init Route BN01 Go', [bn01Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN02 Back', [bn02Back], 'red');
-  addSourceLayer(map, 'Init Route BN03 Go', [bn03Go], 'blue');
+  addSourceLayer(map, 'Init Route BN02 Go', [bn02Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN03 Back', [bn03Back], 'red');
-  addSourceLayer(map, 'Init Route BN08 Go', [bn08Go], 'blue');
+  addSourceLayer(map, 'Init Route BN03 Go', [bn03Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN08 Back', [bn08Back], 'red');
-  addSourceLayer(map, 'Init Route BN27 Go', [bn27Go], 'blue');
+  addSourceLayer(map, 'Init Route BN08 Go', [bn08Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN27 Back', [bn27Back], 'red');
-  addSourceLayer(map, 'Init Route BN68 Go', [bn68Go], 'blue');
+  addSourceLayer(map, 'Init Route BN27 Go', [bn27Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN68 Back', [bn68Back], 'red');
-  addSourceLayer(map, 'Init Route BN86A Go', [bn86aGo], 'blue');
+  addSourceLayer(map, 'Init Route BN68 Go', [bn68Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN86A Back', [bn86aBack], 'red');
-  addSourceLayer(map, 'Init Route BN86B Go', [bn86bGo], 'blue');
+  addSourceLayer(map, 'Init Route BN86A Go', [bn86aGo], '#3e8e41');
   addSourceLayer(map, 'Init Route BN86B Back', [bn86bBack], 'red');
-  addSourceLayer(map, 'Init Route 10A Go', [b10aGo], 'blue');
+  addSourceLayer(map, 'Init Route BN86B Go', [bn86bGo], '#3e8e41');
   addSourceLayer(map, 'Init Route 10A Back', [b10aBack], 'red');
-  addSourceLayer(map, 'Init Route 54 Go', [b54Go], 'blue');
+  addSourceLayer(map, 'Init Route 10A Go', [b10aGo], '#3e8e41');
   addSourceLayer(map, 'Init Route 54 Back', [b54Back], 'red');
-  addSourceLayer(map, 'Init Route 204 Go', [b204Go], 'blue');
+  addSourceLayer(map, 'Init Route 54 Go', [b54Go], '#3e8e41');
   addSourceLayer(map, 'Init Route 204 Back', [b204Back], 'red');
-  addSourceLayer(map, 'Init Route 217 Go', [b217Go], 'blue');
+  addSourceLayer(map, 'Init Route 204 Go', [b204Go], '#3e8e41');
   addSourceLayer(map, 'Init Route 217 Back', [b217Back], 'red');
-  addSourceLayer(map, 'Bus Route Go', [], 'blue');
+  addSourceLayer(map, 'Init Route 217 Go', [b217Go], '#3e8e41');
   addSourceLayer(map, 'Bus Route Back', [], 'red');
+  addSourceLayer(map, 'Bus Route Go', [], '#3e8e41');
 }
 
 function initLoadMarker(map) {
@@ -154,13 +154,15 @@ function initLoadMarker(map) {
     el.className = 'marker-init';
     // make a marker for each feature and add it to the map
     new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
-      new mapboxgl.Popup({ offset: 25 }) // add popups
+      new mapboxgl.Popup() // add popups
         .setHTML(
-          `<div>`
-          + (feature.properties.title ? (`<b>` + feature.properties.title + `</b></br>`) : '')
-          + (feature.properties.description ? (`<small>Đ/c: ` + feature.properties.description + `</small></br>`) : '')
-          + (feature.properties.router ? (`<small>Tuyến: ` + feature.properties.router + `</small>`) : '') +
-          `</div>`
+          '<div>'
+          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
+          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
+          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+          + ('<small>' + feature.properties.district + '</small><br/>')
+          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
+          '</div>'
         )
     ).addTo(map);
   }
@@ -169,7 +171,7 @@ function initLoadMarker(map) {
   for (const feature of bus_stop_list_bSE.features) {
     // create a HTML element for each feature
     const el = document.createElement('div');
-    el.className = 'marker';
+    el.className = 'marker-green';
     const el0108217 = document.createElement('div');
     el0108217.className = 'marker-node marker-01-08-217';
     const el0127 = document.createElement('div');
@@ -253,7 +255,7 @@ function addSourceLayer(map, idSoureLayer, coordinates, color) {
         "paint": {
           "line-color": color,
           "line-width": 4,
-          "line-opacity": 0.5
+          "line-opacity": color === 'red' ? 0.5 : 1
         },
         "layout": {
           "line-join": "round",
@@ -282,7 +284,7 @@ function loadMarker(map, routeId) {
     el.className = 'marker';
     el.id = matchId;
     const elGo = document.createElement('div');
-    elGo.className = 'marker-blue';
+    elGo.className = 'marker-green';
     elGo.id = matchId;
     const elBack = document.createElement('div');
     elBack.className = 'marker-red';
