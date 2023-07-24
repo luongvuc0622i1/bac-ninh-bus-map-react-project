@@ -3200,7 +3200,7 @@ export let stations = {
         'district': 'Thành phố Từ Sơn',
         'routers': [
           { 'id': 14, 'name': 'BN68', 'color': 'blue' },
-          { 'id': 42, 'name': '10A', 'color': 'blue' },
+          { 'id': 42, 'name': '10A' },
           { 'id': 42, 'name': '54', 'color': 'blue' },
           { 'name': '203', 'color': 'blue' }
         ]
