@@ -1412,7 +1412,7 @@ export let stations = {
         'name': 'Công ty Sài Gòn Kinh Bắc',
         'description': 'KCN Quế Võ',
         'address': 'Quốc lộ 18',
-        'ward': 'KCN Quế Võ',
+        'ward': '',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
           { 'id': 15, 'name': 'BN02' },
