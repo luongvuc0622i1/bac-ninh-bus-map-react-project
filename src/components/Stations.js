@@ -11,7 +11,7 @@ export default function Stations(props) {
   const stations_se_out = stationsSE.features.filter(feature => feature.geometry.type === 'Point Out Province');
 
   const sendData = (e) => {
-    props.parentCallback(e.target.value);
+    props.parentCallback(e);
   }
 
   const handleChoose = (e) => {
@@ -29,7 +29,7 @@ export default function Stations(props) {
       <div className='list' style={{ display: props.routeId ? "block" : "none" }} >
         {(chooseId === 1 ? stations_go : stations_back).map(feature => (
           <div key={feature.properties.routers.filter(route => route.name === props.routeId)[0].id}>
-            <button id="nav-menu-bus-stop" value={feature.properties.routers.filter(route => route.name === props.routeId)[0].id} onClick={sendData} >
+            <button id="nav-menu-bus-stop" onClick={() => sendData(feature.properties.routers.filter(route => route.name === props.routeId)[0].id)} >
               <b style={{ display: feature.properties.name ? '' : 'none' }}>{feature.properties.name} </b>
               <b style={{ display: feature.properties.name ? 'none' : '' }}>{feature.properties.address} </b>
               <small  style={{ display: feature.properties.description ? '' : 'none' }}>({feature.properties.description})</small><br/>
@@ -44,7 +44,7 @@ export default function Stations(props) {
       <div className='list' style={{ display: props.routeId ? "none" : "block" }} >
         {(chooseId === 1 ? stations_se_in : stations_se_out).map(feature => (
           <div key={feature.properties.id}>
-            <button id="nav-menu-bus-stop" value={feature.properties.id} onClick={sendData} >
+            <button id="nav-menu-bus-stop" onClick={() => sendData(feature.properties.id)} >
               <b>{feature.properties.name} </b><small>({feature.properties.description})</small><br/>
               <small>Đ/c: </small>
               <small style={{ display: feature.properties.address ? '' : 'none' }}>{feature.properties.address}, </small>
