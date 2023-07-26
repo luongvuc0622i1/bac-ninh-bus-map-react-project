@@ -1,5 +1,6 @@
 import React from 'react';
 import mapboxgl from "mapbox-gl";
+import { center } from 'turf';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import bn01Go from '../data/bus-routes/bn01-go.json';
 import bn01Back from '../data/bus-routes/bn01-back.json';
@@ -57,41 +58,41 @@ export default class RouteMap extends React.Component {
       }
 
       if (this.props.routeId === "BN01") {
-        setDataSoure(this.map, 'Bus Route Go', [bn01Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn01Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn01Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn01Back], this.props.routeId);
       } else if (this.props.routeId === "BN02") {
-        setDataSoure(this.map, 'Bus Route Go', [bn02Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn02Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn02Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn02Back], this.props.routeId);
       } else if (this.props.routeId === "BN03") {
-        setDataSoure(this.map, 'Bus Route Go', [bn03Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn03Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn03Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn03Back], this.props.routeId);
       } else if (this.props.routeId === "BN08") {
-        setDataSoure(this.map, 'Bus Route Go', [bn08Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn08Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn08Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn08Back], this.props.routeId);
       } else if (this.props.routeId === "BN27") {
-        setDataSoure(this.map, 'Bus Route Go', [bn27Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn27Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn27Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn27Back], this.props.routeId);
       } else if (this.props.routeId === "BN68") {
-        setDataSoure(this.map, 'Bus Route Go', [bn68Go]);
-        setDataSoure(this.map, 'Bus Route Back', [bn68Back]);
+        setDataSoure(this.map, 'Bus Route Go', [bn68Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn68Back], this.props.routeId);
       } else if (this.props.routeId === "BN86A") {
-        setDataSoure(this.map, 'Bus Route Go', [bn86aGo]);
-        setDataSoure(this.map, 'Bus Route Back', [bn86aBack]);
+        setDataSoure(this.map, 'Bus Route Go', [bn86aGo], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn86aBack], this.props.routeId);
       } else if (this.props.routeId === "BN86B") {
-        setDataSoure(this.map, 'Bus Route Go', [bn86bGo]);
-        setDataSoure(this.map, 'Bus Route Back', [bn86bBack]);
+        setDataSoure(this.map, 'Bus Route Go', [bn86bGo], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [bn86bBack], this.props.routeId);
       } else if (this.props.routeId === "10A") {
-        setDataSoure(this.map, 'Bus Route Go', [b10aGo]);
-        setDataSoure(this.map, 'Bus Route Back', [b10aBack]);
+        setDataSoure(this.map, 'Bus Route Go', [b10aGo], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [b10aBack], this.props.routeId);
       } else if (this.props.routeId === "54") {
-        setDataSoure(this.map, 'Bus Route Go', [b54Go]);
-        setDataSoure(this.map, 'Bus Route Back', [b54Back]);
+        setDataSoure(this.map, 'Bus Route Go', [b54Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [b54Back], this.props.routeId);
       } else if (this.props.routeId === "204") {
-        setDataSoure(this.map, 'Bus Route Go', [b204Go]);
-        setDataSoure(this.map, 'Bus Route Back', [b204Back]);
+        setDataSoure(this.map, 'Bus Route Go', [b204Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [b204Back], this.props.routeId);
       } else if (this.props.routeId === "217") {
-        setDataSoure(this.map, 'Bus Route Go', [b217Go]);
-        setDataSoure(this.map, 'Bus Route Back', [b217Back]);
+        setDataSoure(this.map, 'Bus Route Go', [b217Go], this.props.routeId);
+        setDataSoure(this.map, 'Bus Route Back', [b217Back], this.props.routeId);
       };
       loadMarker(this.map, this.props.routeId);
     } else {
@@ -281,9 +282,28 @@ function addSourceLayer(map, idSoureLayer, coordinates, color) {
   });
 }
 
-function setDataSoure(map, idSoureLayer, coordinates) {
+function setDataSoure(map, idSoureLayer, coordinates, routeId) {
   let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
   map.getSource(idSoureLayer).setData(geojson);
+  let turf_center = center(geojson); //find center of bus route using Turf
+  let center_coord = turf_center.geometry.coordinates;
+  map.flyTo({
+   center: center_coord,
+   zoom: routeId === 'BN01'  ? 11.5 :
+         routeId === 'BN02'  ? 12   :
+         routeId === 'BN03'  ? 12.6 :
+         routeId === 'BN08'  ? 11.7 :
+         routeId === 'BN27'  ? 11.8 :
+         routeId === 'BN68'  ? 12   :
+         routeId === 'BN86A' ? 11.3 :
+         routeId === 'BN86B' ? 12   :
+         routeId === '10A'   ? 12.5 :
+         routeId === '54'    ? 11.7 :
+         routeId === '203'   ? 10.7 :
+         routeId === '204'   ? 11.9 :
+         routeId === '210'   ? 10.7 :
+         routeId === '212'   ? 11.3 : 10.9
+  });
 }
 
 function loadMarker(map, routeId) {
