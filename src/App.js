@@ -40,11 +40,13 @@ export default function App() {
               {optionItems}
             </select>
           </div>
-          <div style={{ display: routeId ? "block" : "none" }} >
-            <div className='btn-group' >
-              <button className='button' style={{ backgroundColor: chooseId === 1 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="1" >Thông tin</button>
-              <button className='button' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="2" >Trạm dừng</button>
-              <button className='button' style={{ backgroundColor: chooseId === 3 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="3" >Biểu đồ giờ</button>
+          <div>
+            <div style={{ display: routeId ? "block" : "none" }} >
+              <div className='btn-group' >
+                <button className='button' style={{ backgroundColor: chooseId === 1 ? "#4CAF50" : "#3e8e41" }} onClick={handleChoose} value="1" >Thông tin</button>
+                <button className='button' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41" }} onClick={handleChoose} value="2" >Trạm dừng</button>
+                <button className='button' style={{ backgroundColor: chooseId === 3 ? "#4CAF50" : "#3e8e41" }} onClick={handleChoose} value="3" >Biểu đồ giờ</button>
+              </div>
             </div>
             <div style={{ display: chooseId === 1 && routeId ? "block" : "none" }}>
               <Infomation routeId={routeId} />
