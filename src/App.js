@@ -40,16 +40,16 @@ export default function App() {
               {optionItems}
             </select>
           </div>
-          <div style={{ display: routeId ? "block" : "none" }}>
+          <div style={{ display: routeId ? "block" : "none" }} >
             <div className='btn-group' >
               <button className='button' style={{ backgroundColor: chooseId === 1 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="1" >Thông tin</button>
               <button className='button' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="2" >Trạm dừng</button>
               <button className='button' style={{ backgroundColor: chooseId === 3 ? "#4CAF50" : "#3e8e41"}} onClick={handleChoose} value="3" >Biểu đồ giờ</button>
             </div>
-            <div style={{ display: chooseId === 1 ? "block" : "none" }}>
+            <div style={{ display: chooseId === 1 && routeId ? "block" : "none" }}>
               <Infomation routeId={routeId} />
             </div>
-            <div style={{ display: chooseId === 2 ? "block" : "none", height: "calc(100vh - 205px)" }}>
+            <div style={{ display: chooseId === 2 || !routeId ? "block" : "none", height: "calc(100vh - 205px)" }}>
               <Stations routeId={routeId} parentCallback={handleClick} />
             </div>
             <div style={{ display: chooseId === 3 ? "block" : "none" }}>
