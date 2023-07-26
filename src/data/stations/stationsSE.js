@@ -41,7 +41,7 @@ export let stationsSE = {
       'properties': {
         'id': 3,
         'name': 'Phả Lại',
-        'description': 'Gần chân cầu Phả Lại',
+        'description': 'Gần cầu Phả Lại',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
@@ -104,8 +104,8 @@ export let stationsSE = {
       },
       'properties': {
         'id': 7,
-        'name': 'Khu công nghiệp VSIP',
-        'description': 'Gần trung tâm văn hóa thể thao Khu phố Rích Gạo',
+        'name': 'KCN VSIP',
+        'description': 'Gần TTVH Thể thao Khu phố Rích Gạo',
         'address': '',
         'ward': 'Phù Chẩn',
         'district': 'Thành phố Từ Sơn',
@@ -200,7 +200,7 @@ export let stationsSE = {
       'properties': {
         'id': 13,
         'name': 'Thành phố Bắc Ninh',
-        'description': 'Gần Trung tâm văn hóa Kinh Bắc',
+        'description': 'Gần TT Văn Hóa Kinh Bắc',
         'address': 'Đường Kinh Dương Vương',
         'district': 'Thành phố Bắc Ninh',
         'routers': '54'

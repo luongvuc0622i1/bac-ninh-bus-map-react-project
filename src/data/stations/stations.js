@@ -9,7 +9,8 @@ export let stations = {
         'coordinates': [106.061027, 21.180761]
       },
       'properties': {
-        'name': '(A) Bến xe Bắc Ninh',
+        'name': '(A) Bắc Ninh',
+        'description': 'Bến xe Bắc Ninh',
         'address': '2 Nguyễn Du',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -33,6 +34,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Hiệu sách nhân dân tỉnh Bắc Ninh',
+        'description': '',
         'address': '687 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -55,7 +57,8 @@ export let stations = {
         'coordinates': [106.066108, 21.183520]
       },
       'properties': {
-        'name': 'Trung tâm bồi dưỡng chính trị Thành phố Bắc Ninh',
+        'name': 'Trung tâm chính trị Thành phố Bắc Ninh',
+        'description': '',
         'address': '395 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -74,6 +77,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': '',
         'address': '410-412 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -92,6 +96,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Học viện Ngân Hàng - Phân viện Bắc Ninh',
+        'description': '',
         'address': '331 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -110,6 +115,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khách sạn Suối Hoa',
+        'description': '',
         'address': '231 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -128,6 +134,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Kho bạc Thành phố Bắc Ninh',
+        'description': '',
         'address': '120 Ngô Gia Tự',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -146,6 +153,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Siêu thị Bình Minh',
+        'description': '',
         'address': '10 Kinh Dương Vương',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -163,6 +171,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bến xe buýt 54',
+        'description': '',
         'address': 'Đường Kinh Dương Vương',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -181,6 +190,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bảo tàng Bắc Ninh',
+        'description': '',
         'address': '2 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -198,6 +208,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Sở Y Tế Bắc Ninh',
+        'description': '',
         'address': '3 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -215,6 +226,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bưu điện tỉnh Bắc Ninh',
+        'description': '',
         'address': '16 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -232,6 +244,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Lilama 69-1 Bắc Ninh',
+        'description': '',
         'address': '17 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -249,6 +262,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Tòa nhà MB Bắc Ninh',
+        'description': '',
         'address': '24 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -266,6 +280,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Tòa Viglacera Bắc Ninh',
+        'description': '',
         'address': '21 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -283,6 +298,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': '',
         'address': '30 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -300,6 +316,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cung văn hóa Thanh Thiếu Nhi Bắc Ninh',
+        'description': '',
         'address': '31 Lý Thái Tổ',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -317,6 +334,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cột đồng hồ Thành phố Bắc Ninh',
+        'description': '',
         'address': '294 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -336,6 +354,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bệnh viện Đa Khoa Bắc Ninh',
+        'description': '',
         'address': '502 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -354,6 +373,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cầu Bồ Sơn',
+        'description': '',
         'address': '678-680 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -371,6 +391,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà máy thức ăn chăn nuôi DABACO',
+        'description': '',
         'address': 'Đối diện 930 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -388,6 +409,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường Cao Đẳng Y Tế Bắc Ninh',
+        'description': '',
         'address': 'Đường Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -405,6 +427,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đối diện Trường Cao Đẳng Y Tế Bắc Ninh',
+        'description': '',
         'address': 'Đường Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -422,7 +445,8 @@ export let stations = {
       },
       'properties': {
         'name': 'Cống Nguyễn',
-        'address': 'Gầm cầu vượt Đường vành đai VI',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
+        'address': 'Đường Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
           { 'id': 24, 'name': 'BN01', 'color': 'blue' },
@@ -439,7 +463,8 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu phố Tiên Xá',
-        'address': 'Gầm cầu vượt Đường vành đai VI',
+        'description': 'Gầm cầu vượt Đường vành đai VI',
+        'address': 'Đường Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
           { 'id': 25, 'name': 'BN01', 'color': 'red' },
@@ -456,6 +481,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Vòng xuyến Phố Và',
+        'description': '',
         'address': '1346-1348 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -473,6 +499,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '',
         'address': '1466-1468 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -490,6 +517,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bệnh viện Mắt Bắc Ninh',
+        'description': '',
         'address': '1017-1019 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -507,6 +535,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đối diện Trường THPT Lý Thường Kiệt',
+        'description': '',
         'address': 'Đường Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -524,6 +553,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Lý Thường Kiệt',
+        'description': '',
         'address': '1147-1149 Nguyễn Trãi',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -541,6 +571,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Siêu thị DABACO Lạc Vệ',
+        'description': '',
         'address': 'Quốc lộ 38',
         'ward': 'Lạc Vệ',
         'district': 'Tiên Du',
@@ -559,6 +590,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Hương Vân',
+        'description': '',
         'address': 'Quốc lộ 38',
         'ward': 'Lạc Vệ',
         'district': 'Tiên Du',
@@ -577,6 +609,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cầu Trầm',
+        'description': '',
         'address': 'Km5+230 Quốc lộ 38',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -594,9 +627,10 @@ export let stations = {
         'coordinates': [106.082073, 21.092923]
       },
       'properties': {
-        'name': 'Chùa Phổ Âm - Tư Chi',
+        'name': 'Chùa Phổ Âm',
+        'description': 'CCN Tân Chi -Mercury Industrial Park',
         'address': 'Quốc lộ 38',
-        'ward': 'Tân Chi',
+        'ward': 'Tư Chi, Tân Chi',
         'district': 'Tiên Du',
         'routers': [
           { 'id': 34, 'name': 'BN01' },
@@ -613,6 +647,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Kho xăng dầu Hải Linh - Bắc Ninh',
+        'description': '',
         'address': '',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -629,6 +664,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà văn hoá thôn Chi Hồ',
+        'description': '',
         'address': '',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -645,6 +681,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Di tích Đình Đông - Chi Hồ',
+        'description': '',
         'address': '',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -660,7 +697,8 @@ export let stations = {
         'coordinates': [106.095894, 21.063815]
       },
       'properties': {
-        'name': 'Khu đô thị NOXH Lan Hưng',
+        'name': 'Khu đô thị Lan Hưng',
+        'description': 'Gần ngã tư cầu Hồ',
         'address': 'Đường Kinh Dương Vương',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -677,6 +715,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Thuận Thành số 3',
+        'description': '',
         'address': 'Đường Vương Văn Trà',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -693,6 +732,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chợ trung tâm Thuận Thành',
+        'description': '',
         'address': 'Đường Vương Văn Trà',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -709,6 +749,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà văn hóa Khu phố Mới',
+        'description': '',
         'address': '213 Âu Cơ',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -725,7 +766,8 @@ export let stations = {
         'coordinates': [106.088224, 21.050398]
       },
       'properties': {
-        'name': 'Trung tâm Giáo dục thường xuyên Thuận Thành',
+        'name': 'TT Giáo dục thường xuyên Thuận Thành',
+        'description': '',
         'address': '474 Âu Cơ',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -743,6 +785,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà văn hóa Khu phố Lẽ Đông Côi',
+        'description': '',
         'address': '614 Âu Cơ',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -760,6 +803,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu đô thị LITTLE SAIGON',
+        'description': '',
         'address': '1055-1057 Âu Cơ',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -776,8 +820,9 @@ export let stations = {
         'coordinates': [106.096430, 21.038811]
       },
       'properties': {
-        'name': 'Trường Đại học Kỹ thuật - Hậu cần CAND',
-        'address': 'Quốc lộ 17 (Ngã tư Đông Côi)',
+        'name': 'Ngã tư Đông Côi',
+        'description': 'ĐH Kỹ thuật - Hậu cần CAND',
+        'address': 'Quốc lộ 17',
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 45, 'name': 'BN01' },
@@ -792,7 +837,8 @@ export let stations = {
         'coordinates': [106.120867, 21.043118]
       },
       'properties': {
-        'name': 'Cầu Khoai - Ngã ba phố Nguyễn Cư Đạo',
+        'name': 'Cầu Khoai',
+        'description': 'Ngã ba phố Nguyễn Cư Đạo',
         'address': 'Quốc lộ 17',
         'ward': 'An Bình',
         'district': 'Thị xã Thuận Thành',
@@ -810,6 +856,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đình Phú Lộc',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'An Bình',
         'district': 'Thị xã Thuận Thành',
@@ -827,6 +874,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cống Đoan',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Đại Bái',
         'district': 'Gia Bình',
@@ -844,6 +892,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đình Ngọc Xuyên',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Đại Bái',
         'district': 'Gia Bình',
@@ -860,6 +909,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD Công ty may',
         'address': '385-387 Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -876,6 +926,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Công ty may Đông Bình',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -892,6 +943,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD Bến xe Gia Bình',
         'address': '243-245 Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -908,6 +960,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bến xe Gia Bình',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -924,6 +977,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Siêu thị DABACO Gia Bình',
+        'description': 'Vườn hoa trung tâm',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -940,6 +994,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Công an huyện Gia Bình',
+        'description': '',
         'address': '142-144 Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -956,6 +1011,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Ngã tư Đông Bình',
+        'description': '',
         'address': '20-22 Thiên Thai',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -972,6 +1028,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Ngã tư Đông Bình',
+        'description': '',
         'address': '22-24 Nguyễn Văn Cừ',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -988,6 +1045,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nghĩa trang Liệt sỹ Thị trấn Gia Bình',
+        'description': '',
         'address': 'Đường Thiên Thai',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -1004,6 +1062,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đường vào thôn Thủ Pháp',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Quỳnh Phú',
         'district': 'Gia Bình',
@@ -1020,6 +1079,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cầu Móng',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Quỳnh Phú',
         'district': 'Gia Bình',
@@ -1036,6 +1096,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cổng làng Tử Nê',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Tân Lãng',
         'district': 'Lương Tài',
@@ -1052,6 +1113,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Tân Lãng',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Tân Lãng',
         'district': 'Lương Tài',
@@ -1068,6 +1130,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nghĩa trang Liệt sỹ xã Tân Lãng',
+        'description': '',
         'address': 'Đường Phá Lãng',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -1084,6 +1147,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Ngọc Cục',
+        'description': '',
         'address': 'Đường Phá Lãng',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -1099,7 +1163,8 @@ export let stations = {
         'coordinates': [106.195603, 21.019009]
       },
       'properties': {
-        'name': '(B) Bến xe Lương Tài',
+        'name': '(B) Lương Tài',
+        'description': 'Bến xe Lương Tài',
         'address': 'Đường Phá Lãng',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -1117,6 +1182,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chợ Nhớn',
+        'description': '',
         'address': '60 Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1134,6 +1200,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trạm Y tế Phường Tiền An',
+        'description': '',
         'address': '117 Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1151,6 +1218,7 @@ export let stations = {
       },
       'properties': {
         'name': 'HimLam Plaza',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1168,6 +1236,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Tòa Vietcombank Bắc Ninh',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1186,6 +1255,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Vincom Plaza Lý Thái Tổ',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1204,6 +1274,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu tập thể Lilama 69-1',
+        'description': '',
         'address': '112 Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1222,6 +1293,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD Khu tập thể Lilama 69-1',
         'address': '131 Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1240,6 +1312,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà khách Bộ chỉ huy Quân sự Bắc Ninh',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1258,6 +1331,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cổng chào Thành phố Bắc Ninh',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1276,6 +1350,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cây xăng Cầu Ngà',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Vân Dương',
         'district': 'Thành phố Bắc Ninh',
@@ -1295,6 +1370,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Siêu thị Minh Anh',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Vân Dương',
         'district': 'Thành phố Bắc Ninh',
@@ -1314,8 +1390,9 @@ export let stations = {
       },
       'properties': {
         'name': 'Công ty TNHH Canon Vietnam',
+        'description': 'KCN Quế Võ',
         'address': 'Quốc lộ 18',
-        'ward': 'KCN Quế Võ',
+        'ward': '',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
           { 'id': 14, 'name': 'BN02' },
@@ -1333,6 +1410,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Công ty Sài Gòn Kinh Bắc',
+        'description': 'KCN Quế Võ',
         'address': 'Quốc lộ 18',
         'ward': 'KCN Quế Võ',
         'district': 'Thành phố Bắc Ninh',
@@ -1352,6 +1430,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu phố Giang Liễu',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1369,7 +1448,8 @@ export let stations = {
         'coordinates': [106.136341, 21.155789]
       },
       'properties': {
-        'name': 'Trường Cao Đẳng nghề Quản Lý và Công Nghệ',
+        'name': 'Cao Đẳng nghề Quản Lý và Công Nghệ',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1388,6 +1468,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Siêu thị DABACO Quế Võ',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1405,7 +1486,8 @@ export let stations = {
         'coordinates': [106.150950, 21.153405]
       },
       'properties': {
-        'name': 'Cửa hàng vàng bạc Xuân Mạo',
+        'name': 'CH Vàng bạc Xuân Mạo',
+        'description': 'Ngã tư Phố Mới',
         'address': '183 Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1424,6 +1506,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Công an Thị xã Quế Võ',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1442,6 +1525,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bến xe Quế Võ',
+        'description': 'Gần Bệnh viện Đa khoa Thiện Nhân',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1460,6 +1544,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND Phường Việt Hùng',
+        'description': '',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1477,6 +1562,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Phố Lựa',
+        'description': 'Gần chùa Khánh Quang',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1494,6 +1580,7 @@ export let stations = {
       },
       'properties': {
         'name': 'KCN Quế Võ III',
+        'description': 'Gần chùa Diên Quang',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
         'routers': [
@@ -1511,6 +1598,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trung tâm Thánh mẫu Từ Phong',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Cách Bi',
         'district': 'Thị xã Quế Võ',
@@ -1529,6 +1617,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Agribank Đông Du',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Đào Viên',
         'district': 'Thị xã Quế Võ',
@@ -1547,6 +1636,7 @@ export let stations = {
       },
       'properties': {
         'name': 'KCN Quế Võ II',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Ngọc Xá',
         'district': 'Thị xã Quế Võ',
@@ -1565,6 +1655,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Ngọc Sơn',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Ngọc Xá',
         'district': 'Thị xã Quế Võ',
@@ -1583,6 +1674,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chân cầu Bình Than',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Châu Phong',
         'district': 'Thị xã Quế Võ',
@@ -1600,7 +1692,8 @@ export let stations = {
         'coordinates': [106.249497, 21.119790]
       },
       'properties': {
-        'name': 'Cây xăng PETROLIMEX - Cửa hàng 171',
+        'name': 'PETROLIMEX - CH 171',
+        'description': 'Gầm cầu Bình Than',
         'address': 'Quốc lộ 18',
         'ward': 'Châu Phong',
         'district': 'Thị xã Quế Võ',
@@ -1617,6 +1710,7 @@ export let stations = {
       },
       'properties': {
         'name': 'ICD Tân Cảng Quế Võ',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Châu Phong',
         'district': 'Thị xã Quế Võ',
@@ -1633,6 +1727,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Xóm trại Vệ Xá',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
@@ -1649,6 +1744,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Kiều Lương',
+        'description': '',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
@@ -1664,7 +1760,8 @@ export let stations = {
         'coordinates': [106.274165, 21.116830]
       },
       'properties': {
-        'name': 'Cây xăng PETROLIMEX - Cửa hàng 164',
+        'name': 'PETROLIMEX - CH 164',
+        'description': 'Gần UBND xã Đức Long',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
@@ -1681,6 +1778,7 @@ export let stations = {
       },
       'properties': {
         'name': '(B) Phả Lại',
+        'description': 'Gần cầu Phả Lại',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
@@ -1698,6 +1796,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Chi Trung',
+        'description': '',
         'address': 'Quốc lộ 38',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -1715,6 +1814,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trạm thu phí Cầu Hồ',
+        'description': '',
         'address': 'Quốc lộ 38',
         'ward': 'Tân Chi',
         'district': 'Tiên Du',
@@ -1733,8 +1833,9 @@ export let stations = {
         'coordinates': [106.098160, 21.067615]
       },
       'properties': {
-        'name': 'Điếm văn hoá Ngọ Xá - Cầu Hồ',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'name': 'Ngã tư Cầu Hồ',
+        'description': 'Điếm văn hoá Ngọ Xá',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Hoài Thượng',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -1750,7 +1851,8 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Thượng Trì',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'description': '',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Hoài Thượng',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -1766,7 +1868,8 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Hoài Thượng',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'description': '',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Hoài Thượng',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -1782,7 +1885,8 @@ export let stations = {
       },
       'properties': {
         'name': 'Điếm văn hoá Thuỵ Mão',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'description': '',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Mão Điền',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -1798,7 +1902,8 @@ export let stations = {
       },
       'properties': {
         'name': 'Điếm văn hoá Ngăm Lương',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'description': '',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Lãng Ngâm',
         'district': 'Gia Bình',
         'routers': [
@@ -1814,7 +1919,8 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Lãng Ngâm',
-        'address': 'Đường tỉnh 280 - Đê Hữu Đuống',
+        'description': '',
+        'address': 'Đê Hữu Đuống',
         'ward': 'Lãng Ngâm',
         'district': 'Gia Bình',
         'routers': [
@@ -1830,6 +1936,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Dốc Lãng Ngâm',
+        'description': 'Nghĩa trang liệt sỹ Lãng Ngâm',
         'address': 'Đường tỉnh 280',
         'ward': 'Lãng Ngâm',
         'district': 'Gia Bình',
@@ -1846,6 +1953,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đình An Quang',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Lãng Ngâm',
         'district': 'Gia Bình',
@@ -1861,7 +1969,8 @@ export let stations = {
         'coordinates': [106.156426,21.074710]
       },
       'properties': {
-        'name': 'Chợ Núi - Đường vào thôn Du Tràng',
+        'name': 'Chợ Núi',
+        'description': 'Đường vào thôn Du Tràng',
         'address': 'Đường tỉnh 280',
         'ward': 'Lãng Ngâm',
         'district': 'Gia Bình',
@@ -1878,6 +1987,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bưu điện Phố Núi',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Đông Cứu',
         'district': 'Gia Bình',
@@ -1894,6 +2004,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Ngã 3 đường tránh Phố Núi',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Đông Cứu',
         'district': 'Gia Bình',
@@ -1910,6 +2021,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Yên Việt',
+        'description': '',
         'address': 'Đường tỉnh 280',
         'ward': 'Đông Cứu',
         'district': 'Gia Bình',
@@ -1926,6 +2038,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đường vào Đền thờ Lê Văn Thịnh',
+        'description': '',
         'address': 'Đường Lê Văn Thịnh',
         'ward': 'Đông Cứu',
         'district': 'Gia Bình',
@@ -1942,6 +2055,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD Trường THPT Lê Văn Thịnh',
         'address': '171 Lê Văn Thịnh',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -1958,6 +2072,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Lê Văn Thịnh',
+        'description': '',
         'address': '210 Lê Văn Thịnh',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -1974,6 +2089,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cổng làng Hương Vinh',
+        'description': '',
         'address': '119 Lê Văn Thịnh',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -1990,6 +2106,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Tổng kho gạo sạch Gia Bình',
+        'description': 'Ngã tư Đông Bình',
         'address': '5-7 Lê Văn Thịnh',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -2005,7 +2122,8 @@ export let stations = {
         'coordinates': [106.180327, 21.053816]
       },
       'properties': {
-        'name': 'Trung tâm Y tế Gia Bình',
+        'name': '',
+        'description': 'Gần Trung tâm Y tế Gia Bình',
         'address': '56-58 Bình Than',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -2022,6 +2140,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Nhà văn hóa thôn Đông Bình',
+        'description': '',
         'address': '257-259 Bình Than',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
@@ -2038,6 +2157,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Xuân Lai',
+        'description': '',
         'address': 'Đường Bình Than',
         'ward': 'Xuân Lai',
         'district': 'Gia Bình',
@@ -2054,6 +2174,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Đĩnh Cương',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Xuân Lai',
         'district': 'Gia Bình',
@@ -2069,7 +2190,8 @@ export let stations = {
         'coordinates': [106.218580, 21.060145]
       },
       'properties': {
-        'name': 'Công ty TNHH May và Thương mại Việt Thành',
+        'name': 'Cty TNHH May và Thương mại Việt Thành',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2086,6 +2208,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Khoái Khê',
+        'description': 'Đường vào thôn Hương Triện',
         'address': 'Quốc lộ 17',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2102,6 +2225,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chùa Ngụ',
+        'description': 'Gần ngã ba Ngụ',
         'address': 'Phố Ngụ',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2118,7 +2242,8 @@ export let stations = {
         'coordinates': [106.235564, 21.063586]
       },
       'properties': {
-        'name': 'Khu dãn dân thôn Cầu Đào',
+        'name': 'Thôn Cầu Đào',
+        'description': 'Khu dãn dân thôn Cầu Đào',
         'address': 'Phố Ngụ',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2137,6 +2262,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cổng làng Lê Lợi',
+        'description': '',
         'address': 'Phố Ngụ',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2155,6 +2281,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Cổng làng Cẩm Xá',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2173,6 +2300,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trại Vối',
+        'description': 'Đường vào thôn Ngô Cương',
         'address': 'Quốc lộ 17',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
@@ -2191,6 +2319,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Đìa',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
@@ -2209,6 +2338,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Bình Dương',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
@@ -2227,6 +2357,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Vòng xuyến cầu Bình Than',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
@@ -2245,6 +2376,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Đường vào thôn Cao Thọ',
+        'description': '',
         'address': 'Đường tỉnh 282',
         'ward': 'Vạn Ninh',
         'district': 'Gia Bình',
@@ -2261,6 +2393,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND xã Cao Đức',
+        'description': 'Gần Chợ Kênh',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'Cao Đức',
         'district': 'Gia Bình',
@@ -2277,6 +2410,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Kênh Phố',
+        'description': '',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'Cao Đức',
         'district': 'Gia Bình',
@@ -2293,6 +2427,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Mỹ Lộc',
+        'description': '',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'Cao Đức',
         'district': 'Gia Bình',
@@ -2309,6 +2444,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Điểm văn hóa Cáp Thủy',
+        'description': '',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'An Thịnh',
         'district': 'Lương Tài',
@@ -2325,6 +2461,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Cáp Hạ',
+        'description': '',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
@@ -2341,6 +2478,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Lương Tài số 2',
+        'description': '',
         'address': 'Đê Hữu Thái Bình',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
@@ -2357,6 +2495,7 @@ export let stations = {
     //   },
     //   'properties': {
     //     'name': '(A) Kênh Vàng',
+    //     'description': '',
     //     'address': 'Đường tỉnh 281',
     //     'ward': 'Trung Kênh',
     //     'district': 'Lương Tài',
@@ -2374,6 +2513,7 @@ export let stations = {
       },
       'properties': {
         'name': '(B) Kênh Vàng',
+        'description': 'Gần cầu Đò',
         'address': 'Đường tỉnh 281',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
@@ -2392,6 +2532,7 @@ export let stations = {
       },
       'properties': {
         'name': '(A) Kênh Vàng',
+        'description': 'Dốc Kênh Vàng',
         'address': 'Đường tỉnh 281',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
@@ -2409,6 +2550,7 @@ export let stations = {
     //   },
     //   'properties': {
     //     'name': 'Cầu Đò',
+    //     'description': '',
     //     'address': 'Đường tỉnh 281',
     //     'ward': 'Trung Kênh',
     //     'district': 'Lương Tài',
@@ -2426,6 +2568,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Công ty CP Tập đoàn Minh Tâm',
+        'description': '',
         'address': 'Đường Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2442,6 +2585,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Ngã ba Táo Đôi',
+        'description': '',
         'address': 'Đường Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2458,6 +2602,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THCS Hàn Thuyên',
+        'description': '',
         'address': '681 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2474,6 +2619,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': '',
         'address': '563 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2490,6 +2636,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': '',
         'address': '566 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2506,6 +2653,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': '',
         'address': '391-393 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2522,6 +2670,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'Đường vào thôn Bùi Xá',
         'address': '438-440 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2538,6 +2687,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trung tâm Y tế Lương Tài',
+        'description': '',
         'address': '267 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2554,6 +2704,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD TT Y tế Lương Tài',
         'address': '284-286 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2570,6 +2721,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trạm Y tế Thị trấn Thứa',
+        'description': '',
         'address': '33-35 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2586,6 +2738,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'ĐD Trạm Y tế Thị trấn Thứa',
         'address': '86-88 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2602,6 +2755,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Bờ hồ Thứa',
+        'description': '',
         'address': 'Đường Lý Thái Tổ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2618,6 +2772,7 @@ export let stations = {
       },
       'properties': {
         'name': '',
+        'description': 'Đối diện THPT Lương Tài số 1',
         'address': '38-40 Lý Thái Tổ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2634,6 +2789,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Lương Tài số 1',
+        'description': '',
         'address': '61-63 Lý Thái Tổ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2650,6 +2806,7 @@ export let stations = {
       },
       'properties': {
         'name': 'KĐT Tây Nam Thị trấn Thứa',
+        'description': '',
         'address': 'Đường Lý Thái Tổ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2666,6 +2823,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Thôn Kim Đào',
+        'description': '',
         'address': 'Đường Lý Thái Tổ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2682,6 +2840,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chi cục thuế huyện Lương Tài',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2698,6 +2857,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Vòng xuyến Kim Đào',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2714,6 +2874,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Lối đi bến xe Lương Tài',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2730,6 +2891,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Lối đi Đại Bái',
+        'description': '',
         'address': 'Đường Nguyễn Văn Cừ',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
@@ -2745,7 +2907,8 @@ export let stations = {
         'coordinates': [106.152198,21.038080]
       },
       'properties': {
-        'name': 'Xóm Trại Đại Bái (gần Lăng Tổ)',
+        'name': 'Xóm Trại Đại Bái',
+        'description': 'Gần Lăng Tổ',
         'address': 'Đường tỉnh 284',
         'ward': 'Đại Bái',
         'district': 'Gia Bình',
@@ -2762,6 +2925,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Tượng đài Liệt sỹ Thuận Thành (cũ)',
+        'description': '',
         'address': '208-210 Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2778,6 +2942,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Thuận Thành số 1',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2794,6 +2959,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu phố Ngọc Khám',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2810,6 +2976,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu phố Tam Á',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2825,7 +2992,8 @@ export let stations = {
         'coordinates': [106.063105, 21.035256]
       },
       'properties': {
-        'name': 'Cây xăng PETROLIMEX - Cửa hàng số 16',
+        'name': 'PETROLIMEX - CH 16',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2842,6 +3010,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Khu công nghiệp Khai Sơn',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2858,6 +3027,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Trường THPT Thuận Thành số 2',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2874,6 +3044,7 @@ export let stations = {
       },
       'properties': {
         'name': 'UBND Phường Thanh Khương',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2890,6 +3061,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chùa Dâu',
+        'description': '',
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
@@ -2906,6 +3078,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Chợ đầu mối Ngã tư Dâu',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Hà Mãn',
         'district': 'Thị xã Thuận Thành',
@@ -2923,6 +3096,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Lối vào UBND Phường Hà Mãn',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Hà Mãn',
         'district': 'Thị xã Thuận Thành',
@@ -2940,6 +3114,7 @@ export let stations = {
       },
       'properties': {
         'name': 'Lối vào UBND Phường Xuân Lâm',
+        'description': '',
         'address': 'Quốc lộ 17',
         'ward': 'Xuân Lâm',
         'district': 'Thị xã Thuận Thành',
@@ -2957,6 +3132,7 @@ export let stations = {
       },
       'properties': {
         'name': '(B) Xuân Lâm',
+        'description': 'Gần Cổng Khu đô thị Khai Sơn',
         'address': 'Quốc lộ 17',
         'ward': 'Xuân Lâm',
         'district': 'Thị xã Thuận Thành',
@@ -2974,7 +3150,8 @@ export let stations = {
         'coordinates': [105.967206,21.087379]
       },
       'properties': {
-        'name': '(A) Khu công nghiệp VSIP',
+        'name': '(A) KCN VSIP',
+        'description': 'Gần TTVHTT Khu phố Rích Gạo',
         'address': '',
         'ward': 'Khu phố Rích Gạo, Phù Chẩn',
         'district': 'Thành phố Từ Sơn',
@@ -2990,7 +3167,7 @@ export let stations = {
         'coordinates': [105.966597,21.088116]
       },
       'properties': {
-        'name': 'Trung tâm văn hoá thể thao Khu phố Rích Gạo',
+        'name': 'TT Văn hoá Thể thao Khu phố Rích Gạo',
         'address': '',
         'ward': 'Khu phố Rích Gạo, Phù Chẩn',
         'district': 'Thành phố Từ Sơn',
