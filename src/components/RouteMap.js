@@ -26,7 +26,7 @@ import b204Go from '../data/bus-routes/204-go.json';
 import b204Back from '../data/bus-routes/204-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
-import { stations } from '../data/stations/stations';
+import { stations } from '../data/stations';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -40,11 +40,9 @@ export default class RouteMap extends React.Component {
       center: [106.0804849, 21.1169071],
       zoom: 10.5
     });
-
-    //init page load soure & layer (route line) null
-    initPage(this.map);
-
-    //init page load marker (bus_stop_list) start-end bus stop
+    //init page load soure & layer (route line) all route
+    initLoadLine(this.map);
+    //init page load marker start-end bus stop, all bus stop, node marker
     initLoadMarker(this.map);
   };
 
@@ -52,72 +50,22 @@ export default class RouteMap extends React.Component {
     if (this.props.routeId) {
       //first change routeId => clear all init route
       if (this.first) {
-        clearInitPage(this.map);
+        clearInitLoadLine(this.map);
         this.first = false;
       }
-
-      if (this.props.routeId === "BN01") {
-        setDataSoure(this.map, 'Bus Route Go', [bn01Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn01Back], this.props.routeId);
-      } else if (this.props.routeId === "BN02") {
-        setDataSoure(this.map, 'Bus Route Go', [bn02Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn02Back], this.props.routeId);
-      } else if (this.props.routeId === "BN03") {
-        setDataSoure(this.map, 'Bus Route Go', [bn03Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn03Back], this.props.routeId);
-      } else if (this.props.routeId === "BN08") {
-        setDataSoure(this.map, 'Bus Route Go', [bn08Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn08Back], this.props.routeId);
-      } else if (this.props.routeId === "BN27") {
-        setDataSoure(this.map, 'Bus Route Go', [bn27Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn27Back], this.props.routeId);
-      } else if (this.props.routeId === "BN68") {
-        setDataSoure(this.map, 'Bus Route Go', [bn68Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn68Back], this.props.routeId);
-      } else if (this.props.routeId === "BN86A") {
-        setDataSoure(this.map, 'Bus Route Go', [bn86aGo], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn86aBack], this.props.routeId);
-      } else if (this.props.routeId === "BN86B") {
-        setDataSoure(this.map, 'Bus Route Go', [bn86bGo], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [bn86bBack], this.props.routeId);
-      } else if (this.props.routeId === "10A") {
-        setDataSoure(this.map, 'Bus Route Go', [b10aGo], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [b10aBack], this.props.routeId);
-      } else if (this.props.routeId === "54") {
-        setDataSoure(this.map, 'Bus Route Go', [b54Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [b54Back], this.props.routeId);
-      } else if (this.props.routeId === "204") {
-        setDataSoure(this.map, 'Bus Route Go', [b204Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [b204Back], this.props.routeId);
-      } else if (this.props.routeId === "217") {
-        setDataSoure(this.map, 'Bus Route Go', [b217Go], this.props.routeId);
-        setDataSoure(this.map, 'Bus Route Back', [b217Back], this.props.routeId);
-      };
+      //clear all old markers
+      clearMarkerByClassName('mapboxgl-marker');
+      //setup new line by route
+      setDataSoureById(this.map, this.props.routeId);
+      //setup new list marker by route
       loadMarker(this.map, this.props.routeId);
     } else {
-      // must load again funtion initLoadMarker because the last funtion in componentDidMount() not run in componentDidUpdate()
-      const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
-      while (elements.length > 0) elements[0].remove();
+      //must load again funtion initLoadMarker because the last funtion in componentDidMount() not run in componentDidUpdate()
+      clearMarkerByClassName('mapboxgl-marker');
       initLoadMarker(this.map);
     }
-
-    // event click list bus stop in menu => map
-    if (document.getElementById(this.props.markerId)) {
-      // for all marker have opacity = 0.3
-      const elements = document.getElementsByClassName('mapboxgl-marker');
-      for (const element of elements) {
-        element.style.opacity = "0.3";
-      }
-      const elementsNode = document.getElementsByClassName('marker-node');
-      for (const element of elementsNode) {
-        element.style.opacity = "1";
-      }
-      document.getElementById(this.props.markerId).style.backgroundImage = "url(../images/bus-stop-here.png)";
-      document.getElementById(this.props.markerId).style.marginTop = "-40px"
-      document.getElementById(this.props.markerId).style.width = "80px";
-      document.getElementById(this.props.markerId).style.height = "80px";
-      document.getElementById(this.props.markerId).style.opacity = "1";
-    }
+    //event click list bus stop in menu => map
+    clickButtonToHere(this.props.markerId);
   }
 
   render() {
@@ -129,7 +77,7 @@ export default class RouteMap extends React.Component {
   }
 }
 
-function initPage(map) {
+function initLoadLine(map) {
   addSourceLayer(map, 'Init Route BN01 Back', [bn01Back], 'red');
   addSourceLayer(map, 'Init Route BN01 Go', [bn01Go], '#3e8e41');
   addSourceLayer(map, 'Init Route BN02 Back', [bn02Back], 'red');
@@ -158,57 +106,95 @@ function initPage(map) {
   addSourceLayer(map, 'Bus Route Go', [], '#3e8e41');
 }
 
+function addSourceLayer(map, idSoureLayer, coordinates, color) {
+  map.on('load', () => { //Get initial geojson data from Calgary Open Data
+    let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
+    try {
+      map.addSource(idSoureLayer, {
+        type: 'geojson',
+        data: geojson
+      });
+      map.addLayer({
+        "id": idSoureLayer,
+        "type": "line",
+        "source": idSoureLayer,
+        "paint": {
+          "line-color": color,
+          "line-width": 4,
+          "line-opacity": color === 'red' ? 0.5 : 1
+        },
+        "layout": {
+          "line-join": "round",
+          "line-cap": "round"
+        },
+      });
+    } catch (error) { }
+  });
+}
+
 function initLoadMarker(map) {
   for (const feature of stations.features) {
     // create a HTML element for each feature
-    const elSE = document.createElement('div');
-    elSE.className = 'marker-green';
-    elSE.id = feature.geometry.pointId;
     const el = document.createElement('div');
-    el.className = 'marker-init';
-    const el0108217 = document.createElement('div');
-    el0108217.className = 'marker-node marker-01-08-217';
-    const el0127 = document.createElement('div');
-    el0127.className = 'marker-node marker-01-27';
-    const el0286212 = document.createElement('div');
-    el0286212.className = 'marker-node marker-02-86-212';
-    const el0286 = document.createElement('div');
-    el0286.className = 'marker-node marker-02-86';
-    const el0886 = document.createElement('div');
-    el0886.className = 'marker-node marker-08-86';
-    const el27204 = document.createElement('div');
-    el27204.className = 'marker-node marker-27-204';
-    const el6854203 = document.createElement('div');
-    el6854203.className = 'marker-node marker-68-54-203';
-    const el1054210 = document.createElement('div');
-    el1054210.className = 'marker-node marker-10-54-210';
+    if (feature.geometry.lineId === '0108217') {
+      el.className = 'marker-node marker-01-08-217';
+    } else if (feature.geometry.lineId === '0127') {
+      el.className = 'marker-node marker-01-27';
+    } else if (feature.geometry.lineId === '0286212') {
+      el.className = 'marker-node marker-02-86-212';
+    } else if (feature.geometry.lineId === '0286') {
+      el.className = 'marker-node marker-02-86';
+    } else if (feature.geometry.lineId === '0886') {
+      el.className = 'marker-node marker-08-86';
+    } else if (feature.geometry.lineId === '27204') {
+      el.className = 'marker-node marker-27-204';
+    } else if (feature.geometry.lineId === '6854203') {
+      el.className = 'marker-node marker-68-54-203';
+    } else if (feature.geometry.lineId === '1054210') {
+      el.className = 'marker-node marker-10-54-210';
+    } else if (feature.geometry.type === 'Point') {
+      el.className = 'marker-all';
+    } else {
+      el.className = 'marker-green';
+      el.id = feature.geometry.pointId;
+    }
+    
+    let routes = feature.properties.routers;
+    if (feature.geometry.type === 'Point In Province' || feature.geometry.type === 'Point Out Province') {
+      routes = feature.properties.routers.filter(route => route.start);
+    } else {
+      routes = feature.properties.routers;
+    }
 
     // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(feature.geometry.lineId === '0108217' ? el0108217 :
-      feature.geometry.lineId === '0127' ? el0127 :
-        feature.geometry.lineId === '0286212' ? el0286212 :
-          feature.geometry.lineId === '0286' ? el0286 :
-            feature.geometry.lineId === '0886' ? el0886 :
-              feature.geometry.lineId === '27204' ? el27204 :
-                feature.geometry.lineId === '6854203' ? el6854203 :
-                  feature.geometry.lineId === '1054210' ? el1054210 :
-                    feature.geometry.type === 'Point' ? el : elSE
-    ).setLngLat(feature.geometry.coordinates).setPopup(
-      new mapboxgl.Popup( feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
-        .setHTML(
-          '<div>'
-          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
-          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
-          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-          + ('<small>' + feature.properties.district + '</small><br/>')
-          + ('<small>Tuyến: ' + renderRouteList(feature.geometry.type !== 'Line' ? feature.properties.routers.filter(route => route.start) : feature.properties.routers) + '</small>') +
-          '</div>'
-        )
-    ).addTo(map);
+    createMarker(map, el, feature, routes);
   }
 }
 
-function clearInitPage(map) {
+function createMarker(map, el, feature, routes) {
+  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
+    new mapboxgl.Popup( feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
+      .setHTML(
+        '<div>'
+        + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
+        + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
+        + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+        + ('<small>' + feature.properties.district + '</small><br/>')
+        + ('<small>Tuyến: ' + renderRouteList(routes) + '</small>') +
+        '</div>'
+      )
+  ).addTo(map);
+}
+
+function renderRouteList(routes) {
+  const routeNameList = [];
+  for (const route of routes) {
+    routeNameList.push(route.name);
+  }
+  return routeNameList.join(', ');
+}
+
+function clearInitLoadLine(map) {
   map.removeLayer('Init Route BN01 Go').removeSource('Init Route BN01 Go');
   map.removeLayer('Init Route BN01 Back').removeSource('Init Route BN01 Back');
   map.removeLayer('Init Route BN02 Go').removeSource('Init Route BN02 Go');
@@ -235,36 +221,58 @@ function clearInitPage(map) {
   map.removeLayer('Init Route 217 Back').removeSource('Init Route 217 Back');
 }
 
-function addSourceLayer(map, idSoureLayer, coordinates, color) {
-  map.on('load', () => { //Get initial geojson data from Calgary Open Data
-    let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
+function clearMarkerByClassName(className) {
+  const elements = document.getElementsByClassName(className); //clear all old markers
+  while (elements.length > 0) elements[0].remove();
+}
 
-    try {
-      map.addSource(idSoureLayer, {
-        type: 'geojson',
-        data: geojson
-      });
-      map.addLayer({
-        "id": idSoureLayer,
-        "type": "line",
-        "source": idSoureLayer,
-        "paint": {
-          "line-color": color,
-          "line-width": 4,
-          "line-opacity": color === 'red' ? 0.5 : 1
-        },
-        "layout": {
-          "line-join": "round",
-          "line-cap": "round"
-        },
-      });
-    } catch (error) { }
-  });
+function setDataSoureById(map, routeId) {
+  if (routeId === "BN01") {
+    setDataSoure(map, 'Bus Route Go', [bn01Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn01Back], routeId);
+  } else if (routeId === "BN02") {
+    setDataSoure(map, 'Bus Route Go', [bn02Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn02Back], routeId);
+  } else if (routeId === "BN03") {
+    setDataSoure(map, 'Bus Route Go', [bn03Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn03Back], routeId);
+  } else if (routeId === "BN08") {
+    setDataSoure(map, 'Bus Route Go', [bn08Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn08Back], routeId);
+  } else if (routeId === "BN27") {
+    setDataSoure(map, 'Bus Route Go', [bn27Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn27Back], routeId);
+  } else if (routeId === "BN68") {
+    setDataSoure(map, 'Bus Route Go', [bn68Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn68Back], routeId);
+  } else if (routeId === "BN86A") {
+    setDataSoure(map, 'Bus Route Go', [bn86aGo], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn86aBack], routeId);
+  } else if (routeId === "BN86B") {
+    setDataSoure(map, 'Bus Route Go', [bn86bGo], routeId);
+    setDataSoure(map, 'Bus Route Back', [bn86bBack], routeId);
+  } else if (routeId === "10A") {
+    setDataSoure(map, 'Bus Route Go', [b10aGo], routeId);
+    setDataSoure(map, 'Bus Route Back', [b10aBack], routeId);
+  } else if (routeId === "54") {
+    setDataSoure(map, 'Bus Route Go', [b54Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [b54Back], routeId);
+  } else if (routeId === "204") {
+    setDataSoure(map, 'Bus Route Go', [b204Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [b204Back], routeId);
+  } else if (routeId === "217") {
+    setDataSoure(map, 'Bus Route Go', [b217Go], routeId);
+    setDataSoure(map, 'Bus Route Back', [b217Back], routeId);
+  };
 }
 
 function setDataSoure(map, idSoureLayer, coordinates, routeId) {
   let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
   map.getSource(idSoureLayer).setData(geojson);
+  fly(map, geojson, routeId);
+}
+
+function fly(map, geojson, routeId) {
   let turf_center = center(geojson); //find center of bus route using Turf
   let center_coord = turf_center.geometry.coordinates;
   map.flyTo({
@@ -287,8 +295,6 @@ function setDataSoure(map, idSoureLayer, coordinates, routeId) {
 }
 
 function loadMarker(map, routeId) {
-  const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
-  while (elements.length > 0) elements[0].remove();
   // add markers to map
   const features = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === routeId));
   for (const feature of features) {
@@ -296,35 +302,37 @@ function loadMarker(map, routeId) {
     const matchColor = feature.properties.routers.filter(route => route.name === routeId)[0].color;
     // create a HTML element for each feature
     const el = document.createElement('div');
-    el.className = 'marker';
-    el.id = matchId;
-    const elGo = document.createElement('div');
-    elGo.className = 'marker-green';
-    elGo.id = matchId;
-    const elBack = document.createElement('div');
-    elBack.className = 'marker-red';
-    elBack.id = matchId;
+    if (matchColor === 'green') {
+      el.className = 'marker-green';
+      el.id = matchId;
+    } else if (matchColor === 'red') {
+      el.className = 'marker-red';
+      el.id = matchId;
+    } else {
+      el.className = 'marker';
+      el.id = matchId;
+    }
 
     // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(matchColor ? (matchColor === 'blue' ? elGo : elBack) : el).setLngLat(feature.geometry.coordinates).setPopup(
-      new mapboxgl.Popup({ offset: 25 }) // add popups
-        .setHTML(
-          '<div>'
-          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
-          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
-          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-          + ('<small>' + feature.properties.district + '</small><br/>')
-          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
-          '</div>'
-        )
-    ).addTo(map);
+    createMarker(map, el, feature, feature.properties.routers);
   };
 }
 
-function renderRouteList(routes) {
-  const routeList = [];
-  for (const route of routes) {
-    routeList.push(route.name);
+function clickButtonToHere(markerId) {
+  if (document.getElementById(markerId)) {
+    //for all marker have opacity = 0.3
+    const elements = document.getElementsByClassName('mapboxgl-marker');
+    for (const element of elements) {
+      element.style.opacity = "0.3";
+    }
+    const elementsNode = document.getElementsByClassName('marker-node');
+    for (const element of elementsNode) {
+      element.style.opacity = "1";
+    }
+    document.getElementById(markerId).style.backgroundImage = "url(../images/bus-stop-here.png)";
+    document.getElementById(markerId).style.marginTop = "-40px"
+    document.getElementById(markerId).style.width = "80px";
+    document.getElementById(markerId).style.height = "80px";
+    document.getElementById(markerId).style.opacity = "1";
   }
-  return routeList.join(', ');
 }

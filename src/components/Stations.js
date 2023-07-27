@@ -1,6 +1,6 @@
 import '../styles/Stations.css';
-import { stations } from '../data/stations/stations';
 import { useState } from 'react';
+import { stations } from '../data/stations';
 
 export default function Stations(props) {
   const [chooseId, setChooseId] = useState(1);
