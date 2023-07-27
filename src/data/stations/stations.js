@@ -5,7 +5,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.061027, 21.180761]
       },
       'properties': {
@@ -14,12 +14,12 @@ export let stations = {
         'address': '2 Nguyễn Du',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
-          { 'id': 1, 'name': 'BN01' },
-          { 'id': 1, 'name': 'BN02' },
-          { 'id': 1, 'name': 'BN03' },
-          { 'id': 1, 'name': 'BN08' },
-          { 'id': 1, 'name': 'BN86A' },
-          { 'id': 1, 'name': 'BN86B' },
+          { 'id': 1, 'name': 'BN01', 'start': true },
+          { 'id': 1, 'name': 'BN02', 'start': true },
+          { 'id': 1, 'name': 'BN03', 'start': true },
+          { 'id': 1, 'name': 'BN08', 'start': true },
+          { 'id': 1, 'name': 'BN86A', 'start': true },
+          { 'id': 1, 'name': 'BN86B', 'start': true },
           { 'id': 71, 'name': '54', 'color': 'red' },
           { 'name': '203', 'color': 'red' },
           { 'id': 99, 'name': '217' }
@@ -166,7 +166,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.076359, 21.188028]
       },
       'properties': {
@@ -178,7 +178,7 @@ export let stations = {
           { 'id': 9, 'name': 'BN01', 'color': 'red' },
           { 'id': 9, 'name': 'BN08', 'color': 'red' },
           { 'id': 48, 'name': 'BN68', 'color': 'blue' },
-          { 'id': 77, 'name': '54' }
+          { 'id': 77, 'name': '54', 'start': true }
         ]
       }
     },
@@ -1159,7 +1159,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.195603, 21.019009]
       },
       'properties': {
@@ -1169,7 +1169,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 65, 'name': 'BN01' }
+          { 'id': 65, 'name': 'BN01', 'start': true }
         ]
       }
     },
@@ -1773,7 +1773,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.285208, 21.117838]
       },
       'properties': {
@@ -1783,7 +1783,7 @@ export let stations = {
         'ward': 'Đức Long',
         'district': 'Thị xã Quế Võ',
         'routers': [
-          { 'id': 35, 'name': 'BN02' }
+          { 'id': 35, 'name': 'BN02', 'start': true }
         ]
       }
     },
@@ -2508,7 +2508,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.276207, 21.044408]
       },
       'properties': {
@@ -2518,8 +2518,8 @@ export let stations = {
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 77, 'name': 'BN08' },
-          // { 'id': 2, 'name': 'BN27' }
+          { 'id': 77, 'name': 'BN08', 'start': true },
+          { 'id': 2, 'name': 'BN27' }
         ]
       }
     },
@@ -2527,7 +2527,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.290945,21.040881]
       },
       'properties': {
@@ -2537,8 +2537,8 @@ export let stations = {
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
         'routers': [
-          // { 'id': 76, 'name': 'BN08' },
-          { 'id': 1, 'name': 'BN27' }
+          { 'id': 76, 'name': 'BN08' },
+          { 'id': 1, 'name': 'BN27', 'start': true }
         ]
       }
     },
@@ -3127,7 +3127,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.013119, 21.030249]
       },
       'properties': {
@@ -3137,8 +3137,7 @@ export let stations = {
         'ward': 'Xuân Lâm',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 46, 'name': 'BN27' },
-          { 'id': 18, 'name': '204' }
+          { 'id': 46, 'name': 'BN27', 'start': true }
         ]
       }
     },
@@ -3146,7 +3145,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [105.967206,21.087379]
       },
       'properties': {
@@ -3156,7 +3155,7 @@ export let stations = {
         'ward': 'Khu phố Rích Gạo, Phù Chẩn',
         'district': 'Thành phố Từ Sơn',
         'routers': [
-          { 'id': 1, 'name': 'BN68' }
+          { 'id': 1, 'name': 'BN68', 'start': true }
         ]
       }
     },
@@ -4062,7 +4061,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.143433,21.098960]
       },
       'properties': {
@@ -4072,7 +4071,7 @@ export let stations = {
         'ward': 'Chi Lăng',
         'district': 'Thị xã Quế Võ',
         'routers': [
-          { 'id': 67, 'name': 'BN68' }
+          { 'id': 67, 'name': 'BN68', 'start': true }
         ]
       }
     },
@@ -4235,7 +4234,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.265589, 20.989173]
       },
       'properties': {
@@ -4245,7 +4244,7 @@ export let stations = {
         'ward': 'Minh Tân',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 47, 'name': 'BN86A' }
+          { 'id': 47, 'name': 'BN86A', 'start': true }
         ]
       }
     },
@@ -4338,7 +4337,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.201397, 21.086935]
       },
       'properties': {
@@ -4348,7 +4347,7 @@ export let stations = {
         'ward': 'Đại Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 44, 'name': 'BN86B' }
+          { 'id': 44, 'name': 'BN86B', 'start': true }
         ]
       }
     },
@@ -4356,7 +4355,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point Out Province',
         'coordinates': [105.849453,21.041309]
       },
       'properties': {
@@ -4366,8 +4365,8 @@ export let stations = {
         'ward': '',
         'district': 'Hà Nội',
         'routers': [
-          { 'id': 1, 'name': '10A' },
-          { 'id': 1, 'name': '54' },
+          { 'id': 1, 'name': '10A', 'start': true },
+          { 'id': 1, 'name': '54', 'start': true },
           { 'id': 99, 'name': '204' }
         ]
       }
@@ -4698,14 +4697,14 @@ export let stations = {
         'ward': 'Lệ Chi',
         'district': 'Gia Lâm',
         'routers': [
-          { 'id': 19, 'name': '204' }
+          { 'id': 18, 'name': '204' }
         ]
       }
     },
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point In Province',
         'coordinates': [106.088707,21.059260]
       },
       'properties': {
@@ -4714,7 +4713,7 @@ export let stations = {
         'address': 'Đường Vương Văn Trà',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 1, 'name': '204' }
+          { 'id': 1, 'name': '204', 'start': true }
         ]
       }
     },
@@ -4722,7 +4721,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'type': 'Point Out Province',
         'coordinates': [106.329320, 20.922313]
       },
       'properties': {
@@ -4731,7 +4730,7 @@ export let stations = {
         'address': 'Đường Lê Thanh Nghị',
         'district': 'Thành phố Hải Dương',
         'routers': [
-          { 'id': 1, 'name': '217' }
+          { 'id': 1, 'name': '217', 'start': true }
         ]
       }
     },

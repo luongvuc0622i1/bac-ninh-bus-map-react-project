@@ -162,29 +162,11 @@ function initPage(map) {
 function initLoadMarker(map) {
   for (const feature of stations.features) {
     // create a HTML element for each feature
+    const elSE = document.createElement('div');
+    elSE.className = 'marker-green';
+    elSE.id = feature.properties.id;
     const el = document.createElement('div');
     el.className = 'marker-init';
-    // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
-      new mapboxgl.Popup() // add popups
-        .setHTML(
-          '<div>'
-          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
-          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
-          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-          + ('<small>' + feature.properties.district + '</small><br/>')
-          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
-          '</div>'
-        )
-    ).addTo(map);
-  }
-
-  // add markers to map
-  for (const feature of stationsSE.features) {
-    // create a HTML element for each feature
-    const el = document.createElement('div');
-    el.className = 'marker-green';
-    el.id = feature.properties.id;
     const el0108217 = document.createElement('div');
     el0108217.className = 'marker-node marker-01-08-217';
     const el0127 = document.createElement('div');
@@ -211,21 +193,68 @@ function initLoadMarker(map) {
               feature.properties.id === '27204' ? el27204 :
                 feature.properties.id === '6854203' ? el6854203 :
                   feature.properties.id === '1054210' ? el1054210 :
-                    el
+                    feature.geometry.type === 'Point' ? el : elSE
     ).setLngLat(feature.geometry.coordinates).setPopup(
-      new mapboxgl.Popup({ offset: 25 }) // add popups
+      new mapboxgl.Popup( feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
         .setHTML(
-          `<div>`
-          + (`<b>` + feature.properties.name + `</b></br>`)
-          + (feature.properties.description ? (`<small>` + feature.properties.description + `</small></br>`) : '')
-          + (feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
+          '<div>'
+          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
+          + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
           + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-          + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : '')
-          + (`<small>Tuyến: ` + feature.properties.routers + `</small>`) +
-          `</div>`
+          + ('<small>' + feature.properties.district + '</small><br/>')
+          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
+          '</div>'
         )
     ).addTo(map);
-  };
+  }
+
+  // // add markers to map
+  // for (const feature of stationsSE.features) {
+  //   // create a HTML element for each feature
+  //   const elSE = document.createElement('div');
+  //   elSE.className = 'marker-green';
+  //   elSE.id = feature.properties.id;
+  //   const el0108217 = document.createElement('div');
+  //   el0108217.className = 'marker-node marker-01-08-217';
+  //   const el0127 = document.createElement('div');
+  //   el0127.className = 'marker-node marker-01-27';
+  //   const el0286212 = document.createElement('div');
+  //   el0286212.className = 'marker-node marker-02-86-212';
+  //   const el0286 = document.createElement('div');
+  //   el0286.className = 'marker-node marker-02-86';
+  //   const el0886 = document.createElement('div');
+  //   el0886.className = 'marker-node marker-08-86';
+  //   const el27204 = document.createElement('div');
+  //   el27204.className = 'marker-node marker-27-204';
+  //   const el6854203 = document.createElement('div');
+  //   el6854203.className = 'marker-node marker-68-54-203';
+  //   const el1054210 = document.createElement('div');
+  //   el1054210.className = 'marker-node marker-10-54-210';
+
+  //   // make a marker for each feature and add it to the map
+  //   new mapboxgl.Marker(feature.properties.id === '0108217' ? el0108217 :
+  //     feature.properties.id === '0127' ? el0127 :
+  //       feature.properties.id === '0286212' ? el0286212 :
+  //         feature.properties.id === '0286' ? el0286 :
+  //           feature.properties.id === '0886' ? el0886 :
+  //             feature.properties.id === '27204' ? el27204 :
+  //               feature.properties.id === '6854203' ? el6854203 :
+  //                 feature.properties.id === '1054210' ? el1054210 :
+  //                   elSE
+  //   ).setLngLat(feature.geometry.coordinates).setPopup(
+  //     new mapboxgl.Popup({ offset: 25 }) // add popups
+  //       .setHTML(
+  //         `<div>`
+  //         + (`<b>` + feature.properties.name + `</b></br>`)
+  //         + (feature.properties.description ? (`<small>` + feature.properties.description + `</small></br>`) : '')
+  //         + (feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
+  //         + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+  //         + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : '')
+  //         + (`<small>Tuyến: ` + feature.properties.routers + `</small>`) +
+  //         `</div>`
+  //       )
+  //   ).addTo(map);
+  // };
 }
 
 function clearInitPage(map) {
@@ -288,21 +317,21 @@ function setDataSoure(map, idSoureLayer, coordinates, routeId) {
   let turf_center = center(geojson); //find center of bus route using Turf
   let center_coord = turf_center.geometry.coordinates;
   map.flyTo({
-   center: center_coord,
-   zoom: routeId === 'BN01'  ? 11.5 :
-         routeId === 'BN02'  ? 12   :
-         routeId === 'BN03'  ? 12.6 :
-         routeId === 'BN08'  ? 11.7 :
-         routeId === 'BN27'  ? 11.8 :
-         routeId === 'BN68'  ? 12   :
-         routeId === 'BN86A' ? 11.3 :
-         routeId === 'BN86B' ? 12   :
-         routeId === '10A'   ? 12.5 :
-         routeId === '54'    ? 11.7 :
-         routeId === '203'   ? 10.7 :
-         routeId === '204'   ? 11.9 :
-         routeId === '210'   ? 10.7 :
-         routeId === '212'   ? 11.3 : 10.9
+    center: center_coord,
+    zoom: routeId === 'BN01' ? 11.5 :
+      routeId === 'BN02' ? 12 :
+        routeId === 'BN03' ? 12.6 :
+          routeId === 'BN08' ? 11.7 :
+            routeId === 'BN27' ? 11.8 :
+              routeId === 'BN68' ? 12 :
+                routeId === 'BN86A' ? 11.3 :
+                  routeId === 'BN86B' ? 12 :
+                    routeId === '10A' ? 12.5 :
+                      routeId === '54' ? 11.7 :
+                        routeId === '203' ? 10.7 :
+                          routeId === '204' ? 11.9 :
+                            routeId === '210' ? 10.7 :
+                              routeId === '212' ? 11.3 : 10.9
   });
 }
 

@@ -5,10 +5,10 @@ import { useState } from 'react';
 
 export default function Stations(props) {
   const [chooseId, setChooseId] = useState(1);
-  const stations_go = stations.features.filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'red').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return -1; else return 0; });
-  const stations_back = stations.features.filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'blue').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return 0; else return -1; });
-  const stations_se_in = stationsSE.features.filter(feature => feature.geometry.type === 'Point In Province');
-  const stations_se_out = stationsSE.features.filter(feature => feature.geometry.type === 'Point Out Province');
+  const stations_go = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'red').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return -1; else return 0; });
+  const stations_back = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'blue').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return 0; else return -1; });
+  const stations_se_in = stations.features.filter(feature => feature.geometry.type === 'Point In Province');
+  const stations_se_out = stations.features.filter(feature => feature.geometry.type === 'Point Out Province');
 
   const sendData = (e) => {
     props.parentCallback(e);
