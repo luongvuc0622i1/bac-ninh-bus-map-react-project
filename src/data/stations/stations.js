@@ -5,6 +5,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 1,
         'type': 'Point In Province',
         'coordinates': [106.061027, 21.180761]
       },
@@ -166,12 +167,13 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 14,
         'type': 'Point In Province',
         'coordinates': [106.076359, 21.188028]
       },
       'properties': {
-        'name': 'Bến xe buýt 54',
-        'description': '',
+        'name': '(B) Thành phố Bắc Ninh',
+        'description': 'Bến xe buýt 54',
         'address': 'Đường Kinh Dương Vương',
         'district': 'Thành phố Bắc Ninh',
         'routers': [
@@ -1159,6 +1161,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 2,
         'type': 'Point In Province',
         'coordinates': [106.195603, 21.019009]
       },
@@ -1773,6 +1776,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 3,
         'type': 'Point In Province',
         'coordinates': [106.285208, 21.117838]
       },
@@ -2508,6 +2512,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 4,
         'type': 'Point In Province',
         'coordinates': [106.276207, 21.044408]
       },
@@ -2527,6 +2532,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 5,
         'type': 'Point In Province',
         'coordinates': [106.290945,21.040881]
       },
@@ -3127,6 +3133,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 6,
         'type': 'Point In Province',
         'coordinates': [106.013119, 21.030249]
       },
@@ -3145,6 +3152,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 7,
         'type': 'Point In Province',
         'coordinates': [105.967206,21.087379]
       },
@@ -3379,17 +3387,18 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'type': 'Point',
+        'pointId': 13,
+        'type': 'Point In Province',
         'coordinates': [105.971592,21.124479]
       },
       'properties': {
-        'name': 'Trung tâm Y tế Từ Sơn',
-        'description': '',
+        'name': '(B) Từ Sơn',
+        'description': 'Trung tâm Y tế Từ Sơn',
         'address': 'Đường Minh Khai',
         'district': 'Thành phố Từ Sơn',
         'routers': [
           { 'id': 14, 'name': 'BN68', 'color': 'blue' },
-          { 'id': 42, 'name': '10A' },
+          { 'id': 42, 'name': '10A', 'start': true },
           { 'id': 42, 'name': '54', 'color': 'blue' },
           { 'name': '203', 'color': 'blue' }
         ]
@@ -4061,6 +4070,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 8,
         'type': 'Point In Province',
         'coordinates': [106.143433,21.098960]
       },
@@ -4234,6 +4244,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 9,
         'type': 'Point In Province',
         'coordinates': [106.265589, 20.989173]
       },
@@ -4337,6 +4348,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 11,
         'type': 'Point In Province',
         'coordinates': [106.201397, 21.086935]
       },
@@ -4355,6 +4367,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 12,
         'type': 'Point Out Province',
         'coordinates': [105.849453,21.041309]
       },
@@ -4667,22 +4680,41 @@ export let stations = {
         ]
       }
     },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.076359,21.188028]
-    //   },
-    //   'properties': {
-    //     'name': '(B) Thành phố Bắc Ninh',
-    //     'description': '',
-    //     'address': 'Đường Kinh Dương Vương',
-    //     'district': 'Thành phố Bắc Ninh',
-    //     'routers': [
-    //       { 'id': 77, 'name': '54' }
-    //     ]
-    //   }
-    // },
+    // ---------------------------------------------------------------- Route 204: Long Bien - Thuan Thanh ------------------------------------------------------
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 15,
+        'type': 'Point Out Province',
+        'coordinates': [105.841484,20.979797]
+      },
+      'properties': {
+        'name': '(A) Giáp Bát',
+        'description': 'Bến xe Giáp Bát',
+        'address': '897 Giải Phóng',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 1, 'name': '203', 'start': true }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 16,
+        'type': 'Point Out Province',
+        'coordinates': [106.204874,21.286627]
+      },
+      'properties': {
+        'name': '(B) Bắc Giang',
+        'description': 'Bến xe khách Bắc Giang',
+        'address': '486 Xương Giang',
+        'district': 'Thành phố Bắc Giang',
+        'routers': [
+          { 'id': 99, 'name': '203', 'start': true }
+        ]
+      }
+    },
     // ---------------------------------------------------------------- Route 204: Long Bien - Thuan Thanh ------------------------------------------------------
     {
       'type': 'Feature',
@@ -4704,6 +4736,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 17,
         'type': 'Point In Province',
         'coordinates': [106.088707,21.059260]
       },
@@ -4717,10 +4750,81 @@ export let stations = {
         ]
       }
     },
+    // ---------------------------------------------------------------- Route 210: Hiep Hoa - Gia Lam ------------------------------------------------------
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 18,
+        'type': 'Point Out Province',
+        'coordinates': [105.990757,21.346510]
+      },
+      'properties': {
+        'name': '(A) Hiệp Hòa',
+        'description': 'Bến xe Hiệp Hòa',
+        'address': '',
+        'district': 'Bắc Giang',
+        'routers': [
+          { 'id': 1, 'name': '210', 'start': true }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 19,
+        'type': 'Point Out Province',
+        'coordinates': [105.878533,21.047953]
+      },
+      'properties': {
+        'name': '(B) Gia Lâm',
+        'description': 'Bến xe Gia Lâm',
+        'address': '9 Ngô Gia Khảm',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 99, 'name': '210', 'start': true }
+        ]
+      }
+    },
+    // ---------------------------------------------------------------- Route 212: My Dinh - Que Vo ------------------------------------------------------
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 20,
+        'type': 'Point Out Province',
+        'coordinates': [105.778478,21.028214]
+      },
+      'properties': {
+        'name': '(A) Mỹ Đình',
+        'description': 'Bến xe Mỹ Đình',
+        'address': '20 Phạm Hùng',
+        'district': 'Hà Nội',
+        'routers': [
+          { 'id': 1, 'name': '212', 'start': true }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 21,
+        'type': 'Point In Province',
+        'coordinates': [106.156268,21.152737]
+      },
+      'properties': {
+        'name': '(B) Quế Võ',
+        'description': 'Bến xe Quế Võ',
+        'address': 'Đường Trần Hưng Đạo',
+        'district': 'Thị xã Quế Võ',
+        'routers': [
+          { 'id': 99, 'name': '212', 'start': true }
+        ]
+      }
+    },
     // ---------------------------------------------------------------- Route 217: Hai Duong - Bac Ninh ------------------------------------------------------
     {
       'type': 'Feature',
       'geometry': {
+        'pointId': 22,
         'type': 'Point Out Province',
         'coordinates': [106.329320, 20.922313]
       },
@@ -4747,6 +4851,143 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 76, 'name': '217' }
+        ]
+      }
+    },
+    // ---------------------------------------------------------------- NODE ------------------------------------------------------
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '0108217',
+        'type': 'Line',
+        'coordinates': [106.075359,21.140047]
+      },
+      'properties': {
+        'name': 'Quốc lộ 38',
+        'description': 'Đoạn từ cầu Bồ Sơn đến cầu Hồ',
+        'routers': [
+          { 'name': 'BN01' },
+          { 'name': 'BN08' },
+          { 'name': '217' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '0127',
+        'type': 'Line',
+        'coordinates': [106.120867,21.043118]
+      },
+      'properties': {
+        'name': 'Quốc lộ 17',
+        'description': 'Đoạn từ Đông Côi đến Cống Đoan',
+        'routers': [
+          { 'name': 'BN01' },
+          { 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '0286212',
+        'type': 'Line',
+        'coordinates': [106.110034,21.163219]
+      },
+      'properties': {
+        'name': 'Quốc lộ 18',
+        'description': 'Đoạn từ Ngã Sáu đến Phố Mới',
+        'routers': [
+          { 'name': 'BN02' },
+          { 'name': 'BN86A' },
+          { 'name': 'BN86B' },
+          { 'name': '212' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '0286',
+        'type': 'Line',
+        'coordinates': [106.223544,21.123041]
+      },
+      'properties': {
+        'name': 'Quốc lộ 18',
+        'description': 'Đoạn từ Phố Mới đến cầu Bình Than',
+        'routers': [
+          { 'name': 'BN02' },
+          { 'name': 'BN86A' },
+          { 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '0886',
+        'type': 'Line',
+        'coordinates': [106.243727,21.072526]
+      },
+      'properties': {
+        'name': 'Quốc lộ 17',
+        'description': 'Đoạn từ Ngụ đến vòng xuyến cầu Bình Than',
+        'routers': [
+          { 'name': 'BN08' },
+          { 'name': 'BN86A' },
+          { 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '27204',
+        'type': 'Line',
+        'coordinates': [106.055893,21.035998]
+      },
+      'properties': {
+        'name': 'Quốc lộ 17',
+        'description': 'Đoạn từ Đông Côi đến Xuân Lâm',
+        'routers': [
+          { 'name': 'BN27' },
+          { 'name': '204' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '6854203',
+        'type': 'Line',
+        'coordinates': [106.019100,21.143711]
+      },
+      'properties': {
+        'name': 'Đường tỉnh 295',
+        'description': 'Đoạn từ Từ Sơn đến Hòa Đình',
+        'routers': [
+          { 'name': 'BN68' },
+          { 'name': '54' },
+          { 'name': '203' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'lineId': '1054210',
+        'type': 'Line',
+        'coordinates': [105.915917,21.083978]
+      },
+      'properties': {
+        'name': 'Đường tỉnh 295',
+        'description': 'Đoạn từ Cầu Đuống đến Từ Sơn',
+        'routers': [
+          { 'name': '10' },
+          { 'name': '54' },
+          { 'name': '203' },
+          { 'name': '210' }
         ]
       }
     }

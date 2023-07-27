@@ -1,5 +1,4 @@
 import '../styles/Stations.css';
-import { stationsSE } from '../data/stations/stationsSE';
 import { stations } from '../data/stations/stations';
 import { useState } from 'react';
 
@@ -43,9 +42,9 @@ export default function Stations(props) {
       </div>
       <div className='list' style={{ display: props.routeId ? "none" : "block" }} >
         {(chooseId === 1 ? stations_se_in : stations_se_out).map(feature => (
-          <div key={feature.properties.id}>
-            <button id="nav-menu-bus-stop" onClick={() => sendData(feature.properties.id)} >
-              <b>{feature.properties.name} </b><small>({feature.properties.description})</small><br/>
+          <div key={feature.geometry.pointId}>
+            <button id="nav-menu-bus-stop" onClick={() => sendData(feature.geometry.pointId)} >
+              <b>{feature.properties.name.slice(4)} </b><small>({feature.properties.description})</small><br/>
               <small>Đ/c: </small>
               <small style={{ display: feature.properties.address ? '' : 'none' }}>{feature.properties.address}, </small>
               <small style={{ display: feature.properties.ward ? '' : 'none' }}>{feature.properties.ward}, </small>

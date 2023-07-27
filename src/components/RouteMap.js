@@ -27,7 +27,6 @@ import b204Back from '../data/bus-routes/204-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
 import { stations } from '../data/stations/stations';
-import { stationsSE } from '../data/stations/stationsSE';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -164,7 +163,7 @@ function initLoadMarker(map) {
     // create a HTML element for each feature
     const elSE = document.createElement('div');
     elSE.className = 'marker-green';
-    elSE.id = feature.properties.id;
+    elSE.id = feature.geometry.pointId;
     const el = document.createElement('div');
     el.className = 'marker-init';
     const el0108217 = document.createElement('div');
@@ -185,14 +184,14 @@ function initLoadMarker(map) {
     el1054210.className = 'marker-node marker-10-54-210';
 
     // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(feature.properties.id === '0108217' ? el0108217 :
-      feature.properties.id === '0127' ? el0127 :
-        feature.properties.id === '0286212' ? el0286212 :
-          feature.properties.id === '0286' ? el0286 :
-            feature.properties.id === '0886' ? el0886 :
-              feature.properties.id === '27204' ? el27204 :
-                feature.properties.id === '6854203' ? el6854203 :
-                  feature.properties.id === '1054210' ? el1054210 :
+    new mapboxgl.Marker(feature.geometry.lineId === '0108217' ? el0108217 :
+      feature.geometry.lineId === '0127' ? el0127 :
+        feature.geometry.lineId === '0286212' ? el0286212 :
+          feature.geometry.lineId === '0286' ? el0286 :
+            feature.geometry.lineId === '0886' ? el0886 :
+              feature.geometry.lineId === '27204' ? el27204 :
+                feature.geometry.lineId === '6854203' ? el6854203 :
+                  feature.geometry.lineId === '1054210' ? el1054210 :
                     feature.geometry.type === 'Point' ? el : elSE
     ).setLngLat(feature.geometry.coordinates).setPopup(
       new mapboxgl.Popup( feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
@@ -202,59 +201,11 @@ function initLoadMarker(map) {
           + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
           + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
           + ('<small>' + feature.properties.district + '</small><br/>')
-          + ('<small>Tuyến: ' + renderRouteList(feature.properties.routers) + '</small>') +
+          + ('<small>Tuyến: ' + renderRouteList(feature.geometry.type !== 'Line' ? feature.properties.routers.filter(route => route.start) : feature.properties.routers) + '</small>') +
           '</div>'
         )
     ).addTo(map);
   }
-
-  // // add markers to map
-  // for (const feature of stationsSE.features) {
-  //   // create a HTML element for each feature
-  //   const elSE = document.createElement('div');
-  //   elSE.className = 'marker-green';
-  //   elSE.id = feature.properties.id;
-  //   const el0108217 = document.createElement('div');
-  //   el0108217.className = 'marker-node marker-01-08-217';
-  //   const el0127 = document.createElement('div');
-  //   el0127.className = 'marker-node marker-01-27';
-  //   const el0286212 = document.createElement('div');
-  //   el0286212.className = 'marker-node marker-02-86-212';
-  //   const el0286 = document.createElement('div');
-  //   el0286.className = 'marker-node marker-02-86';
-  //   const el0886 = document.createElement('div');
-  //   el0886.className = 'marker-node marker-08-86';
-  //   const el27204 = document.createElement('div');
-  //   el27204.className = 'marker-node marker-27-204';
-  //   const el6854203 = document.createElement('div');
-  //   el6854203.className = 'marker-node marker-68-54-203';
-  //   const el1054210 = document.createElement('div');
-  //   el1054210.className = 'marker-node marker-10-54-210';
-
-  //   // make a marker for each feature and add it to the map
-  //   new mapboxgl.Marker(feature.properties.id === '0108217' ? el0108217 :
-  //     feature.properties.id === '0127' ? el0127 :
-  //       feature.properties.id === '0286212' ? el0286212 :
-  //         feature.properties.id === '0286' ? el0286 :
-  //           feature.properties.id === '0886' ? el0886 :
-  //             feature.properties.id === '27204' ? el27204 :
-  //               feature.properties.id === '6854203' ? el6854203 :
-  //                 feature.properties.id === '1054210' ? el1054210 :
-  //                   elSE
-  //   ).setLngLat(feature.geometry.coordinates).setPopup(
-  //     new mapboxgl.Popup({ offset: 25 }) // add popups
-  //       .setHTML(
-  //         `<div>`
-  //         + (`<b>` + feature.properties.name + `</b></br>`)
-  //         + (feature.properties.description ? (`<small>` + feature.properties.description + `</small></br>`) : '')
-  //         + (feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
-  //         + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-  //         + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : '')
-  //         + (`<small>Tuyến: ` + feature.properties.routers + `</small>`) +
-  //         `</div>`
-  //       )
-  //   ).addTo(map);
-  // };
 }
 
 function clearInitPage(map) {
@@ -339,7 +290,7 @@ function loadMarker(map, routeId) {
   const elements = document.getElementsByClassName('mapboxgl-marker'); //clear all old markers
   while (elements.length > 0) elements[0].remove();
   // add markers to map
-  const features = stations.features.filter(feature => feature.properties.routers.some(route => route.name === routeId));
+  const features = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === routeId));
   for (const feature of features) {
     const matchId = feature.properties.routers.filter(route => route.name === routeId)[0].id;
     const matchColor = feature.properties.routers.filter(route => route.name === routeId)[0].color;
