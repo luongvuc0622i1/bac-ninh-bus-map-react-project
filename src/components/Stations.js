@@ -4,8 +4,9 @@ import { stations } from '../data/stations';
 
 export default function Stations(props) {
   const [chooseId, setChooseId] = useState(1);
-  const stations_go = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'red').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return -1; else return 0; });
-  const stations_back = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'blue').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return 0; else return -1; });
+  let features = [];
+  if (chooseId === 1) features = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'red').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return -1; else return 0; });
+  else features = stations.features.filter(feature => feature.geometry.type !== 'Line').filter(feature => feature.properties.routers.some(route => route.name === props.routeId)).filter(feature => feature.properties.routers.filter(route => route.name === props.routeId)[0].color !== 'blue').sort((firstEl, secondEl) => { if (secondEl.properties.routers.filter(route => route.name === props.routeId)[0].id > firstEl.properties.routers.filter(route => route.name === props.routeId)[0].id) return 0; else return -1; });
   const stations_se_in = stations.features.filter(feature => feature.geometry.type === 'Point In Province');
   const stations_se_out = stations.features.filter(feature => feature.geometry.type === 'Point Out Province');
 
@@ -26,12 +27,11 @@ export default function Stations(props) {
         <button className='button back' style={{ backgroundColor: chooseId === 2 ? "#4CAF50" : "#3e8e41", display: props.routeId ? "none" : "block" }} onClick={handleChoose} value="2" >Bến xe ngoại tỉnh</button>
       </div>
       <div className='list' style={{ display: props.routeId ? "block" : "none" }} >
-        {(chooseId === 1 ? stations_go : stations_back).map(feature => (
+        {features.map(feature => (
           <div key={feature.properties.routers.filter(route => route.name === props.routeId)[0].id}>
             <button id="nav-menu-bus-stop" onClick={() => sendData(feature.properties.routers.filter(route => route.name === props.routeId)[0].id)} >
-              <b style={{ display: feature.properties.name ? '' : 'none' }}>{feature.properties.name} </b>
-              <b style={{ display: feature.properties.name ? 'none' : '' }}>{feature.properties.address} </b>
-              <small  style={{ display: feature.properties.description ? '' : 'none' }}>({feature.properties.description})</small><br/>
+              {feature.properties.name ? (feature !== features[0] && feature !== features[features.length - 1] && (feature.properties.name.includes('(A)') || feature.properties.name.includes('(B)')) ? (<b>{feature.properties.description} </b>) : (<b>{feature.properties.name} </b>)) : (<b>{feature.properties.address} </b>)}
+              {!feature.properties.description || (feature !== features[0] && feature !== features[features.length - 1] && (feature.properties.name.includes('(A)') || feature.properties.name.includes('(B)'))) ? '' : (<small>({feature.properties.description})</small>)}<br/>
               <small>Đ/c: </small>
               <small style={{ display: feature.properties.address ? '' : 'none' }}>{feature.properties.address}, </small>
               <small style={{ display: feature.properties.ward ? '' : 'none' }}>{feature.properties.ward}, </small>

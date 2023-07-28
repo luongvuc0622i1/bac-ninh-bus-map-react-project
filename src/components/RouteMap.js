@@ -47,21 +47,17 @@ export default class RouteMap extends React.Component {
     initLoadMarker(this.map);
   };
 
-  checkMarker() {
-    if (!this.props.routeId) {
-      this.check = this.props.markerId;
-      return this.props.markerId;
-    } else if (this.check !== this.props.markerId) {
-        this.check = this.props.markerId;
-        return this.props.markerId;
-    } else {
-      return 0;
+  checkMarker(routeId, markerId) {
+    if (routeId && this.check === markerId) return 0;
+    else {
+      this.check = markerId;
+      return markerId;
     }
   }
 
   componentDidUpdate() {
     // check marker id and markerId = null in each new route tab
-    const checkedMarkerId = this.checkMarker();
+    const checkedMarkerId = this.checkMarker(this.props.routeId, this.props.markerId);
 
     if (this.props.routeId) {
       //first change routeId => clear all init route
@@ -124,7 +120,7 @@ function initLoadLine(map) {
 
 function addSourceLayer(map, idSoureLayer, coordinates, color) {
   map.on('load', () => { //Get initial geojson data from Calgary Open Data
-    let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
+    let geojson = getGeojson(coordinates);
     try {
       map.addSource(idSoureLayer, {
         type: 'geojson',
@@ -146,6 +142,27 @@ function addSourceLayer(map, idSoureLayer, coordinates, color) {
       });
     } catch (error) { }
   });
+}
+
+function getGeojson(coordinates) {
+  return {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": coordinates
+        }
+      }
+    ],
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+      }
+    }
+  };
 }
 
 function initLoadMarker(map) {
@@ -182,20 +199,23 @@ function initLoadMarker(map) {
       routes = feature.properties.routers;
     }
 
+    let offset = '';
+    if (feature.geometry.type !== 'Point') offset = 25;
+
     // make a marker for each feature and add it to the map
-    createMarker(map, el, feature, routes);
+    createMarker(map, el, feature, routes, offset);
   }
 }
 
-function createMarker(map, el, feature, routes) {
+function createMarker(map, el, feature, routes, offset) {
   new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
-    new mapboxgl.Popup(feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
+    new mapboxgl.Popup({ offset: offset }) // add popups
       .setHTML(
         '<div>'
         + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
         + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
         + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-        + ('<small>' + feature.properties.district + '</small><br/>')
+        + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : ('<small>' + feature.properties.description + '</small><br/>'))
         + ('<small>Tuyến: ' + renderRouteList(routes) + '</small>') +
         '</div>'
       )
@@ -283,7 +303,7 @@ function setDataSoureById(map, routeId) {
 }
 
 function setDataSoure(map, idSoureLayer, coordinates, routeId) {
-  let geojson = { "type": "FeatureCollection", "features": [{ "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": coordinates } }], "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } } };
+  let geojson = getGeojson(coordinates);
   map.getSource(idSoureLayer).setData(geojson);
   fly(map, geojson, routeId);
 }
@@ -330,7 +350,7 @@ function loadMarker(map, routeId) {
     }
 
     // make a marker for each feature and add it to the map
-    createMarker(map, el, feature, feature.properties.routers);
+    createMarker(map, el, feature, feature.properties.routers, 25);
   };
 }
 

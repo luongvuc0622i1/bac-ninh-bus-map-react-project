@@ -1791,6 +1791,25 @@ export let stations = {
         ]
       }
     },
+    // ---------------------------------------------------------------- Route BN03: Bac Ninh - Yen Phong ------------------------------------------------------
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 4,
+        'type': 'Point In Province',
+        'coordinates': [105.917504,21.199791]
+      },
+      'properties': {
+        'name': '(B) Yên Phong',
+        'description': 'Gần cầu Đò Lo',
+        'address': 'Đường tỉnh 286',
+        'ward': 'Hòa Tiến',
+        'district': 'Yên Phong',
+        'routers': [
+          { 'id': 66, 'name': 'BN03', 'start': true }
+        ]
+      }
+    },
     // ---------------------------------------------------------------- Route BN08: Bac Ninh - Kenh Vang ------------------------------------------------------
     {
       'type': 'Feature',
@@ -2512,7 +2531,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 4,
+        'pointId': 5,
         'type': 'Point In Province',
         'coordinates': [106.276207, 21.044408]
       },
@@ -2532,7 +2551,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 5,
+        'pointId': 6,
         'type': 'Point In Province',
         'coordinates': [106.290945,21.040881]
       },
@@ -3133,7 +3152,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 6,
+        'pointId': 7,
         'type': 'Point In Province',
         'coordinates': [106.013119, 21.030249]
       },
@@ -3152,7 +3171,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 7,
+        'pointId': 8,
         'type': 'Point In Province',
         'coordinates': [105.967206,21.087379]
       },
@@ -4070,7 +4089,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 8,
+        'pointId': 9,
         'type': 'Point In Province',
         'coordinates': [106.143433,21.098960]
       },
@@ -4244,7 +4263,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 9,
+        'pointId': 10,
         'type': 'Point In Province',
         'coordinates': [106.265589, 20.989173]
       },
@@ -4680,7 +4699,7 @@ export let stations = {
         ]
       }
     },
-    // ---------------------------------------------------------------- Route 204: Long Bien - Thuan Thanh ------------------------------------------------------
+    // ---------------------------------------------------------------- Route 203: Giap Bat - Bac Giang ------------------------------------------------------
     {
       'type': 'Feature',
       'geometry': {
