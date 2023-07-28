@@ -32,6 +32,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxN
 
 export default class RouteMap extends React.Component {
   first = true;
+  check = '';
 
   componentDidMount() {
     this.map = new mapboxgl.Map({
@@ -46,7 +47,22 @@ export default class RouteMap extends React.Component {
     initLoadMarker(this.map);
   };
 
+  checkMarker() {
+    if (!this.props.routeId) {
+      this.check = this.props.markerId;
+      return this.props.markerId;
+    } else if (this.check !== this.props.markerId) {
+        this.check = this.props.markerId;
+        return this.props.markerId;
+    } else {
+      return 0;
+    }
+  }
+
   componentDidUpdate() {
+    // check marker id and markerId = null in each new route tab
+    const checkedMarkerId = this.checkMarker();
+
     if (this.props.routeId) {
       //first change routeId => clear all init route
       if (this.first) {
@@ -65,7 +81,7 @@ export default class RouteMap extends React.Component {
       initLoadMarker(this.map);
     }
     //event click list bus stop in menu => map
-    clickButtonToHere(this.props.markerId);
+    clickButtonToHere(checkedMarkerId);
   }
 
   render() {
@@ -158,7 +174,7 @@ function initLoadMarker(map) {
       el.className = 'marker-green';
       el.id = feature.geometry.pointId;
     }
-    
+
     let routes = feature.properties.routers;
     if (feature.geometry.type === 'Point In Province' || feature.geometry.type === 'Point Out Province') {
       routes = feature.properties.routers.filter(route => route.start);
@@ -173,7 +189,7 @@ function initLoadMarker(map) {
 
 function createMarker(map, el, feature, routes) {
   new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(
-    new mapboxgl.Popup( feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
+    new mapboxgl.Popup(feature.geometry.type === 'Point' ? '' : { offset: 25 }) // add popups
       .setHTML(
         '<div>'
         + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
@@ -277,20 +293,20 @@ function fly(map, geojson, routeId) {
   let center_coord = turf_center.geometry.coordinates;
   map.flyTo({
     center: center_coord,
-    zoom: routeId === 'BN01' ? 11.5 :
-      routeId === 'BN02' ? 12 :
-        routeId === 'BN03' ? 12.6 :
-          routeId === 'BN08' ? 11.7 :
-            routeId === 'BN27' ? 11.8 :
-              routeId === 'BN68' ? 12 :
-                routeId === 'BN86A' ? 11.3 :
-                  routeId === 'BN86B' ? 12 :
-                    routeId === '10A' ? 12.5 :
-                      routeId === '54' ? 11.7 :
-                        routeId === '203' ? 10.7 :
-                          routeId === '204' ? 11.9 :
-                            routeId === '210' ? 10.7 :
-                              routeId === '212' ? 11.3 : 10.9
+    zoom: routeId === 'BN01' ? 11 :
+      routeId === 'BN02' ? 11.5 :
+        routeId === 'BN03' ? 12.1 :
+          routeId === 'BN08' ? 11.2 :
+            routeId === 'BN27' ? 11.3 :
+              routeId === 'BN68' ? 11.5 :
+                routeId === 'BN86A' ? 10.8 :
+                  routeId === 'BN86B' ? 11.5 :
+                    routeId === '10A' ? 12 :
+                      routeId === '54' ? 11.2 :
+                        routeId === '203' ? 10.2 :
+                          routeId === '204' ? 11.4 :
+                            routeId === '210' ? 10.2 :
+                              routeId === '212' ? 10.8 : 10.4
   });
 }
 
