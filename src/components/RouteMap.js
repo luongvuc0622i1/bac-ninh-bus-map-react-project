@@ -216,10 +216,25 @@ function createMarker(map, el, feature, routes, offset) {
         + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
         + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
         + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : ('<small>' + feature.properties.description + '</small><br/>'))
-        + ('<small>Tuyến: ' + renderRouteList(routes) + '</small>') +
+        + ('<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>')
+        + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
         '</div>'
       )
   ).addTo(map);
+}
+
+function renderLink(coordinates) {
+  let longitude = change(coordinates[0]) + 'E';
+  let latitude = change(coordinates[1]) + 'N';
+  let url = 'https://www.google.com/maps/place/' + latitude + '+' + longitude;
+  return ('<a href="' + url + '" target="_blank" >Chỉ đường với Google Map</a>');
+}
+
+function change(number) {
+  let hours = number - (number % 1);
+  let minutes = (number % 1)*60 - ((number % 1)*60 % 1);
+  let seconds = ((number % 1)*60 % 1)*60;
+  return hours + "°" + minutes + "'" + seconds + "''";
 }
 
 function renderRouteList(routes) {

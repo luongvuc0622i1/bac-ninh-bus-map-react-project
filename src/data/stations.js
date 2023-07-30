@@ -2147,11 +2147,11 @@ export let stations = {
       'properties': {
         'name': '',
         'description': 'Gần Trung tâm Y tế Gia Bình',
-        'address': '56-58 Bình Than',
+        'address': '54-56 Bình Than',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 55, 'name': 'BN08' }
+          { 'id': 55, 'name': 'BN08', 'color': 'green' }
         ]
       }
     },
@@ -2159,16 +2159,50 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.186004, 21.054874]
+        'coordinates': [106.180450,21.053850]
+      },
+      'properties': {
+        'name': '',
+        'description': '',
+        'address': '39-41 Bình Than',
+        'ward': 'Thị trấn Gia Bình',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 56, 'name': 'BN08', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.186345,21.054941]
       },
       'properties': {
         'name': 'Nhà văn hóa thôn Đông Bình',
+        'description': '',
+        'address': '230 Bình Than',
+        'ward': 'Thị trấn Gia Bình',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 57, 'name': 'BN08', 'color': 'green' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.185850,21.054830]
+      },
+      'properties': {
+        'name': '',
         'description': '',
         'address': '257-259 Bình Than',
         'ward': 'Thị trấn Gia Bình',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 56, 'name': 'BN08' }
+          { 'id': 58, 'name': 'BN08', 'color': 'red' }
         ]
       }
     },
@@ -2185,7 +2219,7 @@ export let stations = {
         'ward': 'Xuân Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 57, 'name': 'BN08' }
+          { 'id': 59, 'name': 'BN08' }
         ]
       }
     },
@@ -2202,7 +2236,7 @@ export let stations = {
         'ward': 'Xuân Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 58, 'name': 'BN08' }
+          { 'id': 60, 'name': 'BN08' }
         ]
       }
     },
@@ -2219,7 +2253,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 59, 'name': 'BN08' }
+          { 'id': 61, 'name': 'BN08' }
         ]
       }
     },
@@ -2236,7 +2270,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 60, 'name': 'BN08' }
+          { 'id': 62, 'name': 'BN08' }
         ]
       }
     },
@@ -2253,7 +2287,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 61, 'name': 'BN08' },
+          { 'id': 63, 'name': 'BN08' },
           { 'id': 39, 'name': 'BN86A' }
         ]
       }
@@ -2271,7 +2305,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 62, 'name': 'BN08' },
+          { 'id': 64, 'name': 'BN08' },
           { 'id': 38, 'name': 'BN86A' },
           { 'id': 38, 'name': 'BN86B' }
         ]
@@ -2290,7 +2324,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 63, 'name': 'BN08' },
+          { 'id': 65, 'name': 'BN08' },
           { 'id': 37, 'name': 'BN86A' },
           { 'id': 37, 'name': 'BN86B' }
         ]
@@ -2309,7 +2343,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 64, 'name': 'BN08' },
+          { 'id': 66, 'name': 'BN08' },
           { 'id': 36, 'name': 'BN86A' },
           { 'id': 36, 'name': 'BN86B' }
         ]
@@ -2328,7 +2362,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 65, 'name': 'BN08' },
+          { 'id': 67, 'name': 'BN08' },
           { 'id': 35, 'name': 'BN86A' },
           { 'id': 35, 'name': 'BN86B' }
         ]
@@ -2347,7 +2381,7 @@ export let stations = {
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 66, 'name': 'BN08' },
+          { 'id': 68, 'name': 'BN08' },
           { 'id': 34, 'name': 'BN86A' },
           { 'id': 34, 'name': 'BN86B' }
         ]
@@ -2366,7 +2400,7 @@ export let stations = {
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 67, 'name': 'BN08' },
+          { 'id': 69, 'name': 'BN08' },
           { 'id': 33, 'name': 'BN86A' },
           { 'id': 33, 'name': 'BN86B' }
         ]
@@ -2385,7 +2419,7 @@ export let stations = {
         'ward': 'Bình Dương',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 68, 'name': 'BN08' },
+          { 'id': 70, 'name': 'BN08' },
           { 'id': 32, 'name': 'BN86A' },
           { 'id': 32, 'name': 'BN86B' }
         ]
@@ -2404,7 +2438,41 @@ export let stations = {
         'ward': 'Vạn Ninh',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 69, 'name': 'BN08' }
+          { 'id': 71, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.275678,21.087120]
+      },
+      'properties': {
+        'name': 'Bưu điện văn hóa xã Cao Đức',
+        'description': 'Thôn Văn Than',
+        'address': 'Đường tỉnh 282',
+        'ward': 'Cao Đức',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 72, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.282167,21.086989]
+      },
+      'properties': {
+        'name': 'Dốc Than',
+        'description': '',
+        'address': 'Đường tỉnh 282',
+        'ward': 'Cao Đức',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 73, 'name': 'BN08' }
         ]
       }
     },
@@ -2421,74 +2489,6 @@ export let stations = {
         'ward': 'Cao Đức',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 70, 'name': 'BN08' }
-        ]
-      }
-    },
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [106.285704,21.076562]
-      },
-      'properties': {
-        'name': 'Thôn Kênh Phố',
-        'description': '',
-        'address': 'Đê Hữu Thái Bình',
-        'ward': 'Cao Đức',
-        'district': 'Gia Bình',
-        'routers': [
-          { 'id': 71, 'name': 'BN08' }
-        ]
-      }
-    },
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [106.296750,21.070345]
-      },
-      'properties': {
-        'name': 'Thôn Mỹ Lộc',
-        'description': '',
-        'address': 'Đê Hữu Thái Bình',
-        'ward': 'Cao Đức',
-        'district': 'Gia Bình',
-        'routers': [
-          { 'id': 72, 'name': 'BN08' }
-        ]
-      }
-    },
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [106.302924,21.058555]
-      },
-      'properties': {
-        'name': 'Điểm văn hóa Cáp Thủy',
-        'description': '',
-        'address': 'Đê Hữu Thái Bình',
-        'ward': 'An Thịnh',
-        'district': 'Lương Tài',
-        'routers': [
-          { 'id': 73, 'name': 'BN08' }
-        ]
-      }
-    },
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [106.301127,21.051964]
-      },
-      'properties': {
-        'name': 'Thôn Cáp Hạ',
-        'description': '',
-        'address': 'Đê Hữu Thái Bình',
-        'ward': 'Trung Kênh',
-        'district': 'Lương Tài',
-        'routers': [
           { 'id': 74, 'name': 'BN08' }
         ]
       }
@@ -2497,53 +2497,154 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.292015,21.042778]
+        'coordinates': [106.284963,21.077403]
       },
       'properties': {
-        'name': 'Trường THPT Lương Tài số 2',
+        'name': 'Điếm canh đê Kênh Phố',
         'description': '',
         'address': 'Đê Hữu Thái Bình',
-        'ward': 'Trung Kênh',
-        'district': 'Lương Tài',
+        'ward': 'Cao Đức',
+        'district': 'Gia Bình',
         'routers': [
           { 'id': 75, 'name': 'BN08' }
         ]
       }
     },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.290945,21.040881]
-    //   },
-    //   'properties': {
-    //     'name': '(A) Kênh Vàng',
-    //     'description': '',
-    //     'address': 'Đường tỉnh 281',
-    //     'ward': 'Trung Kênh',
-    //     'district': 'Lương Tài',
-    //     'routers': [
-    //       { 'id': 76, 'name': 'BN08' },
-    //       { 'id': 1, 'name': 'BN27' }
-    //     ]
-    //   }
-    // },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.293038,21.072198]
+      },
+      'properties': {
+        'name': 'Dốc Mỹ Lộc',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Cao Đức',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 76, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.296750,21.070375]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Mỹ Lộc',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Cao Đức',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 77, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.302793,21.065090]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Cáp Thủy',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'An Thịnh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 78, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.302884,21.058555]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Cáp Thượng',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'An Thịnh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 79, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.301676,21.053798]
+      },
+      'properties': {
+        'name': 'Nhà máy nước sạch',
+        'description': '',
+        'address': 'Thôn Cáp Hạ',
+        'ward': 'Trung Kênh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 80, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.299043,21.049666]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Cáp Hạ',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Trung Kênh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 81, 'name': 'BN08' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.295168,21.045818]
+      },
+      'properties': {
+        'name': 'Thôn Cáp Trại',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Trung Kênh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 82, 'name': 'BN08' }
+        ]
+      }
+    },
     {
       'type': 'Feature',
       'geometry': {
         'pointId': 5,
         'type': 'Point In Province',
-        'coordinates': [106.276207, 21.044408]
+        'coordinates': [106.290945,21.040881]
       },
       'properties': {
         'name': '(B) Kênh Vàng',
-        'description': 'Gần cầu Đò',
+        'description': 'Dốc Kênh Vàng',
         'address': 'Đường tỉnh 281',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 77, 'name': 'BN08', 'start': true },
-          { 'id': 2, 'name': 'BN27' }
+          { 'id': 83, 'name': 'BN08', 'start': true },
+          { 'id': 1, 'name': 'BN27', 'start': true }
         ]
       }
     },
@@ -2551,40 +2652,20 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 6,
-        'type': 'Point In Province',
-        'coordinates': [106.290945,21.040881]
+        'type': 'Point',
+        'coordinates': [106.276207, 21.044408]
       },
       'properties': {
-        'name': '(A) Kênh Vàng',
-        'description': 'Dốc Kênh Vàng',
+        'name': 'Cầu Đò',
+        'description': '',
         'address': 'Đường tỉnh 281',
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 76, 'name': 'BN08' },
-          { 'id': 1, 'name': 'BN27', 'start': true }
+          { 'id': 2, 'name': 'BN27' }
         ]
       }
     },
-    // {
-    //   'type': 'Feature',
-    //   'geometry': {
-    //     'type': 'Point',
-    //     'coordinates': [106.276207, 21.044408]
-    //   },
-    //   'properties': {
-    //     'name': 'Cầu Đò',
-    //     'description': '',
-    //     'address': 'Đường tỉnh 281',
-    //     'ward': 'Trung Kênh',
-    //     'district': 'Lương Tài',
-    //     'routers': [
-    //       { 'id': 77, 'name': 'BN08' },
-    //       { 'id': 2, 'name': 'BN27' }
-    //     ]
-    //   }
-    // },
     {
       'type': 'Feature',
       'geometry': {
