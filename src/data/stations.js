@@ -167,7 +167,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 14,
+        'pointId': 13,
         'type': 'Point In Province',
         'coordinates': [106.076359, 21.188028]
       },
@@ -2288,7 +2288,7 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 63, 'name': 'BN08' },
-          { 'id': 39, 'name': 'BN86A' }
+          { 'id': 40, 'name': 'BN86A' }
         ]
       }
     },
@@ -2306,8 +2306,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 64, 'name': 'BN08' },
-          { 'id': 38, 'name': 'BN86A' },
-          { 'id': 38, 'name': 'BN86B' }
+          { 'id': 39, 'name': 'BN86A' },
+          { 'id': 39, 'name': 'BN86B' }
         ]
       }
     },
@@ -2325,8 +2325,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 65, 'name': 'BN08' },
-          { 'id': 37, 'name': 'BN86A' },
-          { 'id': 37, 'name': 'BN86B' }
+          { 'id': 38, 'name': 'BN86A' },
+          { 'id': 38, 'name': 'BN86B' }
         ]
       }
     },
@@ -2344,8 +2344,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 66, 'name': 'BN08' },
-          { 'id': 36, 'name': 'BN86A' },
-          { 'id': 36, 'name': 'BN86B' }
+          { 'id': 37, 'name': 'BN86A' },
+          { 'id': 37, 'name': 'BN86B' }
         ]
       }
     },
@@ -2363,8 +2363,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 67, 'name': 'BN08' },
-          { 'id': 35, 'name': 'BN86A' },
-          { 'id': 35, 'name': 'BN86B' }
+          { 'id': 36, 'name': 'BN86A' },
+          { 'id': 36, 'name': 'BN86B' }
         ]
       }
     },
@@ -2382,8 +2382,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 68, 'name': 'BN08' },
-          { 'id': 34, 'name': 'BN86A' },
-          { 'id': 34, 'name': 'BN86B' }
+          { 'id': 35, 'name': 'BN86A' },
+          { 'id': 35, 'name': 'BN86B' }
         ]
       }
     },
@@ -2401,8 +2401,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 69, 'name': 'BN08' },
-          { 'id': 33, 'name': 'BN86A' },
-          { 'id': 33, 'name': 'BN86B' }
+          { 'id': 34, 'name': 'BN86A' },
+          { 'id': 34, 'name': 'BN86B' }
         ]
       }
     },
@@ -2420,8 +2420,8 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 70, 'name': 'BN08' },
-          { 'id': 32, 'name': 'BN86A' },
-          { 'id': 32, 'name': 'BN86B' }
+          { 'id': 33, 'name': 'BN86A' },
+          { 'id': 33, 'name': 'BN86B' }
         ]
       }
     },
@@ -3233,7 +3233,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 7,
+        'pointId': 6,
         'type': 'Point In Province',
         'coordinates': [106.013119, 21.030249]
       },
@@ -3252,7 +3252,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 8,
+        'pointId': 7,
         'type': 'Point In Province',
         'coordinates': [105.967206,21.087379]
       },
@@ -3487,7 +3487,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 13,
+        'pointId': 12,
         'type': 'Point In Province',
         'coordinates': [105.971592,21.124479]
       },
@@ -4170,7 +4170,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 9,
+        'pointId': 8,
         'type': 'Point In Province',
         'coordinates': [106.143433,21.098960]
       },
@@ -4208,7 +4208,7 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.251166, 21.098230]
+        'coordinates': [106.250915,21.098596]
       },
       'properties': {
         'name': 'KCN Hanaka Gia Bình II',
@@ -4226,6 +4226,24 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
+        'coordinates': [106.256700,21.089606]
+      },
+      'properties': {
+        'name': 'Thôn Cao Thọ',
+        'description': '',
+        'address': 'Quốc lộ 17',
+        'ward': 'Vạn Ninh',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 32, 'name': 'BN86A' },
+          { 'id': 32, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
         'coordinates': [106.228167, 21.060662]
       },
       'properties': {
@@ -4235,7 +4253,7 @@ export let stations = {
         'ward': 'Phú Hòa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 40, 'name': 'BN86A' }
+          { 'id': 41, 'name': 'BN86A' }
         ]
       }
     },
@@ -4252,7 +4270,7 @@ export let stations = {
         'ward': 'Phú Hòa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 41, 'name': 'BN86A' }
+          { 'id': 42, 'name': 'BN86A' }
         ]
       }
     },
@@ -4269,7 +4287,7 @@ export let stations = {
         'ward': 'Phú Hòa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 42, 'name': 'BN86A' }
+          { 'id': 43, 'name': 'BN86A' }
         ]
       }
     },
@@ -4286,7 +4304,7 @@ export let stations = {
         'ward': 'Phú Hòa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 43, 'name': 'BN86A' }
+          { 'id': 44, 'name': 'BN86A' }
         ]
       }
     },
@@ -4303,7 +4321,7 @@ export let stations = {
         'ward': 'Trung Chính',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 44, 'name': 'BN86A' }
+          { 'id': 45, 'name': 'BN86A' }
         ]
       }
     },
@@ -4320,7 +4338,7 @@ export let stations = {
         'ward': 'Trung Chính',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 45, 'name': 'BN86A' }
+          { 'id': 46, 'name': 'BN86A' }
         ]
       }
     },
@@ -4337,7 +4355,7 @@ export let stations = {
         'ward': 'Trừng Xá',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 46, 'name': 'BN86A' }
+          { 'id': 47, 'name': 'BN86A' }
         ]
       }
     },
@@ -4354,7 +4372,7 @@ export let stations = {
         'ward': 'Trừng Xá',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 47, 'name': 'BN86A' }
+          { 'id': 48, 'name': 'BN86A' }
         ]
       }
     },
@@ -4371,7 +4389,7 @@ export let stations = {
         'ward': 'Mỹ Hương',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 48, 'name': 'BN86A' }
+          { 'id': 49, 'name': 'BN86A' }
         ]
       }
     },
@@ -4388,7 +4406,7 @@ export let stations = {
         'ward': 'Lai Hạ',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 49, 'name': 'BN86A' }
+          { 'id': 50, 'name': 'BN86A' }
         ]
       }
     },
@@ -4405,7 +4423,7 @@ export let stations = {
         'ward': 'Lai Hạ',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 50, 'name': 'BN86A' }
+          { 'id': 51, 'name': 'BN86A' }
         ]
       }
     },
@@ -4422,7 +4440,7 @@ export let stations = {
         'ward': 'Minh Tân',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 51, 'name': 'BN86A' }
+          { 'id': 52, 'name': 'BN86A' }
         ]
       }
     },
@@ -4439,14 +4457,14 @@ export let stations = {
         'ward': 'Minh Tân',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 52, 'name': 'BN86A' }
+          { 'id': 53, 'name': 'BN86A' }
         ]
       }
     },
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 10,
+        'pointId': 9,
         'type': 'Point In Province',
         'coordinates': [106.265589, 20.989173]
       },
@@ -4457,7 +4475,7 @@ export let stations = {
         'ward': 'Minh Tân',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 53, 'name': 'BN86A', 'start': true }
+          { 'id': 54, 'name': 'BN86A', 'start': true }
         ]
       }
     },
@@ -4466,16 +4484,33 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.230890, 21.066199]
+        'coordinates': [106.230599,21.065100]
       },
       'properties': {
-        'name': 'UBND Thị trấn Nhân Thắng',
+        'name': 'Trường THPT Gia Bình Số 1',
         'description': 'Gần chợ Ngụ',
         'address': 'Đường tỉnh 285',
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 39, 'name': 'BN86B' }
+          { 'id': 40, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.230826,21.070205]
+      },
+      'properties': {
+        'name': 'Nhà văn hóa thôn Nhân Hữu',
+        'description': '',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Thị trấn Nhân Thắng',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 41, 'name': 'BN86B' }
         ]
       }
     },
@@ -4492,7 +4527,7 @@ export let stations = {
         'ward': 'Thị trấn Nhân Thắng',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 40, 'name': 'BN86B' }
+          { 'id': 42, 'name': 'BN86B' }
         ]
       }
     },
@@ -4509,7 +4544,7 @@ export let stations = {
         'ward': 'Thái Bảo',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 41, 'name': 'BN86B' }
+          { 'id': 43, 'name': 'BN86B' }
         ]
       }
     },
@@ -4517,7 +4552,7 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.222924, 21.082267]
+        'coordinates': [106.222924,21.082267]
       },
       'properties': {
         'name': 'Nhà văn hóa thôn Phương Triện',
@@ -4526,7 +4561,7 @@ export let stations = {
         'ward': 'Đại Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 42, 'name': 'BN86B' }
+          { 'id': 44, 'name': 'BN86B' }
         ]
       }
     },
@@ -4534,7 +4569,24 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.210212, 21.089461]
+        'coordinates': [106.212485,21.087637]
+      },
+      'properties': {
+        'name': 'Trường Tiểu học Đại Lai',
+        'description': '',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Đại Lai',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 45, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.209620,21.089018]
       },
       'properties': {
         'name': 'UBND xã Đại Lai',
@@ -4543,25 +4595,42 @@ export let stations = {
         'ward': 'Đại Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 43, 'name': 'BN86B' }
+          { 'id': 46, 'name': 'BN86B' }
         ]
       }
     },
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 11,
+        'type': 'Point',
+        'coordinates': [106.208036,21.088631]
+      },
+      'properties': {
+        'name': 'Chùa Ngọc Hoàng',
+        'description': '',
+        'address': 'Thôn Đại Lai',
+        'ward': 'Đại Lai',
+        'district': 'Gia Bình',
+        'routers': [
+          { 'id': 47, 'name': 'BN86B' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'pointId': 10,
         'type': 'Point In Province',
         'coordinates': [106.201397, 21.086935]
       },
       'properties': {
         'name': '(B) Đại Lai',
         'description': 'Khu Di tích Lệ Chi Viên',
-        'address': 'Đường tỉnh 285',
+        'address': 'Thôn Đại Lai',
         'ward': 'Đại Lai',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 44, 'name': 'BN86B', 'start': true }
+          { 'id': 48, 'name': 'BN86B', 'start': true }
         ]
       }
     },
@@ -4569,7 +4638,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 12,
+        'pointId': 11,
         'type': 'Point Out Province',
         'coordinates': [105.849453,21.041309]
       },
@@ -4886,7 +4955,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 15,
+        'pointId': 14,
         'type': 'Point Out Province',
         'coordinates': [105.841484,20.979797]
       },
@@ -4903,7 +4972,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 16,
+        'pointId': 15,
         'type': 'Point Out Province',
         'coordinates': [106.204874,21.286627]
       },
@@ -4938,7 +5007,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 17,
+        'pointId': 16,
         'type': 'Point In Province',
         'coordinates': [106.088707,21.059260]
       },
@@ -4956,7 +5025,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 18,
+        'pointId': 17,
         'type': 'Point Out Province',
         'coordinates': [105.990757,21.346510]
       },
@@ -4973,7 +5042,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 19,
+        'pointId': 18,
         'type': 'Point Out Province',
         'coordinates': [105.878533,21.047953]
       },
@@ -4991,7 +5060,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 20,
+        'pointId': 19,
         'type': 'Point Out Province',
         'coordinates': [105.778478,21.028214]
       },
@@ -5008,7 +5077,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 21,
+        'pointId': 20,
         'type': 'Point In Province',
         'coordinates': [106.156268,21.152737]
       },
@@ -5026,7 +5095,7 @@ export let stations = {
     {
       'type': 'Feature',
       'geometry': {
-        'pointId': 22,
+        'pointId': 21,
         'type': 'Point Out Province',
         'coordinates': [106.329320, 20.922313]
       },
