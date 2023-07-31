@@ -4260,11 +4260,11 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.228679, 21.036264]
+        'coordinates': [106.228511,21.046117]
       },
       'properties': {
-        'name': 'Cầu Tĩnh Xá',
-        'description': 'Gần Cầu Phương',
+        'name': 'Trường THCS Phú Hòa',
+        'description': '',
         'address': 'Đường tỉnh 285',
         'ward': 'Phú Hòa',
         'district': 'Lương Tài',
@@ -4277,13 +4277,13 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.228894, 21.027593]
+        'coordinates': [106.228679, 21.036264]
       },
       'properties': {
-        'name': 'Cầu Táo Đôi',
-        'description': '',
+        'name': 'Cầu Tĩnh Xá',
+        'description': 'Gần Cầu Phương',
         'address': 'Đường tỉnh 285',
-        'ward': 'Trung Chính',
+        'ward': 'Phú Hòa',
         'district': 'Lương Tài',
         'routers': [
           { 'id': 43, 'name': 'BN86A' }
@@ -4294,13 +4294,13 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.255464, 21.024511]
+        'coordinates': [106.228934, 21.027593]
       },
       'properties': {
-        'name': 'Thôn An Mỹ',
+        'name': 'Cầu Táo Đôi',
         'description': '',
         'address': 'Đường tỉnh 285',
-        'ward': 'Mỹ Hương',
+        'ward': 'Trung Chính',
         'district': 'Lương Tài',
         'routers': [
           { 'id': 44, 'name': 'BN86A' }
@@ -4311,11 +4311,79 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.265800, 21.017991]
+        'coordinates': [106.232000,21.026228]
       },
       'properties': {
-        'name': 'Cổng làng Lai Hạ',
+        'name': 'Cổng làng Đào Xuyên',
         'description': '',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Trung Chính',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 45, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.238709,21.026438]
+      },
+      'properties': {
+        'name': 'Thôn Trừng Xá',
+        'description': 'Quầy thuốc Minh Khang',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Trừng Xá',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 46, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.244687,21.026593]
+      },
+      'properties': {
+        'name': 'Đường vào UBND xã Trừng Xá',
+        'description': '',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Trừng Xá',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 47, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.255464,21.024571]
+      },
+      'properties': {
+        'name': 'Thôn An Mỹ',
+        'description': '',
+        'address': 'Đường tỉnh 285',
+        'ward': 'Mỹ Hương',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 48, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.261121,21.021043]
+      },
+      'properties': {
+        'name': 'Trại DABACO',
+        'description': 'Thôn Lai Hạ',
         'address': 'Đường tỉnh 285',
         'ward': 'Lai Hạ',
         'district': 'Lương Tài',
