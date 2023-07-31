@@ -722,7 +722,7 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 39, 'name': 'BN01', 'color': 'green' },
-          { 'id': 28, 'name': 'BN27', 'color': 'green' }
+          { 'id': 37, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -739,7 +739,7 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 40, 'name': 'BN01', 'color': 'red' },
-          { 'id': 29, 'name': 'BN27', 'color': 'red' }
+          { 'id': 38, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -756,8 +756,8 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 41, 'name': 'BN01' },
-          { 'id': 30, 'name': 'BN27' },
-          { 'id': 2, 'name': '204' }
+          { 'id': 39, 'name': 'BN27' },
+          { 'id': 77, 'name': '204' }
         ]
       }
     },
@@ -774,8 +774,8 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 42, 'name': 'BN01' },
-          { 'id': 31, 'name': 'BN27' },
-          { 'id': 3, 'name': '204' }
+          { 'id': 40, 'name': 'BN27' },
+          { 'id': 76, 'name': '204' }
         ]
       }
     },
@@ -792,8 +792,8 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 43, 'name': 'BN01' },
-          { 'id': 32, 'name': 'BN27' },
-          { 'id': 4, 'name': '204' }
+          { 'id': 41, 'name': 'BN27' },
+          { 'id': 75, 'name': '204' }
         ]
       }
     },
@@ -810,8 +810,8 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 44, 'name': 'BN01', 'color': 'red' },
-          { 'id': 33, 'name': 'BN27', 'color': 'red' },
-          { 'id': 5, 'name': '204', 'color': 'red' }
+          { 'id': 42, 'name': 'BN27', 'color': 'red' },
+          { 'id': 74, 'name': '204', 'color': 'red' }
         ]
       }
     },
@@ -828,7 +828,7 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 45, 'name': 'BN01' },
-          { 'id': 27, 'name': 'BN27' }
+          { 'id': 36, 'name': 'BN27' }
         ]
       }
     },
@@ -846,7 +846,7 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 46, 'name': 'BN01' },
-          { 'id': 26, 'name': 'BN27' }
+          { 'id': 35, 'name': 'BN27' }
         ]
       }
     },
@@ -864,7 +864,7 @@ export let stations = {
         'district': 'Thị xã Thuận Thành',
         'routers': [
           { 'id': 47, 'name': 'BN01' },
-          { 'id': 25, 'name': 'BN27' }
+          { 'id': 34, 'name': 'BN27' }
         ]
       }
     },
@@ -882,7 +882,7 @@ export let stations = {
         'district': 'Gia Bình',
         'routers': [
           { 'id': 48, 'name': 'BN01' },
-          { 'id': 24, 'name': 'BN27' }
+          { 'id': 33, 'name': 'BN27' }
         ]
       }
     },
@@ -2653,7 +2653,41 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.276207, 21.044408]
+        'coordinates': [106.285534,21.042155]
+      },
+      'properties': {
+        'name': 'Cổng làng Tháp Dương',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Trung Kênh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 2, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.279360,21.043661]
+      },
+      'properties': {
+        'name': 'Thôn Cường Tráng',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Trung Kênh',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 3, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.276786,21.044283]
       },
       'properties': {
         'name': 'Cầu Đò',
@@ -2662,7 +2696,126 @@ export let stations = {
         'ward': 'Trung Kênh',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 2, 'name': 'BN27' }
+          { 'id': 4, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.273702,21.045275]
+      },
+      'properties': {
+        'name': 'Siêu thị điện máy Hoàng Hiệu',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 5, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.264583,21.047595]
+      },
+      'properties': {
+        'name': 'Thôn Ngọc Thượng',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 6, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.254862,21.044207]
+      },
+      'properties': {
+        'name': 'Thôn Tỳ Điện',
+        'description': 'Đường vào NMXL rác',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 7, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.249689,21.042378]
+      },
+      'properties': {
+        'name': 'Cổng làng Tỳ Điện',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 8, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.244938,21.041010]
+      },
+      'properties': {
+        'name': 'Thôn Hương Chi',
+        'description': '',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 9, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.233526,21.038169]
+      },
+      'properties': {
+        'name': 'UBND xã Phú Hòa',
+        'description': 'Thôn Phương Thanh',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 10, 'name': 'BN27' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.229974,21.036194]
+      },
+      'properties': {
+        'name': 'Cầu Phương',
+        'description': 'Thôn Phương Xá',
+        'address': 'Đường tỉnh 281',
+        'ward': 'Phú Hòa',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 11, 'name': 'BN27' }
         ]
       }
     },
@@ -2679,7 +2832,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 3, 'name': 'BN27', 'color': 'green' }
+          { 'id': 12, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2696,7 +2849,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 4, 'name': 'BN27', 'color': 'red' }
+          { 'id': 13, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2709,11 +2862,11 @@ export let stations = {
       'properties': {
         'name': 'Trường THCS Hàn Thuyên',
         'description': '',
-        'address': '681 Hàn Thuyên',
+        'address': '695 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 5, 'name': 'BN27', 'color': 'green' }
+          { 'id': 14, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2730,7 +2883,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 6, 'name': 'BN27', 'color': 'green' }
+          { 'id': 15, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2743,11 +2896,11 @@ export let stations = {
       'properties': {
         'name': '',
         'description': '',
-        'address': '566 Hàn Thuyên',
+        'address': '568-570 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 7, 'name': 'BN27', 'color': 'red' }
+          { 'id': 16, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2764,7 +2917,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 8, 'name': 'BN27', 'color': 'green' }
+          { 'id': 17, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2781,7 +2934,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 9, 'name': 'BN27', 'color': 'red' }
+          { 'id': 18, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2794,11 +2947,11 @@ export let stations = {
       'properties': {
         'name': 'Trung tâm Y tế Lương Tài',
         'description': '',
-        'address': '267 Hàn Thuyên',
+        'address': '263 Hàn Thuyên',
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 10, 'name': 'BN27', 'color': 'green' }
+          { 'id': 19, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2815,7 +2968,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 11, 'name': 'BN27', 'color': 'red' }
+          { 'id': 20, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2832,7 +2985,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 12, 'name': 'BN27', 'color': 'green' }
+          { 'id': 21, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2849,7 +3002,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 13, 'name': 'BN27', 'color': 'red' }
+          { 'id': 22, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2866,7 +3019,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 14, 'name': 'BN27' }
+          { 'id': 23, 'name': 'BN27' }
         ]
       }
     },
@@ -2883,7 +3036,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 15, 'name': 'BN27', 'color': 'green' }
+          { 'id': 24, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2900,7 +3053,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 16, 'name': 'BN27', 'color': 'red' }
+          { 'id': 25, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2917,7 +3070,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 17, 'name': 'BN27', 'color': 'green' }
+          { 'id': 26, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2934,7 +3087,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 18, 'name': 'BN27', 'color': 'red' }
+          { 'id': 27, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2951,7 +3104,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 19, 'name': 'BN27', 'color': 'green' }
+          { 'id': 28, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -2968,7 +3121,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 20, 'name': 'BN27', 'color': 'red' }
+          { 'id': 29, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -2985,7 +3138,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 21, 'name': 'BN27', 'color': 'green' }
+          { 'id': 30, 'name': 'BN27', 'color': 'green' }
         ]
       }
     },
@@ -3002,7 +3155,7 @@ export let stations = {
         'ward': 'Thị trấn Thứa',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 22, 'name': 'BN27', 'color': 'red' }
+          { 'id': 31, 'name': 'BN27', 'color': 'red' }
         ]
       }
     },
@@ -3019,7 +3172,7 @@ export let stations = {
         'ward': 'Đại Bái',
         'district': 'Gia Bình',
         'routers': [
-          { 'id': 23, 'name': 'BN27' }
+          { 'id': 32, 'name': 'BN27' }
         ]
       }
     },
@@ -3035,8 +3188,25 @@ export let stations = {
         'address': '208-210 Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 34, 'name': 'BN27' },
-          { 'id': 6, 'name': '204' }
+          { 'id': 43, 'name': 'BN27' },
+          { 'id': 73, 'name': '204' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.087545,21.037285]
+      },
+      'properties': {
+        'name': 'Trung tâm Y tế Thuận Thành',
+        'description': '',
+        'address': 'Đường Lạc Long Quân',
+        'district': 'Thị xã Thuận Thành',
+        'routers': [
+          { 'id': 44, 'name': 'BN27' },
+          { 'id': 72, 'name': '204' }
         ]
       }
     },
@@ -3052,8 +3222,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 35, 'name': 'BN27' },
-          { 'id': 7, 'name': '204' }
+          { 'id': 45, 'name': 'BN27' },
+          { 'id': 71, 'name': '204' }
         ]
       }
     },
@@ -3069,8 +3239,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 36, 'name': 'BN27' },
-          { 'id': 8, 'name': '204' }
+          { 'id': 46, 'name': 'BN27' },
+          { 'id': 70, 'name': '204' }
         ]
       }
     },
@@ -3086,8 +3256,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 37, 'name': 'BN27' },
-          { 'id': 9, 'name': '204' }
+          { 'id': 47, 'name': 'BN27' },
+          { 'id': 69, 'name': '204' }
         ]
       }
     },
@@ -3103,8 +3273,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 38, 'name': 'BN27' },
-          { 'id': 10, 'name': '204' }
+          { 'id': 48, 'name': 'BN27' },
+          { 'id': 68, 'name': '204' }
         ]
       }
     },
@@ -3120,8 +3290,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 39, 'name': 'BN27' },
-          { 'id': 11, 'name': '204' }
+          { 'id': 49, 'name': 'BN27' },
+          { 'id': 67, 'name': '204' }
         ]
       }
     },
@@ -3137,8 +3307,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 40, 'name': 'BN27' },
-          { 'id': 12, 'name': '204' }
+          { 'id': 50, 'name': 'BN27' },
+          { 'id': 66, 'name': '204' }
         ]
       }
     },
@@ -3154,8 +3324,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 41, 'name': 'BN27' },
-          { 'id': 13, 'name': '204' }
+          { 'id': 51, 'name': 'BN27' },
+          { 'id': 65, 'name': '204' }
         ]
       }
     },
@@ -3171,8 +3341,8 @@ export let stations = {
         'address': 'Đường Lạc Long Quân',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 42, 'name': 'BN27' },
-          { 'id': 14, 'name': '204' }
+          { 'id': 52, 'name': 'BN27' },
+          { 'id': 64, 'name': '204' }
         ]
       }
     },
@@ -3189,8 +3359,8 @@ export let stations = {
         'ward': 'Hà Mãn',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 43, 'name': 'BN27' },
-          { 'id': 15, 'name': '204' }
+          { 'id': 53, 'name': 'BN27' },
+          { 'id': 63, 'name': '204' }
         ]
       }
     },
@@ -3207,8 +3377,8 @@ export let stations = {
         'ward': 'Hà Mãn',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 44, 'name': 'BN27' },
-          { 'id': 16, 'name': '204' }
+          { 'id': 54, 'name': 'BN27' },
+          { 'id': 62, 'name': '204' }
         ]
       }
     },
@@ -3225,8 +3395,8 @@ export let stations = {
         'ward': 'Xuân Lâm',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 45, 'name': 'BN27' },
-          { 'id': 17, 'name': '204' }
+          { 'id': 55, 'name': 'BN27' },
+          { 'id': 61, 'name': '204' }
         ]
       }
     },
@@ -3244,7 +3414,7 @@ export let stations = {
         'ward': 'Xuân Lâm',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 46, 'name': 'BN27', 'start': true }
+          { 'id': 56, 'name': 'BN27', 'start': true }
         ]
       }
     },
@@ -4231,7 +4401,7 @@ export let stations = {
       'properties': {
         'name': 'Thôn Cao Thọ',
         'description': '',
-        'address': 'Quốc lộ 17',
+        'address': 'Km33+200 Quốc lộ 17',
         'ward': 'Vạn Ninh',
         'district': 'Gia Bình',
         'routers': [
@@ -5000,7 +5170,7 @@ export let stations = {
         'ward': 'Lệ Chi',
         'district': 'Gia Lâm',
         'routers': [
-          { 'id': 18, 'name': '204' }
+          { 'id': 60, 'name': '204' }
         ]
       }
     },
@@ -5017,7 +5187,7 @@ export let stations = {
         'address': 'Đường Vương Văn Trà',
         'district': 'Thị xã Thuận Thành',
         'routers': [
-          { 'id': 1, 'name': '204', 'start': true }
+          { 'id': 78, 'name': '204', 'start': true }
         ]
       }
     },
