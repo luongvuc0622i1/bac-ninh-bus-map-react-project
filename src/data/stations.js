@@ -4388,7 +4388,7 @@ export let stations = {
         'ward': 'Lai Hạ',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 45, 'name': 'BN86A' }
+          { 'id': 49, 'name': 'BN86A' }
         ]
       }
     },
@@ -4396,7 +4396,7 @@ export let stations = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [106.275015, 21.011911]
+        'coordinates': [106.275015,21.011911]
       },
       'properties': {
         'name': 'Dốc Lai Hạ',
@@ -4405,7 +4405,41 @@ export let stations = {
         'ward': 'Lai Hạ',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 46, 'name': 'BN86A' }
+          { 'id': 50, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.272898,21.007251]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Nhất Trai',
+        'description': '',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Minh Tân',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 51, 'name': 'BN86A' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.269008,20.999404]
+      },
+      'properties': {
+        'name': 'Điếm canh đê Đạm Trai',
+        'description': 'Gần UBND xã Minh Tân',
+        'address': 'Đê Hữu Thái Bình',
+        'ward': 'Minh Tân',
+        'district': 'Lương Tài',
+        'routers': [
+          { 'id': 52, 'name': 'BN86A' }
         ]
       }
     },
@@ -4419,11 +4453,11 @@ export let stations = {
       'properties': {
         'name': '(B) Minh Tân',
         'description': 'Gần Chợ Văn Thai',
-        'address': 'Đê Hữu Thái Bình',
+        'address': 'Km9+500 Đê Hữu Thái Bình',
         'ward': 'Minh Tân',
         'district': 'Lương Tài',
         'routers': [
-          { 'id': 47, 'name': 'BN86A', 'start': true }
+          { 'id': 53, 'name': 'BN86A', 'start': true }
         ]
       }
     },
