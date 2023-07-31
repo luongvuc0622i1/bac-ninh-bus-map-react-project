@@ -5279,6 +5279,401 @@ export let stations = {
         ]
       }
     },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cây xăng Hải Tân',
+    //     'description': '',
+    //     'address': '677 Lê Thanh Nghị',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 2, 'name': '217' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cây xăng Hải Tân',
+    //     'description': '',
+    //     'address': '677 Lê Thanh Nghị',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 2, 'name': '217' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Ngã tư Cầu Cất',
+    //     'description': '',
+    //     'address': '234 Lê Thanh Nghị',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 3, 'name': '217' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Ngã tư Cầu Cất',
+    //     'description': '',
+    //     'address': '234 Lê Thanh Nghị',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 4, 'name': '217' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Tòa án nhân dân Thành phố Hải Dương',
+    //     'description': '',
+    //     'address': '60 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 5, 'name': '217', 'color': 'green' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Ngã tư Nhà máy Sứ',
+    //     'description': '',
+    //     'address': '3 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 6, 'name': '217', 'color': 'red' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': '',
+    //     'description': '',
+    //     'address': '246 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 7, 'name': '217', 'color': 'green' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Ngân Hàng Hợp tác Việt Nam',
+    //     'description': 'Co.op Bank',
+    //     'address': '185 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 8, 'name': '217', 'color': 'red' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Trường Cao Đẳng Dược Hải Dương',
+    //     'description': '',
+    //     'address': '324 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 9, 'name': '217', 'color': 'green' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Bệnh viện Đa khoa Hải Dương',
+    //     'description': '',
+    //     'address': '225 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 10, 'name': '217', 'color': 'red' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': '',
+    //     'description': '',
+    //     'address': '406 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 11, 'name': '217', 'color': 'green' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cục dự trữ nhà nước khu vực Hải Hưng',
+    //     'description': '',
+    //     'address': '261 Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 12, 'name': '217', 'color': 'red' }
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cổng chào Thành phố Hải Dương',
+    //     'description': 'Ngã ba Hoàng Long',
+    //     'address': 'Đường Nguyễn Lương Bằng',
+    //     'district': 'Thành phố Hải Dương',
+    //     'routers': [
+    //       { 'id': 13, 'name': '217'}
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Khu công nghiệp Đại An',
+    //     'description': '',
+    //     'address': 'Quốc lộ 5',
+    //     'ward': 'Thị trấn Lai Cách',
+    //     'district': 'Cẩm Giàng',
+    //     'routers': [
+    //       { 'id': 14, 'name': '217'}
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cầu vượt Lai Cách',
+    //     'description': '',
+    //     'address': 'Quốc lộ 5',
+    //     'ward': 'Thị trấn Lai Cách',
+    //     'district': 'Cẩm Giàng',
+    //     'routers': [
+    //       { 'id': 15, 'name': '217'}
+    //     ]
+    //   }
+    // },
+    // {
+    //   'type': 'Feature',
+    //   'geometry': {
+    //     'type': 'Point',
+    //     'coordinates': []
+    //   },
+    //   'properties': {
+    //     'name': 'Cầu vượt Lai Cách',
+    //     'description': '',
+    //     'address': 'Quốc lộ 5',
+    //     'ward': 'Thị trấn Lai Cách',
+    //     'district': 'Cẩm Giàng',
+    //     'routers': [
+    //       { 'id': 16, 'name': '217'}
+    //     ]
+    //   }
+    // },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.163663,20.968443]
+      },
+      'properties': {
+        'name': '',
+        'description': '',
+        'address': 'Km27 Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 17, 'name': '217'}
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.156044,20.971531]
+      },
+      'properties': {
+        'name': 'Thôn Nghĩa Trạch',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 18, 'name': '217'}
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.153138,20.972977]
+      },
+      'properties': {
+        'name': 'Trường THCS Ngọc Liên',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 19, 'name': '217', 'color': 'green' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.151780,20.973740]
+      },
+      'properties': {
+        'name': 'UBND xã Ngọc Liên',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 20, 'name': '217', 'color': 'red' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.149403,20.975168]
+      },
+      'properties': {
+        'name': '',
+        'description': '',
+        'address': 'Km25+400 Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 21, 'name': '217' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.145273,20.977449]
+      },
+      'properties': {
+        'name': 'Đình làng Mỹ Vọng',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 22, 'name': '217' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.141049,20.979969]
+      },
+      'properties': {
+        'name': 'Làng Mỹ Vọng',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Ngọc Liên',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 23, 'name': '217' }
+        ]
+      }
+    },
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [106.137513,20.985221]
+      },
+      'properties': {
+        'name': 'UBND xã Cẩm Hưng',
+        'description': '',
+        'address': 'Quốc lộ 38',
+        'ward': 'Cẩm Hưng',
+        'district': 'Cẩm Giàng',
+        'routers': [
+          { 'id': 24, 'name': '217' }
+        ]
+      }
+    },
     {
       'type': 'Feature',
       'geometry': {
