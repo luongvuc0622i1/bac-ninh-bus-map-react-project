@@ -24,6 +24,12 @@ export default function Stations(props) {
     setChooseId(parseInt(e.target.value));
   }
 
+  function displayName(feature) {
+    if ((feature === features[0] && chooseId === 1) || (feature === features[features.length - 1] && chooseId === 2)) return (<b>(A) {feature.properties.name} </b>);
+    else if ((feature === features[0] && chooseId === 2) || (feature === features[features.length - 1] && chooseId === 1)) return (<b>(B) {feature.properties.name} </b>);
+    return (<b>{feature.properties.name} </b>);
+  }
+
   return (
     <div>
       <div className='button-group' >
@@ -36,11 +42,11 @@ export default function Stations(props) {
         {features.map(feature => (
           <div key={feature.properties.routers.filter(route => route.name === props.routeId)[0].id}>
             <button id="nav-menu-bus-stop" onClick={() => sendDataChangeMarker(feature.properties.routers.filter(route => route.name === props.routeId)[0].id)} >
-              {feature.properties.name ? (feature !== features[0] && feature !== features[features.length - 1] && (feature.properties.name.includes('(A)') || feature.properties.name.includes('(B)')) ? (<b>{feature.properties.description} </b>) : (<b>{feature.properties.name} </b>)) : (<b>{feature.properties.address} </b>)}
-              {!feature.properties.description || (feature !== features[0] && feature !== features[features.length - 1] && (feature.properties.name.includes('(A)') || feature.properties.name.includes('(B)'))) ? '' : (<small>({feature.properties.description})</small>)}<br/>
+              {feature.properties.name ? displayName(feature) : (<b>{feature.properties.address} </b>)}
+              {feature.properties.description ? (<small>({feature.properties.description})</small>) : ''}<br/>
               <small>Đ/c: </small>
-              <small style={{ display: feature.properties.address ? '' : 'none' }}>{feature.properties.address}, </small>
-              <small style={{ display: feature.properties.ward ? '' : 'none' }}>{feature.properties.ward}, </small>
+              {feature.properties.address ? <small>{feature.properties.address}, </small> : ''}
+              {feature.properties.ward ? <small>{feature.properties.ward}, </small> : ''}
               <small>{feature.properties.district}.</small>
             </button>
           </div>
@@ -50,7 +56,7 @@ export default function Stations(props) {
         {(chooseId === 1 ? stations_se_in : stations_se_out).map(feature => (
           <div key={feature.geometry.pointId} style={{ position: 'relative' }} >
             <button id="nav-menu-bus-stop" onClick={() => sendDataChangeMarker(feature.geometry.pointId)} >
-              <b>{feature.properties.name.slice(4)} </b><small>({feature.properties.description})</small><br/>
+              <b>{feature.properties.name} </b><small>({feature.properties.description})</small><br/>
               <small>Đ/c: </small>
               <small style={{ display: feature.properties.address ? '' : 'none' }}>{feature.properties.address}, </small>
               <small style={{ display: feature.properties.ward ? '' : 'none' }}>{feature.properties.ward}, </small>

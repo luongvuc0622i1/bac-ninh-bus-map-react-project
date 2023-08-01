@@ -200,15 +200,36 @@ function createMarker(map, el, feature, routes, offset) {
     new mapboxgl.Popup({ offset: offset }) // add popups
       .setHTML(
         '<div>'
-        + (feature.properties.name ? ('<b>' + feature.properties.name + '</b></br>') : ('<b>' + feature.properties.address + '</b></br>'))
-        + (feature.properties.name && feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
-        + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-        + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : ('<small>' + feature.properties.description + '</small><br/>'))
-        + ('<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>')
-        + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
+          + (feature.properties.name ? displayName(feature) : ('<b>' + feature.properties.address + '</b>'))
+          + (feature.properties.description ? ('<small>(' + feature.properties.description + ')</small>') : '')
+          + '<br/><small>Đ/c: </small>'
+          + (feature.properties.address ? ('<small>' + feature.properties.address + ', </small>') : '')
+          + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+          + (feature.properties.district ? ('<small>' + feature.properties.district + '.</small>') : '')
+          + '<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>'
+          + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
         '</div>'
+
+
+        // '<div>'
+        // + (feature.properties.name ? displayName(feature) : ('<b>{feature.properties.address} </b>'))
+        // + (feature.properties.description ? ('<small>(' + feature.properties.description + ')</small>') : '') + '<br/>'
+        // + '<small>Đ/c: </small>'
+        // + (feature.properties.address ? ('<small>' + {feature.properties.address} + ', </small>') : '')
+        // + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
+        // + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : ('<small>' + feature.properties.description + '</small><br/>'))
+        // + ('<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>')
+        // + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
+        // '</div>'
       )
   ).addTo(map);
+}
+
+function displayName(feature) {
+  // if ((feature === features[0] && chooseId === 1) || (feature === features[features.length - 1] && chooseId === 2)) return (<b>(A) {feature.properties.name} </b>);
+  // else if ((feature === features[0] && chooseId === 2) || (feature === features[features.length - 1] && chooseId === 1)) return (<b>(B) {feature.properties.name} </b>);
+  // return (<b>{feature.properties.name} </b>);
+  return 1;
 }
 
 function renderLink(coordinates) {
@@ -220,8 +241,8 @@ function renderLink(coordinates) {
 
 function change(number) {
   let hours = number - (number % 1);
-  let minutes = (number % 1)*60 - ((number % 1)*60 % 1);
-  let seconds = ((number % 1)*60 % 1)*60;
+  let minutes = (number % 1) * 60 - ((number % 1) * 60 % 1);
+  let seconds = ((number % 1) * 60 % 1) * 60;
   return hours + "°" + minutes + "'" + seconds + "''";
 }
 

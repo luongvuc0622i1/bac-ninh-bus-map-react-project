@@ -10,7 +10,7 @@ export let stations = {
         'coordinates': [106.061027, 21.180761]
       },
       'properties': {
-        'name': '(A) Bắc Ninh',
+        'name': 'Bắc Ninh',
         'description': 'Bến xe Bắc Ninh',
         'address': '2 Nguyễn Du',
         'district': 'Thành phố Bắc Ninh',
@@ -172,7 +172,7 @@ export let stations = {
         'coordinates': [106.076359, 21.188028]
       },
       'properties': {
-        'name': '(B) Thành phố Bắc Ninh',
+        'name': 'Thành phố Bắc Ninh',
         'description': 'Bến xe buýt 54',
         'address': 'Đường Kinh Dương Vương',
         'district': 'Thành phố Bắc Ninh',
@@ -1166,7 +1166,7 @@ export let stations = {
         'coordinates': [106.195603, 21.019009]
       },
       'properties': {
-        'name': '(B) Lương Tài',
+        'name': 'Lương Tài',
         'description': 'Bến xe Lương Tài',
         'address': 'Đường Phá Lãng',
         'ward': 'Thị trấn Thứa',
@@ -1781,7 +1781,7 @@ export let stations = {
         'coordinates': [106.285208, 21.117838]
       },
       'properties': {
-        'name': '(B) Phả Lại',
+        'name': 'Phả Lại',
         'description': 'Gần cầu Phả Lại',
         'address': 'Quốc lộ 18',
         'ward': 'Đức Long',
@@ -1800,7 +1800,7 @@ export let stations = {
         'coordinates': [105.917504,21.199791]
       },
       'properties': {
-        'name': '(B) Yên Phong',
+        'name': 'Yên Phong',
         'description': 'Gần cầu Đò Lo',
         'address': 'Đường tỉnh 286',
         'ward': 'Hòa Tiến',
@@ -2637,7 +2637,7 @@ export let stations = {
         'coordinates': [106.290945,21.040881]
       },
       'properties': {
-        'name': '(B) Kênh Vàng',
+        'name': 'Kênh Vàng',
         'description': 'Dốc Kênh Vàng',
         'address': 'Đường tỉnh 281',
         'ward': 'Trung Kênh',
@@ -3408,7 +3408,7 @@ export let stations = {
         'coordinates': [106.013119, 21.030249]
       },
       'properties': {
-        'name': '(B) Xuân Lâm',
+        'name': 'Xuân Lâm',
         'description': 'Gần Cổng Khu đô thị Khai Sơn',
         'address': 'Quốc lộ 17',
         'ward': 'Xuân Lâm',
@@ -3427,7 +3427,7 @@ export let stations = {
         'coordinates': [105.967206,21.087379]
       },
       'properties': {
-        'name': '(A) KCN VSIP',
+        'name': 'KCN VSIP',
         'description': 'Gần TTVHTT Khu phố Rích Gạo',
         'address': '',
         'ward': 'Khu phố Rích Gạo, Phù Chẩn',
@@ -3662,7 +3662,7 @@ export let stations = {
         'coordinates': [105.971592,21.124479]
       },
       'properties': {
-        'name': '(B) Từ Sơn',
+        'name': 'Từ Sơn',
         'description': 'Trung tâm Y tế Từ Sơn',
         'address': 'Đường Minh Khai',
         'district': 'Thành phố Từ Sơn',
@@ -4345,7 +4345,7 @@ export let stations = {
         'coordinates': [106.143433,21.098960]
       },
       'properties': {
-        'name': '(B) Chi Lăng',
+        'name': 'Chi Lăng',
         'description': 'Thôn Quế Ổ',
         'address': '',
         'ward': 'Chi Lăng',
@@ -4639,7 +4639,7 @@ export let stations = {
         'coordinates': [106.265589, 20.989173]
       },
       'properties': {
-        'name': '(B) Minh Tân',
+        'name': 'Minh Tân',
         'description': 'Gần Chợ Văn Thai',
         'address': 'Km9+500 Đê Hữu Thái Bình',
         'ward': 'Minh Tân',
@@ -4794,7 +4794,7 @@ export let stations = {
         'coordinates': [106.201397, 21.086935]
       },
       'properties': {
-        'name': '(B) Đại Lai',
+        'name': 'Đại Lai',
         'description': 'Khu Di tích Lệ Chi Viên',
         'address': 'Thôn Đại Lai',
         'ward': 'Đại Lai',
@@ -4813,7 +4813,7 @@ export let stations = {
         'coordinates': [105.849453,21.041309]
       },
       'properties': {
-        'name': '(A) Long Biên',
+        'name': 'Long Biên',
         'description': 'Trung chuyển Long Biên',
         'address': '',
         'ward': '',
@@ -5130,7 +5130,7 @@ export let stations = {
         'coordinates': [105.841484,20.979797]
       },
       'properties': {
-        'name': '(A) Giáp Bát',
+        'name': 'Giáp Bát',
         'description': 'Bến xe Giáp Bát',
         'address': '897 Giải Phóng',
         'district': 'Hà Nội',
@@ -5147,7 +5147,7 @@ export let stations = {
         'coordinates': [106.204874,21.286627]
       },
       'properties': {
-        'name': '(B) Bắc Giang',
+        'name': 'Bắc Giang',
         'description': 'Bến xe khách Bắc Giang',
         'address': '486 Xương Giang',
         'district': 'Thành phố Bắc Giang',
@@ -5182,7 +5182,7 @@ export let stations = {
         'coordinates': [106.088707,21.059260]
       },
       'properties': {
-        'name': '(B) Thuận Thành',
+        'name': 'Thuận Thành',
         'description': 'Chợ trung tâm Thuận Thành',
         'address': 'Đường Vương Văn Trà',
         'district': 'Thị xã Thuận Thành',
@@ -5200,7 +5200,7 @@ export let stations = {
         'coordinates': [105.990757,21.346510]
       },
       'properties': {
-        'name': '(A) Hiệp Hòa',
+        'name': 'Hiệp Hòa',
         'description': 'Bến xe Hiệp Hòa',
         'address': '',
         'district': 'Bắc Giang',
@@ -5217,7 +5217,7 @@ export let stations = {
         'coordinates': [105.878533,21.047953]
       },
       'properties': {
-        'name': '(B) Gia Lâm',
+        'name': 'Gia Lâm',
         'description': 'Bến xe Gia Lâm',
         'address': '9 Ngô Gia Khảm',
         'district': 'Hà Nội',
@@ -5235,7 +5235,7 @@ export let stations = {
         'coordinates': [105.778478,21.028214]
       },
       'properties': {
-        'name': '(A) Mỹ Đình',
+        'name': 'Mỹ Đình',
         'description': 'Bến xe Mỹ Đình',
         'address': '20 Phạm Hùng',
         'district': 'Hà Nội',
@@ -5252,7 +5252,7 @@ export let stations = {
         'coordinates': [106.156268,21.152737]
       },
       'properties': {
-        'name': '(B) Quế Võ',
+        'name': 'Quế Võ',
         'description': 'Bến xe Quế Võ',
         'address': 'Đường Trần Hưng Đạo',
         'district': 'Thị xã Quế Võ',
@@ -5270,7 +5270,7 @@ export let stations = {
         'coordinates': [106.329320, 20.922313]
       },
       'properties': {
-        'name': '(A) Hải Dương',
+        'name': 'Hải Dương',
         'description': 'Bến xe Hải Tân',
         'address': 'Đường Lê Thanh Nghị',
         'district': 'Thành phố Hải Dương',

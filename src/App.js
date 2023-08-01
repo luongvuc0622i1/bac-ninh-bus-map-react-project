@@ -5,7 +5,7 @@ import RouteMap from './components/RouteMap';
 import Stations from './components/Stations';
 import Timeline from './components/Timeline';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import busRoutersList from './data/bus-routers-list.json' //list of all bus routes
+import { routes } from './data/routes'; //list of all bus routes
 
 export default function App() {
   const [routeId, setRouteId] = useState();
@@ -35,7 +35,7 @@ export default function App() {
     setMarkerId("");
   }
 
-  const optionItems = busRoutersList.map((bus) => <option className='option' key={bus.route_id} value={bus.route_id}>{bus.route_id + " : " + bus.route_name}</option>);
+  const optionItems = routes.features.filter(feature => feature.properties.status).map(feature => <option className='option' key={feature.properties.id} value={feature.properties.id}>{feature.properties.id + " : " + feature.properties.name}</option>);
 
   return (
     <div className='container'>
