@@ -32,7 +32,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxN
 
 export default class RouteMap extends React.Component {
   first = true;
-  check = '';
 
   componentDidMount() {
     this.map = new mapboxgl.Map({
@@ -47,18 +46,7 @@ export default class RouteMap extends React.Component {
     initLoadMarker(this.map);
   };
 
-  checkMarker(routeId, markerId) {
-    if (routeId && this.check === markerId) return 0;
-    else {
-      this.check = markerId;
-      return markerId;
-    }
-  }
-
   componentDidUpdate() {
-    // check marker id and markerId = null in each new route tab
-    const checkedMarkerId = this.checkMarker(this.props.routeId, this.props.markerId);
-
     if (this.props.routeId) {
       //first change routeId => clear all init route
       if (this.first) {
@@ -77,7 +65,7 @@ export default class RouteMap extends React.Component {
       initLoadMarker(this.map);
     }
     //event click list bus stop in menu => map
-    clickButtonToHere(checkedMarkerId);
+    clickButtonToHere(this.props.markerId);
   }
 
   render() {

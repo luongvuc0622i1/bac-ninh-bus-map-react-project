@@ -14,14 +14,25 @@ export default function App() {
 
   const handleInputChange = (e) => {
     setRouteId(e.target.value);
+    setMarkerId("");
+    setChooseId(1);
   };
 
-  const handleClick = (e) => {
+  const handleClickChangeMarker = (e) => {
     setMarkerId(e);
+    setChooseId(1);
+  }
+
+  const handleClickChangeRoute = (e) => {
+    setRouteId(e);
+    document.getElementById('selectRoute').value = e;
+    setMarkerId("");
+    setChooseId(1);
   }
 
   const handleChoose = (e) => {
     setChooseId(parseInt(e.target.value));
+    setMarkerId("");
   }
 
   const optionItems = busRoutersList.map((bus) => <option className='option' key={bus.route_id} value={bus.route_id}>{bus.route_id + " : " + bus.route_name}</option>);
@@ -35,7 +46,7 @@ export default function App() {
         <div className='col-lg-4' style={{ width: '390px', padding: "6px 12px" }}>
           <div className='btn-group'>
             <label style={{ width: '56px', marginTop: '4px' }}>Tuyến:</label>
-            <select className='select' defaultValue="default" onChange={handleInputChange} >
+            <select className='select' id='selectRoute' defaultValue="default" onChange={handleInputChange} >
               <option value="default" disabled hidden>Chọn tuyến buýt</option>
               {optionItems}
             </select>
@@ -52,7 +63,7 @@ export default function App() {
               <Infomation routeId={routeId} />
             </div>
             <div style={{ display: chooseId === 2 || !routeId ? "block" : "none", height: "calc(100vh - 205px)" }}>
-              <Stations routeId={routeId} parentCallback={handleClick} />
+              <Stations routeId={routeId} parentCallbackChangeMarker={handleClickChangeMarker} parentCallbackChangeRoute={handleClickChangeRoute} />
             </div>
             <div style={{ display: chooseId === 3 ? "block" : "none" }}>
               <Timeline />
