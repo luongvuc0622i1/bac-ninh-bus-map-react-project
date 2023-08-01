@@ -27,6 +27,7 @@ import b204Back from '../data/bus-routes/204-back.json';
 import b217Go from '../data/bus-routes/217-go.json';
 import b217Back from '../data/bus-routes/217-back.json';
 import { stations } from '../data/stations';
+import '../styles/RouteMap.css';
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FhZGlxbSIsImEiOiJjamJpMXcxa3AyMG9zMzNyNmdxNDlneGRvIn0.wjlI8r1S_-xxtq2d-W5qPA';
 
@@ -200,36 +201,27 @@ function createMarker(map, el, feature, routes, offset) {
     new mapboxgl.Popup({ offset: offset }) // add popups
       .setHTML(
         '<div>'
-          + (feature.properties.name ? displayName(feature) : ('<b>' + feature.properties.address + '</b>'))
-          + (feature.properties.description ? ('<small>(' + feature.properties.description + ')</small>') : '')
-          + '<br/><small>Đ/c: </small>'
-          + (feature.properties.address ? ('<small>' + feature.properties.address + ', </small>') : '')
+          + (feature.properties.name ? ('<b>' + feature.properties.name + '</b>') : ('<b>' + feature.properties.address + '</b>'))
+          + (feature.properties.district ? '' : ('<br/>'))
+          + (feature.properties.description ? (' <small>(' + feature.properties.description + ')</small>') : '')
+          + '<br/>'
+          + (feature.properties.address ? ('<small>Đ/c: ' + feature.properties.address + ', </small>') : '')
           + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-          + (feature.properties.district ? ('<small>' + feature.properties.district + '.</small>') : '')
-          + '<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>'
+          + (feature.properties.district ? ('<small>' + feature.properties.district + '.</small><br/>') : '')
+          + renderRouteList(routes) + '<br/>'
           + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
         '</div>'
-
-
-        // '<div>'
-        // + (feature.properties.name ? displayName(feature) : ('<b>{feature.properties.address} </b>'))
-        // + (feature.properties.description ? ('<small>(' + feature.properties.description + ')</small>') : '') + '<br/>'
-        // + '<small>Đ/c: </small>'
-        // + (feature.properties.address ? ('<small>' + {feature.properties.address} + ', </small>') : '')
-        // + (feature.properties.ward ? ('<small>' + feature.properties.ward + ', </small>') : '')
-        // + (feature.properties.district ? ('<small>' + feature.properties.district + '</small><br/>') : ('<small>' + feature.properties.description + '</small><br/>'))
-        // + ('<small>Tuyến: ' + renderRouteList(routes) + '</small><br/>')
-        // + (feature.geometry.type === 'Line' ? '' : renderLink(feature.geometry.coordinates)) +
-        // '</div>'
       )
   ).addTo(map);
 }
 
-function displayName(feature) {
-  // if ((feature === features[0] && chooseId === 1) || (feature === features[features.length - 1] && chooseId === 2)) return (<b>(A) {feature.properties.name} </b>);
-  // else if ((feature === features[0] && chooseId === 2) || (feature === features[features.length - 1] && chooseId === 1)) return (<b>(B) {feature.properties.name} </b>);
-  // return (<b>{feature.properties.name} </b>);
-  return 1;
+function renderRouteList(routes) {
+  const routeNameList = [];
+  for (let i = 0; i < routes.length; i++) {
+    if (i % 4 === 0 && i !== 0) routeNameList.push('<br/>');
+    routeNameList.push('<button class="button"> ' + routes[i].name + '</button>');
+  }
+  return routeNameList.join('');
 }
 
 function renderLink(coordinates) {
@@ -244,14 +236,6 @@ function change(number) {
   let minutes = (number % 1) * 60 - ((number % 1) * 60 % 1);
   let seconds = ((number % 1) * 60 % 1) * 60;
   return hours + "°" + minutes + "'" + seconds + "''";
-}
-
-function renderRouteList(routes) {
-  const routeNameList = [];
-  for (const route of routes) {
-    routeNameList.push(route.name);
-  }
-  return routeNameList.join(', ');
 }
 
 function clearInitLoadLine(map) {
