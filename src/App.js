@@ -35,7 +35,7 @@ export default function App() {
     setMarkerId("");
   }
 
-  const optionItems = routes.features.filter(feature => feature.properties.status).map(feature => <option className='option' key={feature.properties.id} value={feature.properties.id}>{feature.properties.id + " : " + feature.properties.name}</option>);
+  const optionItems = routes.features.filter(feature => feature.geometry.status).map(feature => <option className='option' key={feature.geometry.id} value={feature.geometry.id}>{feature.geometry.id + " : " + feature.geometry.name}</option>);
 
   return (
     <div className='container'>
