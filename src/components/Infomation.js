@@ -59,7 +59,7 @@ export default function Infomation(props) {
             </tr>
             {feature.properties.timeline.map(el => (
               <tr key={el.name} >
-                <td rowSpan={feature.properties.timeline.length} style={{ display: el === feature.properties.timeline[0] ? '' : 'none' }} >Thời gian hoạt động</td>
+                <td rowSpan={feature.properties.timeline.length} style={{ display: el === feature.properties.timeline[0] ? '' : 'none' }} >Thời gian hoạt động:</td>
                 <td>{el.name}</td>
                 <td style={{ textAlign: 'center' }}>{el.from}</td>
                 <td style={{ textAlign: 'center' }}>{el.to}</td>
