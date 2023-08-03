@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import Infomation from './components/Infomation';
+import Information from './components/Information';
 import RouteMap from './components/RouteMap';
 import Stations from './components/Stations';
 import Timeline from './components/Timeline';
@@ -60,13 +60,14 @@ export default function App() {
               </div>
             </div>
             <div style={{ display: chooseId === 1 && routeId ? "block" : "none" }}>
-              <Infomation routeId={routeId} />
+              <Information routeId={routeId} />
             </div>
-            <div style={{ display: chooseId === 2 || !routeId ? "block" : "none", height: "calc(100vh - 205px)" }}>
+            {/* <div style={{ display: chooseId === 2 || !routeId ? "block" : "none", height: "calc(100vh - 205px)" }}> */}
+            <div style={{ display: chooseId === 2 || !routeId ? "block" : "none" }}>
               <Stations routeId={routeId} parentCallbackChangeMarker={handleClickChangeMarker} parentCallbackChangeRoute={handleClickChangeRoute} />
             </div>
             <div style={{ display: chooseId === 3 ? "block" : "none" }}>
-              <Timeline />
+              <Timeline routeId={routeId} />
             </div>
           </div>
         </div>

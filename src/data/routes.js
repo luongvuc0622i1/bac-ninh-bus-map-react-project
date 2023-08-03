@@ -16,10 +16,45 @@ export let routes = {
           { 'name': '', 'link': '' }
         ],
         'image': 'img-bn01.jpg?alt=media&token=e78af5e1-d22a-487d-b43f-68d3e2addd39',
-        'description': '',
+        'description': 'Bến xe Bắc Ninh - Cổng Ô (Thành phố Bắc Ninh) - Đường Ngô Gia Tự - Đường Kinh Dương Vương - Đường Lý Thái Tổ - QL.38 - Cầu Hồ - Ngã tư Đông Côi - QL.17 - Thị trấn Gia Bình - ĐT.280 - Bến xe Lương Tài và ngược lại.',
         'timeline': [
-          { 'name': 'Bắc Ninh', 'from': '5:20', 'to': '18:25' },
-          { 'name': 'Lương Tài', 'from': '5:10', 'to': '18:10' }
+          ['Bắc Ninh', 'Lương Tài'],
+          ['5:20', '5:10'],
+          ['5:45', '5:30'],
+          ['6:10', '5:45'],
+          ['6:30', '6:00'],
+          ['6:50', '6:15'],
+          ['7:10', '6:30'],
+          ['7:30', '6:50'],
+          ['7:50', '7:10'],
+          ['8:05', '7:30'],
+          ['8:30', '7:50'],
+          ['8:50', '8:10'],
+          ['9:05', '8:30'],
+          ['9:30', '8:50'],
+          ['9:50', '9:10'],
+          ['10:05', '9:30'],
+          ['10:30', '10:00'],
+          ['11:00', '10:30'],
+          ['11:30', '11:00'],
+          ['12:00', '11:30'],
+          ['12:30', '12:00'],
+          ['13:00', '12:30'],
+          ['13:30', '13:00'],
+          ['13:55', '13:30'],
+          ['14:25', '13:50'],
+          ['15:00', '14:10'],
+          ['15:30', '14:30'],
+          ['15:50', '14:50'],
+          ['16:10', '15:10'],
+          ['16:30', '15:40'],
+          ['16:45', '16:10'],
+          ['16:55', '16:30'],
+          ['17:15', '16:45'],
+          ['17:30', '17:05'],
+          ['17:45', '17:25'],
+          ['18:00', '17:45'],
+          ['18:25', '18:10']
         ],
         'ticket': [
           {
@@ -58,10 +93,43 @@ export let routes = {
           { 'name': '', 'link': '' }
         ],
         'image': 'img-bn02.jpg?alt=media&token=c40ee1d8-942b-44c1-819c-28f08b064ef3',
-        'description': '',
+        'description': 'Bến xe Bắc Ninh - Cổng Ô (Thành phố Bắc Ninh) - Đường Ngô Gia Tự - Đường Trần Hưng Đạo - QL.18 - Gần cầu Phả Lại và ngược lại.',
         'timeline': [
-          { 'name': 'Bắc Ninh', 'from': '5:00', 'to': '19:30' },
-          { 'name': 'Phả Lại', 'from': '5:45', 'to': '19:30' }
+          ['Bắc Ninh', 'Phả Lại'],
+          ['5:00', '5:30'],
+          ['5:15', '5:45'],
+          ['5:30', '6:00'],
+          ['5:45', '6:20'],
+          ['6:00', '6:40'],
+          ['6:30', '7:00'],
+          ['7:00', '7:30'],
+          ['7:30', '8:00'],
+          ['8:00', '8:30'],
+          ['8:30', '9:00'],
+          ['9:00', '9:30'],
+          ['9:30', '10:00'],
+          ['10:00', '10:30'],
+          ['10:20', '11:00'],
+          ['10:40', '11:30'],
+          ['11:00', '12:00'],
+          ['11:20', '12:30'],
+          ['11:40', '13:00'],
+          ['12:00', '13:20'],
+          ['12:30', '13:40'],
+          ['13:00', '14:00'],
+          ['13:30', '14:30'],
+          ['14:00', '15:00'],
+          ['14:30', '15:30'],
+          ['15:00', '16:00'],
+          ['15:30', '16:20'],
+          ['16:00', '16:40'],
+          ['16:20', '17:00'],
+          ['16:40', '17:20'],
+          ['17:00', '17:40'],
+          ['17:30', '18:00'],
+          ['18:00', '18:30'],
+          ['18:30', '19:00'],
+          ['19:30', '19:30']
         ],
         'ticket': [
           {
@@ -98,8 +166,31 @@ export let routes = {
         'image': 'img-bn03.jpg?alt=media&token=0c97f296-0057-4346-bad8-93fc6ff73186',
         'description': '',
         'timeline': [
-          { 'name': 'Bắc Ninh', 'from': '5:20', 'to': '18:20' },
-          { 'name': 'Yên Phong', 'from': '5:40', 'to': '18:40' }
+          ['Bắc Ninh', 'Yên Phong'],
+          ['5:20', '5:40'],
+          ['5:50', '6:10'],
+          ['6:15', '6:40'],
+          ['6:50', '7:00'],
+          ['7:20', '7:30'],
+          ['7:50', '8:00'],
+          ['8:30', '8:30'],
+          ['9:00', '9:10'],
+          ['9:40', '9:40'],
+          ['10:10', '10:30'],
+          ['10:45', '11:05'],
+          ['11:20', '11:30'],
+          ['12:00', '12:00'],
+          ['12:40', '12:40'],
+          ['13:10', '13:10'],
+          ['14:00', '14:00'],
+          ['14:30', '14:40'],
+          ['15:10', '15:10'],
+          ['15:40', '15:50'],
+          ['16:20', '16:30'],
+          ['16:50', '17:00'],
+          ['17:30', '17:30'],
+          ['18:00', '18:00'],
+          ['18:20', '18:40']
         ],
         'ticket': [
           {
@@ -134,8 +225,27 @@ export let routes = {
         'image': 'img-bn08.jpg?alt=media&token=8007761a-bca2-422b-9667-b15f898280d8',
         'description': '',
         'timeline': [
-          { 'name': 'Bắc Ninh', 'from': '5:10', 'to': '18:30' },
-          { 'name': 'Kênh Vàng', 'from': '5:00', 'to': '18:20' }
+          ['Bắc Ninh', 'Kênh Vàng'],
+          ['5:10', '5:00'],
+          ['5:50', '5:20'],
+          ['6:40', '5:40'],
+          ['7:20', '6:00'],
+          ['8:10', '6:40'],
+          ['9:10', '7:40'],
+          ['10:10', '8:40'],
+          ['11:10', '9:40'],
+          ['12:10', '10:40'],
+          ['12:50', '11:40'],
+          ['13:20', '12:40'],
+          ['14:00', '13:20'],
+          ['14:30', '14:00'],
+          ['15:10', '14:30'],
+          ['16:00', '15:00'],
+          ['16:20', '15:30'],
+          ['16:40', '16:10'],
+          ['17:00', '16:40'],
+          ['17:40', '17:30'],
+          ['18:30', '18:20']
         ],
         'ticket': [
           {
@@ -175,8 +285,8 @@ export let routes = {
         'image': 'img-bn27.jpg?alt=media&token=80a83ab6-8c0c-4cf4-90e4-3a62a80876a1',
         'description': 'Ngã ba Kênh Vàng - ĐT.281 - Thị trấn Thứa - ĐT.284 - Đại Bái - QL.17 - Ngã tư Đông Côi - QL.38 - Đường Vương Văn Trà - Đường Âu Cơ - QL.17 - KCN Khai Sơn - Chùa Dâu - Cổng KĐT Khai Sơn (Xuân Lâm) và ngược lại.',
         'timeline': [
-          { 'name': 'Mùa hè', 'from': '5:00', 'to': '19:00' },
-          { 'name': 'Mùa đông', 'from': '5:30', 'to': '18:30' }
+          ['Kênh Vàng', 'Xuân Lâm'],
+          []
         ],
         'ticket': [
           {
@@ -221,7 +331,8 @@ export let routes = {
         'image': 'img-bn68.jpg?alt=media&token=eb34ee48-5b9c-46e4-a78b-5a6a79c990f7',
         'description': 'Thôn Rích Gạo (Phù Chẩn) - ĐT.277 - Cầu Đại Đình - Đền Đô - ĐT.277 - Cột đồng hồ Từ Sơn - ĐT.295B - Đường Lê Thái Tổ - Ngã tư cột đồng hồ - Đường Nguyễn Trãi - Đường Bình Than - Đường Nguyễn Đăng Đạo - Đường Lý Thái Tổ - Đường Kinh Dương Vương - ĐT.295B - Đường Trần Lựu - Đường Hoàng Quốc Việt - Đê Sông Cầu (ĐT.279) - Chợ Nội Doi (ĐT.279) - Ngã tư Phố Mới - Chợ Chì (ĐT.279) - Thôn Quế Ổ (Chi Lăng) và ngược lại.',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['KCN VSIP', 'Chi Lăng'],
+          []
         ],
         'ticket': [
           {
@@ -255,9 +366,21 @@ export let routes = {
           { 'name': 'Công văn số 2726/UBND-XDCB', 'link': 'https://bacninh.gov.vn/news/-/details/20182/keo-dai-lo-trinh-tuyen-xe-buyt-thanh-pho-bac-ninh-lai-ha-huyen-luong-tai-' }
         ],
         'image': 'img-bn86a.jpg?alt=media&token=108f64c5-2210-4dd7-8d73-d0dbebb3072a',
-        'description': 'Bến xe Bắc Ninh - Cổng Ô (thành phố Bắc Ninh) - Đường Ngô Gia Tự - QL.18 - Cầu Bình Than - QL.17 - TL.285 - Đê Lai Hạ - Đê Minh Tân và ngược lại',
+        'description': 'Bến xe Bắc Ninh - Cổng Ô (Thành phố Bắc Ninh) - Đường Ngô Gia Tự - Đường Trần Hưng Đạo - QL.18 - Cầu Bình Than - QL.17 - ĐT.285 - Đê Lai Hạ - Đê Minh Tân và ngược lại.',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Bắc Ninh', 'Minh Tân'],
+          ['5:25', '5:10'],
+          ['6:30', '6:10'],
+          ['7:30', '7:10'],
+          ['8:30', '8:10'],
+          ['9:30', '9:10'],
+          ['10:50', '10:40'],
+          ['12:20', '12:20'],
+          ['14:10', '13:40'],
+          ['14:50', '14:40'],
+          ['16:10', '15:40'],
+          ['17:10', '16:40'],
+          ['18:10', '17:40']
         ],
         'ticket': [
           {
@@ -291,9 +414,21 @@ export let routes = {
           { 'name': 'Quyết định số 1153/QĐ-SGTVT', 'link': 'https://www.facebook.com/photo/?fbid=453040052054657&set=pcb.453040118721317' }
         ],
         'image': 'img-bn86b.jpg?alt=media&token=b0e5fb82-e510-4fe2-ac55-975af0b2db05',
-        'description': '',
+        'description': 'Bến xe Bắc Ninh - Cổng Ô (Thành phố Bắc Ninh) - Đường Ngô Gia Tự - Đường Trần Hưng Đạo - QL.18 - Cầu Bình Than - QL.17 - ĐT.285 - Phương Triện - Khu di tích Lệ Chi Viên và ngược lại.',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Bắc Ninh', 'Đại Lai'],
+          ['5:50', '5:30'],
+          ['6:50', '6:30'],
+          ['7:50', '7:40'],
+          ['8:50', '8:40'],
+          ['9:50', '9:40'],
+          ['11:20', '11:10'],
+          ['13:10', '12:50'],
+          ['14:20', '14:10'],
+          ['15:20', '15:10'],
+          ['16:30', '16:10'],
+          ['17:30', '17:10'],
+          ['18:25', '18:10']
         ],
         'ticket': [
           {
@@ -328,7 +463,8 @@ export let routes = {
         'image': 'img-10a.jpg?alt=media&token=cc272b49-5caf-4044-bdff-b024d68affb9',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Long Biên', 'Từ Sơn'],
+          []
         ],
         'ticket': [
           {
@@ -364,7 +500,8 @@ export let routes = {
         'image': 'img-54.jpg?alt=media&token=d993169f-2139-46a2-917f-3facfad162cb',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Long Biên', 'Tp. Bắc Ninh'],
+          []
         ],
         'ticket': [
           {
@@ -400,7 +537,8 @@ export let routes = {
         'image': 'img-203.jpg?alt=media&token=ce020346-f107-4fc6-b42d-1a6e29daa1de',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Giáp Bát', 'Bắc Giang'],
+          []
         ],
         'ticket': [
           {
@@ -435,7 +573,8 @@ export let routes = {
         'image': 'img-204.jpg?alt=media&token=38257086-a2b7-4d27-860a-26acd2958d17',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Long Biên', 'Thuận Thành'],
+          []
         ],
         'ticket': [
           {
@@ -470,7 +609,8 @@ export let routes = {
         'image': 'img-210.jpg?alt=media&token=333be9f2-2ea5-4f52-8076-caac0d478d81',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Hiệp Hòa', 'Gia Lâm'],
+          []
         ],
         'ticket': [
           {
@@ -505,7 +645,8 @@ export let routes = {
         'image': 'img-212.jpg?alt=media&token=afa0775a-d6c8-4f36-8962-e6c02ddf45ab',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Mỹ Đình', 'Quế Võ'],
+          []
         ],
         'ticket': [
           {
@@ -540,7 +681,8 @@ export let routes = {
         'image': 'img-217.jpg?alt=media&token=8491db29-cbd2-4741-9404-4ea7d8e4125b',
         'description': '',
         'timeline': [
-          { 'name': '', 'from': '', 'to': '' }
+          ['Hải Dương', 'Bắc Ninh'],
+          []
         ],
         'ticket': [
           {
