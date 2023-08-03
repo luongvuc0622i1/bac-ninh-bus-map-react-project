@@ -329,7 +329,7 @@ export let routes = {
           { 'name': '', 'link': '' }
         ],
         'image': 'img-bn68.jpg?alt=media&token=eb34ee48-5b9c-46e4-a78b-5a6a79c990f7',
-        'description': 'Thôn Rích Gạo (Phù Chẩn) - ĐT.277 - Cầu Đại Đình - Đền Đô - ĐT.277 - Cột đồng hồ Từ Sơn - ĐT.295B - Đường Lê Thái Tổ - Ngã tư cột đồng hồ - Đường Nguyễn Trãi - Đường Bình Than - Đường Nguyễn Đăng Đạo - Đường Lý Thái Tổ - Đường Kinh Dương Vương - ĐT.295B - Đường Trần Lựu - Đường Hoàng Quốc Việt - Đê Sông Cầu (ĐT.279) - Chợ Nội Doi (ĐT.279) - Ngã tư Phố Mới - Chợ Chì (ĐT.279) - Thôn Quế Ổ (Chi Lăng) và ngược lại.',
+        'description': 'Thôn Rích Gạo (Phù Chẩn) - ĐT.277 - Cầu Đại Đình - Đền Đô - Cột đồng hồ Từ Sơn - ĐT.295B - Đường Lê Thái Tổ - Cột đồng hồ Bắc Ninh - Đường Nguyễn Trãi - Đường Bình Than - Đường Nguyễn Đăng Đạo - Đường Lý Thái Tổ - Đường Kinh Dương Vương - ĐT.295B - Đường Trần Lựu - Đường Hoàng Quốc Việt - Đê Sông Cầu (ĐT.279) - Chợ Nội Doi (ĐT.279) - Ngã tư Phố Mới - Chợ Chì (ĐT.279) - Thôn Quế Ổ (Chi Lăng) và ngược lại.',
         'timeline': [
           ['KCN VSIP', 'Chi Lăng'],
           []
