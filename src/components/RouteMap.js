@@ -219,7 +219,7 @@ function renderRouteList(routes) {
   const routeNameList = [];
   for (let i = 0; i < routes.length; i++) {
     if (i % 4 === 0 && i !== 0) routeNameList.push('<br/>');
-    routeNameList.push('<button class="button"> ' + routes[i].name + '</button>');
+    routeNameList.push('<button class="button-route-map"> ' + routes[i].name + '</button>');
   }
   return routeNameList.join('');
 }

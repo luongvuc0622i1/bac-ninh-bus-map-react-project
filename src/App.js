@@ -20,7 +20,6 @@ export default function App() {
 
   const handleClickChangeMarker = (e) => {
     setMarkerId(e);
-    setChooseId(1);
   }
 
   const handleClickChangeRoute = (e) => {

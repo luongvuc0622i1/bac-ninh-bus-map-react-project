@@ -252,8 +252,9 @@ export let routes = {
             'type': 'turn ticket',
             'grades': [
               { 'name': 'Toàn tuyến', 'money': '15.000' },
-              { 'name': 'Bắc Ninh - Cầu Hồ', 'money': '10.000' },
-              { 'name': 'Bắc Ninh - Đông Bình', 'money': '12.000' },
+              { 'name': 'Bắc Ninh - Cầu Hồ', 'money': '6.000' },
+              { 'name': 'Bắc Ninh - Đông Bình', 'money': '10.000' },
+              { 'name': 'Cầu Hồ - Đông Bình', 'money': '6.000' },
               { 'name': 'Cầu Hồ - Kênh Vàng', 'money': '10.000' },
               { 'name': 'Đông Bình - Kênh Vàng', 'money': '8.000' }
             ]
@@ -261,7 +262,12 @@ export let routes = {
           {
             'type': 'monthly ticket',
             'grades': [
-              { 'name': 'Toàn tuyến', 'money': '300.000' }
+              { 'name': 'Toàn tuyến', 'money': '300.000' },
+              { 'name': 'Bắc Ninh - Cầu Hồ', 'money': '150.000' },
+              { 'name': 'Bắc Ninh - Đông Bình', 'money': '220.000' },
+              { 'name': 'Cầu Hồ - Đông Bình', 'money': '150.000' },
+              { 'name': 'Cầu Hồ - Kênh Vàng', 'money': '220.000' },
+              { 'name': 'Đông Bình - Kênh Vàng', 'money': '180.000' }
             ]
           }
         ]
@@ -286,7 +292,34 @@ export let routes = {
         'description': 'Ngã ba Kênh Vàng - ĐT.281 - Thị trấn Thứa - ĐT.284 - Đại Bái - QL.17 - Ngã tư Đông Côi - QL.38 - Đường Vương Văn Trà - Đường Âu Cơ - QL.17 - KCN Khai Sơn - Chùa Dâu - Cổng KĐT Khai Sơn (Xuân Lâm) và ngược lại.',
         'timeline': [
           ['Kênh Vàng', 'Xuân Lâm'],
-          []
+          ['5:00', '5:30'],
+          ['5:30', '6:00'],
+          ['5:50', '6:30'],
+          ['6:10', '6:55'],
+          ['6:30', '7:20'],
+          ['6:55', '7:45'],
+          ['7:20', '8:10'],
+          ['7:45', '8:35'],
+          ['8:10', '9:00'],
+          ['8:35', '9:25'],
+          ['9:00', '9:50'],
+          ['9:30', '10:20'],
+          ['10:00', '10:50'],
+          ['10:40', '11:40'],
+          ['11:20', '12:30'],
+          ['11:50', '13:10'],
+          ['12:40', '13:40'],
+          ['13:20', '14:05'],
+          ['13:40', '14:30'],
+          ['14:05', '14:55'],
+          ['14:30', '15:20'],
+          ['14:55', '15:45'],
+          ['15:20', '16:10'],
+          ['15:45', '16:30'],
+          ['16:10', '16:50'],
+          ['16:35', '17:10'],
+          ['17:10', '17:30'],
+          ['18:10', '18:10']
         ],
         'ticket': [
           {
@@ -332,19 +365,46 @@ export let routes = {
         'description': 'Thôn Rích Gạo (Phù Chẩn) - ĐT.277 - Cầu Đại Đình - Đền Đô - Cột đồng hồ Từ Sơn - ĐT.295B - Đường Lê Thái Tổ - Cột đồng hồ Bắc Ninh - Đường Nguyễn Trãi - Đường Bình Than - Đường Nguyễn Đăng Đạo - Đường Lý Thái Tổ - Đường Kinh Dương Vương - ĐT.295B - Đường Trần Lựu - Đường Hoàng Quốc Việt - Đê Sông Cầu (ĐT.279) - Chợ Nội Doi (ĐT.279) - Ngã tư Phố Mới - Chợ Chì (ĐT.279) - Thôn Quế Ổ (Chi Lăng) và ngược lại.',
         'timeline': [
           ['KCN VSIP', 'Chi Lăng'],
-          []
+          ['5:30', '5:20'],
+          ['6:00', '5:45'],
+          ['6:30', '6:00'],
+          ['7:00', '6:20'],
+          ['7:20', '6:40'],
+          ['7:40', '7:00'],
+          ['8:00', '7:20'],
+          ['8:20', '7:50'],
+          ['8:40', '8:20'],
+          ['9:20', '8:40'],
+          ['9:50', '9:00'],
+          ['10:40', '9:30'],
+          ['11:10', '10:00'],
+          ['11:50', '10:40'],
+          ['12:30', '11:20'],
+          ['13:00', '11:50'],
+          ['13:30', '12:40'],
+          ['14:00', '13:20'],
+          ['14:30', '13:40'],
+          ['14:50', '14:10'],
+          ['15:20', '14:30'],
+          ['15:50', '14:50'],
+          ['16:10', '15:10'],
+          ['16:30', '15:30'],
+          ['16:50', '16:10'],
+          ['17:10', '16:40'],
+          ['17:30', '17:20'],
+          ['18:00', '18:00']
         ],
         'ticket': [
           {
             'type': 'turn ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '20.000' }
             ]
           },
           {
             'type': 'monthly ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '300.000' }
             ]
           }
         ]
@@ -386,13 +446,23 @@ export let routes = {
           {
             'type': 'turn ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '20.000' },
+              { 'name': 'Bắc Ninh - Phố Mới', 'money': '8.000' },
+              { 'name': 'Bắc Ninh - Châu Cầu', 'money': '12.000' },
+              { 'name': 'Phố Mới - Châu Cầu', 'money': '8.000' },
+              { 'name': 'Phố Mới - Minh Tân', 'money': '15.000' },
+              { 'name': 'Châu Cầu - Minh Tân', 'money': '12.000' }
             ]
           },
           {
             'type': 'monthly ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '350.000' },
+              { 'name': 'Bắc Ninh - Phố Mới', 'money': '200.000' },
+              { 'name': 'Bắc Ninh - Châu Cầu', 'money': '250.000' },
+              { 'name': 'Phố Mới - Châu Cầu', 'money': '200.000' },
+              { 'name': 'Phố Mới - Minh Tân', 'money': '270.000' },
+              { 'name': 'Châu Cầu - Minh Tân', 'money': '250.000' }
             ]
           }
         ]
@@ -434,13 +504,23 @@ export let routes = {
           {
             'type': 'turn ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '20.000' },
+              { 'name': 'Bắc Ninh - Phố Mới', 'money': '8.000' },
+              { 'name': 'Bắc Ninh - Châu Cầu', 'money': '12.000' },
+              { 'name': 'Phố Mới - Châu Cầu', 'money': '8.000' },
+              { 'name': 'Phố Mới - Đại Lai', 'money': '15.000' },
+              { 'name': 'Châu Cầu - Đại Lai', 'money': '12.000' }
             ]
           },
           {
             'type': 'monthly ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '350.000' },
+              { 'name': 'Bắc Ninh - Phố Mới', 'money': '200.000' },
+              { 'name': 'Bắc Ninh - Châu Cầu', 'money': '250.000' },
+              { 'name': 'Phố Mới - Châu Cầu', 'money': '200.000' },
+              { 'name': 'Phố Mới - Đại Lai', 'money': '270.000' },
+              { 'name': 'Châu Cầu - Đại Lai', 'money': '250.000' }
             ]
           }
         ]
@@ -461,7 +541,7 @@ export let routes = {
           { 'name': '', 'link': '' }
         ],
         'image': 'img-10a.jpg?alt=media&token=cc272b49-5caf-4044-bdff-b024d68affb9',
-        'description': '',
+        'description': 'Long Biên (đối diện Đội CSGT số 1 Hà Nội - số 3 Trần Nhật Duật) - Trần Nhật Duật - Yên Phụ - Quay đầu tại đối diện 92 Yên Phụ - Điểm trung chuyển Long Biên - Trần Nhật Duật - Cầu Chương Dương - Nguyễn Văn Cừ - Ngô Gia Tự - Cầu Đuống - Hà Huy Tập - Đặng Phúc Thông - Trần Phú (Từ Sơn) - Minh Khai (Từ Sơn) - Từ Sơn (Cổng bệnh viện đa khoa Từ Sơn) và ngược lại.',
         'timeline': [
           ['Long Biên', 'Từ Sơn'],
           []
@@ -492,13 +572,13 @@ export let routes = {
       },
       'properties': {
         'distance': '30,6 km',
-        'establish': '',
+        'establish': '9/2/2004',
         'operatedBy': 'Xí nghiệp xe buýt Yên Viên - TRANSERCO',
         'decision': [
           { 'name': '', 'link': '' }
         ],
         'image': 'img-54.jpg?alt=media&token=d993169f-2139-46a2-917f-3facfad162cb',
-        'description': '',
+        'description': 'Long Biên - Yên Phụ - Điểm trung chuyển Long Biên - Trần Nhật Duật - Cầu Chương Dương - Nguyễn Văn Cừ - Ngô Gia Tự - Cầu Đuống - Hà Huy Tập - Đặng Phúc Thông - Trần Phú (Từ Sơn) - Minh Khai (Từ Sơn) - Hai Bà Trưng (Tiên Du) - Nguyễn Văn Cừ (Bắc Ninh) - Ngô Gia Tự (Bắc Ninh) - Kinh Dương Vương (Bắc Ninh) - Thành phố Bắc Ninh và ngược lại.',
         'timeline': [
           ['Long Biên', 'Tp. Bắc Ninh'],
           []
@@ -580,7 +660,8 @@ export let routes = {
           {
             'type': 'turn ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn tuyến', 'money': '22.000' },
+              { 'name': 'Chặng', 'money': '12.000' }
             ]
           },
           {
@@ -637,13 +718,13 @@ export let routes = {
       },
       'properties': {
         'distance': '66,7 km',
-        'establish': '',
+        'establish': '28/03/2018',
         'operatedBy': 'Công ty CP Xe khách Hà Nội',
         'decision': [
           { 'name': '', 'link': '' }
         ],
         'image': 'img-212.jpg?alt=media&token=afa0775a-d6c8-4f36-8962-e6c02ddf45ab',
-        'description': '',
+        'description': 'Bến xe Mỹ Đình - Phạm Hùng - Phạm Văn Đông - Cầu Thăng Long - Võ Văn Kiệt - QL.18 - Đường YP.3 - Đường YP.2 - Cầu Đông Yên - QL.18 - QL.1A - Cầu Bồ Sơn - Nguyễn Trãi (Bắc Ninh) - Lý Thái Tổ (Bắc Ninh) - Trần Hưng Đạo (Bắc Ninh) - Cầu Đại Phúc - QL.18 - Bến xe Quế Võ và ngược lại.',
         'timeline': [
           ['Mỹ Đình', 'Quế Võ'],
           []
@@ -652,7 +733,13 @@ export let routes = {
           {
             'type': 'turn ticket',
             'grades': [
-              { 'name': '', 'money': '' }
+              { 'name': 'Toàn Tuyến', 'money': '40.000' },
+              { 'name': 'Mỹ Đình - Nội Bài', 'money': '10.000' },
+              { 'name': 'Mỹ Đình - KCN Yên Phong', 'money': '30.000' },
+              { 'name': 'Mỹ Đình - TP. Bắc Ninh', 'money': '35.000' },
+              { 'name': 'Nội Bài - Quế Võ', 'money': '35.000' },
+              { 'name': 'KCN Yên Phong - Quế Võ', 'money': '30.000' },
+              { 'name': 'TP. Bắc Ninh - Quế Võ', 'money': '10.000' }
             ]
           },
           {

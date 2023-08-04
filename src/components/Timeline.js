@@ -6,7 +6,7 @@ export default function Timeline(props) {
   const timeline = routes.features.find(el => el.geometry.id === props.routeId).properties.timeline;
 
   return (
-    <div className='group' >
+    <div className='group-info' >
       <table style={{ tableLayout: 'fixed', width: '100%' }}>
         <tbody>
           <tr>

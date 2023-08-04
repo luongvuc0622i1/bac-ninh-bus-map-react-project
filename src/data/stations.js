@@ -4821,7 +4821,7 @@ export let stations = {
         'routers': [
           { 'id': 1, 'name': '10A', 'start': true },
           { 'id': 1, 'name': '54', 'start': true },
-          { 'id': 99, 'name': '204' }
+          { 'id': 1, 'name': '204', 'start': true }
         ]
       }
     },
